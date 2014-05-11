@@ -1,0 +1,53 @@
+
+/* Checks Interface */
+
+.csx .check{
+	position:relative;
+	top:1px;
+	margin:0px 3px 0px 0px;
+}
+
+.csx .check .checkMark{
+	display:inline-block;
+	width:12px;
+	height:12px;
+}
+
+.editable .csx .checkMark{
+	cursor:pointer;
+}
+
+.csx .check .checkBorder{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/check_border.svg');
+	display:inline-block;
+	height:12px;
+	width:12px;
+}
+
+.csx .check .checkOff{
+	background-image:url('../images/check_off.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+.editable .csx .check .checkOff:hover{
+	background-image:url('../images/check_off_hover.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+.csx .check .checkOn{
+	background-image:url('../images/check_on.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+.editable .csx .check .checkOn:hover{
+	background-image:url('../images/check_on_hover.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}

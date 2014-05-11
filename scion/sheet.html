@@ -1,0 +1,337 @@
+<div class="wrapper csx">
+
+	<div class="tabs">
+		<a class="tab fluff tab_fluff" title="Characterization"></a>
+		<a class="tab crunch tab_crunch active" title="Characteristics"></a>
+	</div>
+	
+	<div class="uicontainer">
+	
+		<div class="formatBar">
+			<button type="button" class="boldButton" title="Bold (Ctrl+B)"></button>
+			<button type="button" class="italicButton" title="Italic (Ctrl+I)"></button>
+			<button type="button" class="underlineButton" title="Underline (Ctrl+U)"></button>
+			<button type="button" class="indentButton" title="Indent (Ctrl+Tab)"></button>
+		</div>
+	
+		<div class="tipBox">
+			<div class="corner topLeft"></div>
+			<div class="corner topRight"></div>
+			<div class="corner bottomLeft"></div>
+			<div class="corner bottomRight"></div>
+			<div class="contentBox">
+				<div class="tipArea edit"></div>
+			</div>
+		</div>
+	
+	</div>
+	
+	<div class="main" style="display:block;">
+		<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/scion/brass-corner-top-left.png" class="corner_top_left" />
+		<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/scion/brass-corner-top-right.png" class="corner_top_right" />
+		<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/scion/brass-corner-bottom-left.png" class="corner_bottom_left" />
+		<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/scion/brass-corner-bottom-right.png" class="corner_bottom_right" />
+		<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/scion/brass-bottom.png" class="brass_bottom" />
+		
+		<div class="pagehead">
+			<div class="head">
+				<span class="name readonly dsf dsf_name">Edit Character Name</span>
+			</div>
+			<span class="dsf dsf_calling typev" style="text-align:right;">Edit Calling</span> &#8226; 
+			<span class="dsf dsf_pantheon typev" style="text-align:right;">Edit Pantheon</span> &#8226; 
+			<span class="dsf dsf_nature typev" style="text-align:right;">Edit Nature</span> &#8226; 
+			<span class="dsf dsf_role typev" style="text-align:right;">Edit Role</span>
+			
+		</div>
+
+		<div class="page page_crunch active">
+			
+			<span class="column halfwidth colspace">
+			
+				<!-- Attributes -->
+				<div class="section halfwidth">
+					<div class="head">ATTRIBUTES</div>
+					<div class="group">
+						<div class="row scionstat">
+							<span class="readonly check dsf dsf_strength_epic epicstat"></span>
+							Strength<span class="readonly pips pipsRange_10 dsf dsf_strength">1</span>
+							&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_strength_legendary"></span>
+						</div>
+						<div class="row scionstat">
+							<span class="readonly check dsf dsf_dexterity_epic epicstat"></span>
+							Dexterity<span class="readonly pips pipsRange_10 dsf dsf_dexterity">1</span>
+							&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_dexterity_legendary"></span>
+						</div>
+						<div class="row scionstat">
+							<span class="readonly check dsf dsf_stamina_epic epicstat"></span>
+							Stamina<span class="readonly pips pipsRange_10 dsf dsf_stamina">1</span>
+							&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_stamina_legendary"></span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="row scionstat">
+							<span class="readonly check dsf dsf_charisma_epic epicstat"></span>
+							Charisma<span class="readonly pips pipsRange_10 dsf dsf_charisma">1</span>
+							&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_charisma_legendary"></span>
+						</div>
+						<div class="row scionstat">
+							<span class="readonly check dsf dsf_manipulation_epic epicstat"></span>
+							Manipulation<span class="readonly pips pipsRange_10 dsf dsf_manipulation">1</span>
+							&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_manipulation_legendary"></span>
+						</div>
+						<div class="row scionstat">
+							<span class="readonly check dsf dsf_appearance_epic epicstat"></span>
+							Appearance<span class="readonly pips pipsRange_10 dsf dsf_appearance">1</span>
+							&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_appearance_legendary"></span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="row scionstat">
+							<span class="readonly check dsf dsf_perception_epic epicstat"></span>
+							Perception<span class="readonly pips pipsRange_10 dsf dsf_perception">1</span>
+							&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_perception_legendary"></span>
+						</div>
+						<div class="row scionstat">
+							<span class="readonly check dsf dsf_intelligence_epic epicstat"></span>
+							Intelligence<span class="readonly pips pipsRange_10 dsf dsf_intelligence">1</span>
+							&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_intelligence_legendary"></span>
+						</div>
+						<div class="row scionstat">
+							<span class="readonly check dsf dsf_wits_epic epicstat"></span>
+							Wits<span class="readonly pips pipsRange_10 dsf dsf_wits">1</span>
+							&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_wits_legendary"></span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Abilities -->
+				<div class="section halfwidth">
+					<div class="head">ABILITIES
+						<span class="interface trash"></span>
+						<span class="interface add addto_abilities" title="Add Ability"></span>
+					</div>
+					<ul class="group list list_abilities">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="readonly check dslf dslf_favored"></span>
+							<span class="edit dslf dslf_name abilitylabel">Ability</span>
+							<span class="readonly pips pipsRange_10 dslf dslf_rating"></span>
+						</li>
+						<span class="oldfields hidden">[]</span>
+						<span class="dsf dsf_abilities readonly hidden">
+							[
+								{"favored":0,"name":"Academics","rating":0},
+								{"favored":0,"name":"Animal Ken","rating":0},
+								{"favored":0,"name":"Art","rating":0},
+								{"favored":0,"name":"Athletics","rating":0},
+								{"favored":0,"name":"Awareness","rating":0},
+								{"favored":0,"name":"Brawl","rating":0},
+								{"favored":0,"name":"Command","rating":0},
+								{"favored":0,"name":"Control","rating":0},
+								{"favored":0,"name":"Craft","rating":0},
+								{"favored":0,"name":"Empathy","rating":0},
+								{"favored":0,"name":"Fortitude","rating":0},
+								{"favored":0,"name":"Integrity","rating":0},
+								{"favored":0,"name":"Investigation","rating":0},
+								{"favored":0,"name":"Larceny","rating":0},
+								{"favored":0,"name":"Marksmanship","rating":0},
+								{"favored":0,"name":"Medicine","rating":0},
+								{"favored":0,"name":"Melee","rating":0},
+								{"favored":0,"name":"Occult","rating":0},
+								{"favored":0,"name":"Politics","rating":0},
+								{"favored":0,"name":"Presence","rating":0},
+								{"favored":0,"name":"Science","rating":0},
+								{"favored":0,"name":"Stealth","rating":0},
+								{"favored":0,"name":"Survival","rating":0},
+								{"favored":0,"name":"Thrown","rating":0}
+							]
+						</span>
+					</ul>
+				</div>
+
+				<!-- Combat -->
+				<div class="section halfwidth colspace">
+					<div class="head">COMBAT</div>
+					<div class="group">
+						<div class="row">Soak: <span class="dsf dsf_soak right">0B / 0L / 0A</span></div>
+						<div class="row">Armor: <span class="dsf dsf_armor right">0B / 0L / 0A</span></div>
+						<div class="row">Dodge DV: <span class="dsf dsf_dodge right">0</span></div>
+						<div class="row">Parry DV: <span class="dsf dsf_parry right">0</span></div>
+						<div class="row">Joing Battle: <span class="dsf dsf_join_battle right">0</span></div>
+					</div>
+				</div>
+				
+			</span>
+			
+			<span class="column halfwidth">
+
+				<!-- Misc -->
+				<div class="section halfwidth" style="min-height:0px;">
+					<div class="head">MISCELANIOUS</div>
+					<div class="group">
+						<div class="row">Willpower<span class="readonly pips pipsRange_10 dsf dsf_willpower"></span></div>
+						<div class="row">Legend<span class="readonly pips pipsRange_12 dsf dsf_legend">2</span></div>
+						<div class="row">Legend Points: <span class="dsf dsf_legend_points right">0 | 0</span></div>
+						<div class="row">Experience: <span class="dsf dsf_experience right">0 (0 Spent)</span></div>
+					</div>
+				</div>
+
+				<!-- Virtues -->
+				<div class="section halfwidth">
+					<div class="head">VIRTUES</div>
+					<div class="group">
+						<div class="row"><span class="dsf dsf_virtue01 pips5label">Virtue Name</span><span class="readonly pips pipsRange_5 dsf dsf_virtue01_rating">1</span></div>
+						<div class="row"><span class="dsf dsf_virtue02 pips5label">Virtue Name</span><span class="readonly pips pipsRange_5 dsf dsf_virtue02_rating">1</span></div>
+						<div class="row"><span class="dsf dsf_virtue03 pips5label">Virtue Name</span><span class="readonly pips pipsRange_5 dsf dsf_virtue03_rating">1</span></div>
+						<div class="row"><span class="dsf dsf_virtue04 pips5label">Virtue Name</span><span class="readonly pips pipsRange_5 dsf dsf_virtue04_rating">1</span></div>
+					</div>
+				</div>
+
+				<!-- Boons -->
+				<div class="section halfwidth">
+					<div class="head">BOONS
+						<span class="interface trash"></span>
+						<span class="interface add addto_boons" title="Add Boon"></span>
+					</div>
+					<ul class="group list list_boons">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_name fullcolumn">Boon Name</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[]</span>
+						<span class="dsf dsf_boons readonly hidden"></span>
+					</ul>
+				</div>
+
+				<!-- Knacks -->
+				<div class="section halfwidth">
+					<div class="head">KNACKS
+						<span class="interface trash"></span>
+						<span class="interface add addto_knacks" title="Add Knack"></span>
+					</div>
+					<ul class="group list list_knacks">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_name fullcolumn">Knack Name</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[]</span>
+						<span class="dsf dsf_knacks readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Birthrights -->
+				<div class="section halfwidth">
+					<div class="head">BIRTHRIGHTS
+						<span class="interface trash"></span>
+						<span class="interface add addto_birthrights" title="Add Birthright"></span>
+					</div>
+					<ul class="group list list_birthrights">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_name pips5label">Birthright</span>
+							<span class="pips pipsRange_5 dslf readonly dslf_rating">1</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[]</span>
+						<span class="dsf dsf_birthrights readonly hidden"></span>
+					</ul>
+				</div>							
+
+				<!-- Movement -->
+				<div class="section halfwidth colspace">
+					<div class="head">MOVEMENT</div>
+					<div class="group">
+						<div class="row">Move: <span class="dsf dsf_move right">0</span></div>
+						<div class="row">Dash: <span class="dsf dsf_dash right">0</span></div>
+						<div class="row">Jump: <span class="dsf dsf_jump right">0</span></div>
+					</div>
+				</div>
+				
+				<!-- Health -->
+				<div class="section halfwidth">
+					<div class="head">HEALTH</div>
+					<div class="group">
+						<div class="row">-0 Levels<span class="readonly pips pipsRange_10 dsf dsf_0health"></span></div>
+						<div class="row">-1 Levels<span class="readonly pips pipsRange_10 dsf dsf_1health"></span></div>
+						<div class="row">&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_1health_b"></span></div>
+						<div class="row">-2 Levels<span class="readonly pips pipsRange_10 dsf dsf_2health"></span></div>
+						<div class="row">&nbsp;<span class="readonly pips pipsRange_10 dsf dsf_2health_b"></span></div>
+						<div class="row">-4 Levels<span class="readonly pips pipsRange_10 dsf dsf_4health"></span></div>
+					</div>
+				</div>
+
+			</span>
+			
+			<!-- Attacks -->
+			<div class="section attacks">
+				<div class="head">ATTACKS
+					<span class="interface trash"></span>
+					<span class="interface add addto_attacks" title="Add Attack"></span>
+				</div>
+				<div class="labelrow">
+					<span class="weapon">Attack</span>
+					<span class="speed">Speed</span>
+					<span class="accuracy">Acc</span>
+					<span class="damage">Damage</span>
+					<span class="defense">Def</span>
+					<span class="rate">Rate</span>
+					<span class="range">Range</span>
+					<span class="tags">Tags</span>
+				</div>
+				<ul class="group list list_attacks">
+					<li class="proto item">
+						<div class="handle"><div></div></div>
+						<span class="edit dslf typea dslf_name weapon">Attack Name</span>
+						<span class="edit dslf typed dslf_speed speed">5</span>
+						<span class="edit dslf typed dslf_accuracy accuracy">+0</span>
+						<span class="edit dslf typed dslf_damage damage">0L</span>
+						<span class="edit dslf typed dslf_defense defense">+0</span>
+						<span class="edit dslf typed dslf_rate rate">1</span>
+						<span class="edit dslf typed dslf_range range">Melee</span>
+						<span class="edit dslf typed dslf_tags tags">-</span>
+					</li>
+					<span class="oldfields hidden">[{"name":"attack_weapon","speed":"attack_speed","accuracy":"attack_accuracy","damage":"attack_damage","defense":"attack_defense","rate":"attack_rate","range":"attack_range","tags":"attack_tags"}]</span>
+					<span class="dsf dsf_attacks readonly hidden"></span>
+				</ul>
+			</div>
+			
+		</div>
+
+		<div class="page page_fluff active">
+
+			<!-- Biography -->
+			<div class="section">
+				<div class="head">BIOGRAPHY</div>
+				<div class="group">
+					<div class="portraitholder">
+						<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/scion/brass-corner-top-left.png" class="topleft" />
+						<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/scion/brass-corner-top-right.png" class="topright" />
+						<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/scion/brass-corner-bottom-left.png" class="bottomleft" />
+						<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/scion/brass-corner-bottom-right.png" class="bottomright" />
+						<span class="portrait readonly dsf dsf_avatar_image">.</span>
+					</div>
+					<span class="dsf dsf_bio fullwidth readonly">Edit Biography below...</span>
+				</div>
+			</div>
+
+			<!-- Appearance -->
+			<div class="section">
+				<div class="head">APPEARANCE</div>
+				<div class="group">
+					<span class="dsf dsf_desc fullwidth">Character appearance...</span>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="page_foot">
+			<div class="head"></div>
+			<span class="readonly dsf dsf_campaign">Campaign Name</span> &#8226; 
+			Character By <span class="align_right dsf dsf_player readonly">Player</span> &#8226; 
+			Sheet By <span class="align_left dsf dsf_dst_author readonly">Author</span>
+		</div>
+	</div>
+	
+</div>

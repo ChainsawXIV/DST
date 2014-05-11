@@ -1,0 +1,96 @@
+
+/* Page Tabs */
+
+.csx .tabs{
+	position:absolute;
+	padding-right:90px;
+	top:-37px;
+	right:0px;
+	z-index:3;
+}
+
+.csx .tab{
+	display:inline-block;
+	float:right;
+	height:40px;
+	width:46px;
+}
+.csx .tab:not(.active){
+	cursor:pointer;
+}
+
+.csx .tab.crunch{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png') no-repeat 50% 50%,
+		url('../images/tab01_inactive.png');
+	background-size:
+		70% 70%,
+		100% 100%;
+}
+.csx .tab.crunch:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch_hover.png'),
+		url('../images/tab01_inactive.png');
+}
+.csx .tab.crunch.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png'),
+		url('../images/tab01_active.png');
+}
+
+.csx .tab.magic{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png') no-repeat 50% 50%,
+		url('../images/tab02_inactive.png');
+	background-size:
+		70% 70%,
+		100% 100%;
+}
+.csx .tab.magic:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/magic_hover.png'),
+		url('../images/tab02_inactive.png');
+}
+.csx .tab.magic.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png'),
+		url('../images/tab02_active.png');
+}
+
+.csx .tab.equipment{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png') no-repeat 50% 50%,
+		url('../images/tab03_inactive.png');
+	background-size:
+		70% 70%,
+		100% 100%;
+}
+.csx .tab.equipment:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment_hover.png'),
+		url('../images/tab03_inactive.png');
+}
+.csx .tab.equipment.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png'),
+		url('../images/tab03_active.png');
+}
+
+.csx .tab.fluff{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png') no-repeat 50% 50%,
+		url('../images/tab04_inactive.png');
+	background-size:
+		70% 70%,
+		100% 100%;
+}
+.csx .tab.fluff:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff_hover.png'),
+		url('../images/tab04_inactive.png');
+}
+.csx .tab.fluff.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png'),
+		url('../images/tab04_active.png');
+}

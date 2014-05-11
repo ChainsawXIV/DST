@@ -1,0 +1,59 @@
+
+/* Pips Interface */
+
+.csx .pips{
+	position:relative;
+	z-index:2;
+	float:right;
+	top:3px;
+	height:17px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 2px;
+}
+
+.csx .pips.pipsRange_3{
+	width:41px;
+}
+
+.csx .pips.pipsRange_5{
+	width:70px;
+}
+
+.csx .pips.pipsRange_10{
+	width:142px;
+}
+
+.csx .pips .pip{
+	position:absolute;
+	top:-2px;
+	height:15px;
+	width:15px;
+	display:inline-block;
+}
+
+.csx .pipBorder{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/pip_border.svg');
+	display:inline-block;
+	height:15px;
+	width:15px;
+}
+
+.csx .pips .pipOff{
+	background-image:url('../images/pip_off.png');
+}
+
+.editable .csx .pips .pipOff:hover{
+	background-image:url('../images/pip_off_hover.png');
+}
+
+.csx .pips .pipOn{
+	background-image:url('../images/pip_on.png');
+}
+
+.editable .csx .pips .pipOn:hover{
+	background-image:url('../images/pip_on_hover.png');
+}
+
+.csx .pips svg{
+	position:absolute;
+}

@@ -1,0 +1,368 @@
+
+/* Sheet Content */
+
+.wrapper.csx{
+	position:relative;
+	width:730px;
+	margin:0px auto;
+}
+
+.csx .main{
+
+	position:relative;
+	width:708px;
+	padding:0px 10px 80px 10px;
+	margin:40px 0px 20px 0px;
+	min-height: 795px;
+	
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/solar/background.jpg');
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#e4e5d5;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+	
+	font-family:'Cinzel', palatino, serif;
+	font-size:14px;
+	line-height:17px;
+	color:#554220;
+	
+}
+
+.csx .list.twocolumn .column{
+	width:343px;
+}
+.csx .twocolumn li.item{
+	width:345px;
+}
+.csx .threecolumn .column{
+	width:223px;
+}
+.csx .threecolumn li.item{
+	width:226px;
+}
+.csx .list .column.colspace{
+	margin-right:12px;
+}
+
+.csx .group{
+	margin:0px 0px 8px 0px;
+	padding:0px 3px 0px 3px;
+	position:relative;
+}
+
+.csx .section{
+	display:inline-block;
+	width:100%;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 2px 1px;
+	min-height:98px;
+}
+
+.csx .halfwidth{
+	width:348px;
+}
+
+.csx .column{
+	vertical-align:top;
+	display:inline-block;
+}
+
+.csx .colspace{
+	margin-right:6px;
+}
+
+.csx .head{
+	font-size:14pt;
+	font-weight:normal;
+	letter-spacing:3px;
+	border-bottom:solid 1px #554220;
+	margin-bottom:5px;
+}
+
+.csx .pagehead{
+	text-align:center;
+	width:600px;
+	margin:22px auto 30px auto;
+}
+
+.csx .hidden{
+	display:none;
+}
+
+.csx .page{
+	display:none;
+}
+
+.csx .page.active{
+	display:block;
+}
+
+.csx .page_foot{
+	text-align:center;
+	width:600px;
+	margin:22px 0px 0px 55px;
+	padding:0px 0px 30px 0px;
+	position:absolute;
+	bottom:12px;
+}
+
+.csx a{
+	text-decoration:none;
+	color:#554220;
+}
+
+.csx .section a{
+	text-decoration:underline;
+}
+
+.csx .right{
+	float:right;
+	text-align:right;
+}
+
+/* Corner Brass */
+
+.csx .corner_top_left{
+	position:absolute;
+	left:-7px;
+	top:-7px;
+	z-index:4;
+}
+
+.csx .corner_top_right{
+	position:absolute;
+	right:-7px;
+	top:-7px;
+	z-index:4;
+}
+
+.csx .corner_bottom_left{
+	position:absolute;
+	left:-7px;
+	bottom:-7px;
+	z-index:4;
+}
+
+.csx .corner_bottom_right{
+	position:absolute;
+	right:-7px;
+	bottom:-7px;
+	z-index:4;
+}
+
+.csx .brass_bottom{
+	position:absolute;
+	left:262px;
+	bottom:-7px;
+	z-index:4;
+}
+
+/* Caste Icons */
+
+.csx .casteIcon{
+	position:absolute;
+	left:118px;
+	top:0px;
+	height:85px;
+}
+
+/* Portrait */
+
+.csx .portraitholder{
+	display:inline-block;
+	position:relative;
+	float:right;
+	padding:0px 0px 0px 0px;
+	margin:3px 3px 5px 10px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+}
+.csx .portraitholder .portrait {
+    min-height: 150px;
+    min-width: 150px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+	max-height: 300px;
+	max-width: 300px;
+}
+.csx .portraitholder .topleft{
+	position:absolute;
+	left:-4px;
+	top:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+.csx .portraitholder .topright{
+	position:absolute;
+	right:-4px;
+	top:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+.csx .portraitholder .bottomleft{
+	position:absolute;
+	left:-4px;
+	bottom:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+.csx .portraitholder .bottomright{
+	position:absolute;
+	right:-4px;
+	bottom:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+/* Editable Fields */
+
+.csx .dsf:not(.readonly),
+.csx .edit:not(.readonly){
+	line-height: 14px;
+	padding-bottom: 3px;
+}
+
+.csx .dsf.pips10label,
+.csx .edit.pips10label{
+	width:180px;
+}
+
+.csx .dsf.pips5label,
+.csx .edit.pips5label{
+	width:244;
+}
+
+.csx .dsf.pips3label,
+.csx .edit.pips3label{
+	width:281px;
+}
+
+.csx .dsf.fullcolumn,
+.csx .edit.fullcolumn{
+	width:312px;
+}
+
+.csx .threecolumn .dsf.fullcolumn,
+.csx .threecolumn .edit.fullcolumn{
+	width:196px;
+}
+
+.csx .dsf.fullwidth,
+.csx .edit.fullwidth{
+	width:704px;
+	min-height:50px;
+	display:inline-block;
+	line-height:17px;
+	text-align:justify;
+}
+
+.editable .csx .list .dsf.fullwidth,
+.editable .csx .list .edit.fullwidth{
+	width:684px;
+}
+
+.csx .list .dsf.fullwidth,
+.csx .list .edit.fullwidth{
+	min-height:0px;
+	line-height:14px;
+}
+
+.csx .dsf.right,
+.csx .edit.right{
+	max-width:180px;
+	min-width:100px;
+}
+
+.editable .csx .dsf:hover:not(.readonly),
+.editable .csx .edit:hover:not(.readonly){
+	color:#957438;
+	background-color:rgba(0,0,0,0.02);
+}
+
+.editable .csx .dsf:focus,
+.editable .csx .edit:focus,
+.editable .csx .dsf:focus:hover,
+.editable .csx .edit:focus:hover{
+	color:#957438;
+	background-color:rgba(0,0,0,0.05);
+}
+
+/* Attack List */
+
+.csx .attacks .weapon{
+	width:193px;
+	margin-left:5px;
+}
+
+.editable .csx .attacks .weapon{
+	width:180px;
+	margin-left:0px;
+}
+
+.editable .csx .attacks .labelrow .weapon{
+	margin-left:16px;
+}
+.csx .attacks .labelrow span{
+	display:inline-block;
+	border-bottom:1px solid #A59270;
+	line-height:12px;
+}
+.csx .attacks .speed,
+.csx .attacks .accuracy,
+.csx .attacks .damage,
+.csx .attacks .defense,
+.csx .attacks .rate,
+.csx .attacks .range,
+.csx .attacks .tags{
+	display:inline-block;
+	width:65px;
+	text-align:center;
+	margin-left:3px;
+}
+
+
+/* Misc */
+
+.csx .name{
+	display:inline-block;
+	font-size:18pt;
+	margin:0px 0px 9px 0px;
+	width: 600px;
+	height:16px;
+}
+
+.csx .dsf.dsf_type{
+	font-family:'Cinzel', palatino, serif;
+	font-size:14px;
+	line-height:17px;
+}
+
+.csx .dsf.dsf_bio{
+    width: auto;
+	display:block;
+}
+.csx .dsf.dsf_bio p{
+	margin-top:17px;
+}
+.csx .dsf.dsf_bio p:first-of-type{
+	margin-top:0px;
+}
+
+.editable .csx .list_combos .edit.fullwidth{
+	width:672px;
+}
+
+.csx .check.autobalance .checkMark{
+	background-position: 1px 3px;
+	position: relative;
+	left: 2px;
+}

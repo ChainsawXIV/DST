@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="30.0" width="30.0">
+	<defs>
+		<radialGradient id="checkGlow01" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+			<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+		</radialGradient>
+	</defs>
+	<circle cx="15.0" cy="14.0" r="6.0" fill="url(#checkGlow01)">
+		<animate attributeName="opacity" values="1.0,0.0" begin="0.0s" dur="3.0s" repeatCount="indefinite" />
+		<animate attributeName="r" from="6.0" to="13.0" begin="0.0s" dur="3.0s" repeatCount="indefinite" />
+	</circle>
+</svg>

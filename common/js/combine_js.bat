@@ -1,0 +1,1 @@
+copy /b csx_utils.js+csx_check.js+csx_edit.js+csx_list.js+csx_pips.js+csx_tab.js+csx_tip.js csx_exalted_common.js
