@@ -193,6 +193,13 @@ function csx_edit(context){
 			// Genericize event data
 			e = e || window.event;
 			
+			// Suppress line break insertion if needed
+			if (e.keyCode && this.className.match(/singlerow/)){
+				e.preventDefault();
+				e.stopPropagation();
+				return false;
+			}
+			
 			// Suppress normal browser shortcuts
 			if (e.ctrlKey || e.metaKey){
 				if (e.keyCode == 66){
