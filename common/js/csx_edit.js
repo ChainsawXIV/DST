@@ -253,7 +253,7 @@ function csx_edit(context){
 			this.innerHTML = unescape(this.innerHTML);
 		
 			// Set default value if the field is blank
-			if(this.innerHTML == '' || this.innerHTML == '<br>')
+			if (this.innerHTML == csx_opts.defaultFieldValue || this.innerHTML == '')
 				this.innerHTML = this.defaultValue;
 
 			// Activate the field for editing

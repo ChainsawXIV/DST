@@ -188,7 +188,7 @@ function csx_list(context, addItemCallback){
 				var fields = newItem.querySelectorAll('.dslf');
 				for (var fieldIndex = 0; fieldIndex < fields.length; fieldIndex++){
 					var fieldName = fields[fieldIndex].className.match(/dslf_([\w\d_]+)/)[1];
-					if (data[fieldName])
+					if (fieldName in data)
 						fields[fieldIndex].innerHTML = data[fieldName];
 				}
 			}

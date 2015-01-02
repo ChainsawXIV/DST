@@ -360,7 +360,7 @@ function csx_edit(context){
 			this.innerHTML = unescape(this.innerHTML);
 		
 			// Set default value if the field is blank
-			if(this.innerHTML == '' || this.innerHTML == '<br>')
+			if (this.innerHTML == csx_opts.defaultFieldValue || this.innerHTML == '')
 				this.innerHTML = this.defaultValue;
 
 			// Activate the field for editing
@@ -653,7 +653,7 @@ function csx_list(context, addItemCallback){
 				var fields = newItem.querySelectorAll('.dslf');
 				for (var fieldIndex = 0; fieldIndex < fields.length; fieldIndex++){
 					var fieldName = fields[fieldIndex].className.match(/dslf_([\w\d_]+)/)[1];
-					if (data[fieldName])
+					if (fieldName in data)
 						fields[fieldIndex].innerHTML = data[fieldName];
 				}
 			}
