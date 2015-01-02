@@ -87,7 +87,7 @@ function csx_edit(context){
 			e = e || window.event;
 			
 			// Suppress line break insertion if needed
-			if (e.keyCode && this.className.match(/singlerow/)){
+			if (e.keyCode == 13 && this.className.match(/singlerow/)){
 				e.preventDefault();
 				e.stopPropagation();
 				return false;
