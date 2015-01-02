@@ -324,7 +324,7 @@ function csx_edit(context){
 			continue;
 			
 		// Replace the field span with a div if it's not
-		// Here instead of render so events attack to the new div
+		// Here instead of render so events attach to the new div
 		var field = baseField;
 		if (baseField.tagName == 'SPAN'){
 			var field = document.createElement('div');
@@ -335,7 +335,12 @@ function csx_edit(context){
 		}
 		
 		// Set the default text value for blank fields
-		field.defaultValue = csx_opts.defaultFieldValue;
+		if (baseField.attributes['defaultString']){
+			field.defaultValue = baseField.attributes['defaultString'].value;
+			field.setAttribute('defaultString',baseField.attributes['defaultString'].value);
+		}
+		else
+			field.defaultValue = csx_opts.defaultFieldValue;
 		
 		// Returns the text edited into the field
 		field.value = function(){
@@ -355,7 +360,7 @@ function csx_edit(context){
 			this.innerHTML = unescape(this.innerHTML);
 		
 			// Set default value if the field is blank
-			if (this.innerHTML == '')
+			if(this.innerHTML == '' || this.innerHTML == '<br>')
 				this.innerHTML = this.defaultValue;
 
 			// Activate the field for editing
@@ -426,7 +431,7 @@ function csx_edit(context){
 			this.formatBar.hide();
 			
 			// Default the text if empty
-			if(this.innerHTML == '')
+			if(this.innerHTML == '' || this.innerHTML == '<br>')
 				this.innerHTML = this.defaultValue;
 			
 			// Unshade the field
