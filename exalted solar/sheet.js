@@ -73,7 +73,7 @@ function chainsawxiv_exalted_dataPostLoad(data){
 
 		// Fix container properties
 		csx_firstParentWithClass(csx_opts.defaultContext,'dynamic_sheet_container').style.overflow = 'visible';
-		csx_firstParentWithClass(csx_opts.defaultContext,'main-content-container').style.minWidth = '853px';
+		//csx_firstParentWithClass(csx_opts.defaultContext,'main-content-container').style.minWidth = '853px';
 		
 		// Set up the editing interface
 		csx_opts.setupCallback();
