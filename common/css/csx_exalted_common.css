@@ -229,6 +229,23 @@
 	width:100%;
 	position:relative;
 	border-color:red;
+	border-radius:2px;
+}
+
+.csx .list li.item:nth-of-type(odd){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.csx .list li.item:nth-of-type(even){
+	background-color:initial;
+}
+
+.csx .list .column li.item:nth-of-type(even){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.csx .list .column li.item:nth-of-type(odd){
+	background-color:initial;
 }
 
 .csx .list li.proto{
