@@ -73,6 +73,16 @@ function csx_list(context, addItemCallback){
 			// Get and parse the data from the new-type storage field
 			var listName = this.className.match(/list_([\w\d_]+)/)[1];
 			var dataString = this.querySelector('.dsf_' + listName).innerHTML;
+			
+			// Manually clean up all the unhandled string escaping
+			dataString = dataString.replace(/"\\/g,'\"');
+			dataString = dataString.replace(/=\"\"/g,'=\"\"');
+			dataString = dataString.replace(/&lt;/g,'<');
+			dataString = dataString.replace(/&gt;/g,'>');
+			dataString = dataString.replace(/<[/]*span[^>]*>/g,'');
+			dataString = dataString.replace(/<[/]*font[^>]*>/g,'');
+			dataString = dataString.replace(/<b[^>r]*>/g,'<b>');	
+			
 			var listData = (dataString) ? JSON.parse(dataString) : [];
 
 			// Add on to the end any data stored in the old way
