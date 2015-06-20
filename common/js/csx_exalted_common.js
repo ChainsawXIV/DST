@@ -419,6 +419,10 @@ function csx_edit(context){
 				});
 			}
 			
+			// Disable the element's title
+			this.titleStore = this.title;
+			this.title = '';
+			
 		}
 		
 		// Called when the field loses focus, hide editing interface
@@ -436,6 +440,9 @@ function csx_edit(context){
 			
 			// Unshade the field
 			this.className = this.className.replace(/ activeField/g,'');
+			
+			// Enable the element's title
+			this.title = this.titleStore;
 		
 		}
 		
