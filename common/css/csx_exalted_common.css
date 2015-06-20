@@ -503,6 +503,10 @@
 	display:none;
 }
 
+.csx .highlight{
+	background-color:rgba(0,0,0,0.4);
+}
+
 .editable .csx .tip{
 	display:inline-block;
 	float:right;
@@ -931,6 +935,10 @@
 	width:65px;
 	text-align:center;
 	margin-left:3px;
+}
+
+.csx .list .column li.item.highlight{
+	background-color:rgba(255,255,255,0.4);
 }
 
 

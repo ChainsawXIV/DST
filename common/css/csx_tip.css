@@ -5,6 +5,10 @@
 	display:none;
 }
 
+.csx .highlight{
+	background-color:rgba(0,0,0,0.4);
+}
+
 .editable .csx .tip{
 	display:inline-block;
 	float:right;

@@ -41,6 +41,9 @@ function csx_tip(context){
 			tipBox.style.display = 'block';
 			tipArea.focus();
 			
+			// Highlight the item
+			this.parentNode.className += ' highlight';
+			
 			// Position the tip near the mouse
 			this.move(e);
 		}
@@ -81,6 +84,9 @@ function csx_tip(context){
 			// Don't store the default value
 			else
 				tipBox.activeField.innerHTML = '';
+			
+			// Remove the highlight
+			this.parentNode.className = this.parentNode.className.replace(/ highlight/g,'');
 			
 			// Hide the tip box
 			tipBox.style.display = 'none';
