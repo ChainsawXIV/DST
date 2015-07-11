@@ -24,7 +24,7 @@
 		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png') no-repeat 50% 50%,
 		url('../images/tab01_inactive.png');
 	background-size:
-		70% 70%,
+		61% 70%,
 		100% 100%;
 }
 .csx .tab.crunch:not(.active):hover{
@@ -43,7 +43,7 @@
 		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png') no-repeat 50% 50%,
 		url('../images/tab02_inactive.png');
 	background-size:
-		70% 70%,
+		61% 70%,
 		100% 100%;
 }
 .csx .tab.magic:not(.active):hover{
@@ -62,7 +62,7 @@
 		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png') no-repeat 50% 50%,
 		url('../images/tab03_inactive.png');
 	background-size:
-		70% 70%,
+		61% 70%,
 		100% 100%;
 }
 .csx .tab.equipment:not(.active):hover{
@@ -81,7 +81,7 @@
 		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png') no-repeat 50% 50%,
 		url('../images/tab04_inactive.png');
 	background-size:
-		70% 70%,
+		61% 70%,
 		100% 100%;
 }
 .csx .tab.fluff:not(.active):hover{
