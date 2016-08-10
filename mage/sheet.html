@@ -115,19 +115,19 @@
 				<div class="section halfwidth">
 					<div class="head">SPHERES</div>
 					<div class="group">
-						<div class="row">Correspondence<span class="readonly pips pipsRange_10 dsf dsf_correspondence"></span></div>
-						<div class="row">Entropy<span class="readonly pips pipsRange_10 dsf dsf_entropy"></span></div>
-						<div class="row">Forces<span class="readonly pips pipsRange_10 dsf dsf_forces"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_correspondence_favored"></span>Correspondence<span class="readonly pips pipsRange_10 dsf dsf_correspondence"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_entropy_favored"></span>Entropy<span class="readonly pips pipsRange_10 dsf dsf_entropy"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_forces_favored"></span>Forces<span class="readonly pips pipsRange_10 dsf dsf_forces"></span></div>
 					</div>
 					<div class="group">
-						<div class="row">Life<span class="readonly pips pipsRange_10 dsf dsf_life"></span></div>
-						<div class="row">Matter<span class="readonly pips pipsRange_10 dsf dsf_matter"></span></div>
-						<div class="row">Mind<span class="readonly pips pipsRange_10 dsf dsf_mind"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_life_favored"></span>Life<span class="readonly pips pipsRange_10 dsf dsf_life"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_matter_favored"></span>Matter<span class="readonly pips pipsRange_10 dsf dsf_matter"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_mind_favored"></span>Mind<span class="readonly pips pipsRange_10 dsf dsf_mind"></span></div>
 					</div>
 					<div class="group">
-						<div class="row">Prime<span class="readonly pips pipsRange_10 dsf dsf_prime"></span></div>
-						<div class="row">Spirit<span class="readonly pips pipsRange_10 dsf dsf_spirit"></span></div>
-						<div class="row">Time<span class="readonly pips pipsRange_10 dsf dsf_time"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_prime_favored"></span>Prime<span class="readonly pips pipsRange_10 dsf dsf_prime"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_spirit_favored"></span>Spirit<span class="readonly pips pipsRange_10 dsf dsf_spirit"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_time_favored"></span>Time<span class="readonly pips pipsRange_10 dsf dsf_time"></span></div>
 					</div>
 				</div>
 
@@ -141,6 +141,26 @@
 						<div class="row">Paradox: <span class="dsf dsf_paradox right singlerow" defaultString="0 (0 Permanent)">0 (0 Permanent)</span></div>
 						<div class="row">Experience: <span class="dsf dsf_experience right singlerow" defaultString="0xp (0xp Unspent)">0xp (0xp Unspent)</span></div>
 					</div>
+				</div>
+
+				<!-- Focus -->
+				<div class="section halfwidth">
+					<div class="head">FOCUS
+						<span class="interface trash"></span>
+						<span class="interface add addto_instruments" title="Add Instrument"></span>
+					</div>
+					<div class="row">Paradigm: <span class="dsf dsf_paradigm right singlerow" defaultString="Paradigm Name">Paradigm Name</span></div>
+					<div class="row">Practice: <span class="dsf dsf_practice right singlerow" defaultString="Practice Name">Practice Name</span></div>
+					<div class="row" style="border-bottom:1px solid rgba(0,0,0,0.1);padding-top:3px;">Instruments</div>
+					<ul class="group list list_instruments">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_instrument fullcolumn singlerow" defaultString="Instrument">Instrument</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[]</span>
+						<span class="dsf dsf_instruments readonly hidden"></span>
+					</ul>
 				</div>
 
 				<!-- Merits & Flaws -->
