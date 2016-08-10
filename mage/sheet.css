@@ -280,3 +280,11 @@ div.ds_chainsawxiv_mage .portrait img{
 	min-width:150px;
 }
 
+div.ds_chainsawxiv_mage .csx .section{
+	min-height:90px;
+}
+
+div.ds_chainsawxiv_mage .row.highlight.hl_fix{
+	background-color:rgba(255,255,255,0.5);
+	border-radius:2px;
+}
