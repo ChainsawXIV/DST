@@ -44,19 +44,19 @@ function csx_tab(context){
 				localStorage.lastPage = pageName;
 			
 			// Clear active class from current tab and page
-			var activeTab = this.parentNode.querySelectorAll('.tab.active');
+			var activeTab = context.querySelectorAll('.tab.active');
 			for (var i = 0; i < activeTab.length; i++)
 				activeTab[i].className = activeTab[i].className.replace(/[\s]*active/g,'');
 			
-			var activePage = this.parentNode.parentNode.querySelectorAll('.page.active');
+			var activePage = context.querySelectorAll('.page.active');
 			for (var i = 0; i < activePage.length; i++)
 				activePage[i].className = activePage[i].className.replace(/[\s]*active/g,'');
 			
 			// Make the proper page and tab active
-			activeTab = this.parentNode.querySelector('.tab.tab_' + pageName);
+			activeTab = context.querySelector('.tab.tab_' + pageName);
 			activeTab.className += ' active';
 			
-			activePage = this.parentNode.parentNode.querySelector('.page.page_' + pageName);
+			activePage = context.querySelector('.page.page_' + pageName);
 			activePage.className += ' active';
 		};
 		
