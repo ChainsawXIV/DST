@@ -1,0 +1,972 @@
+<script>
+
+	function get(){
+	
+		var out = document.getElementById( 'out' );
+		out.innerHTML = '';
+		var source = document.getElementById( 'source' );
+		var fields = source.querySelectorAll( '.dsf,.dslf' );
+		for ( var i = fields.length - 1; i > -1; i-- ){
+			var name = fields[ i ].className.match( /ds[l]*f_[\w\d_]+/,'')[0];
+			if ( name.match( /dslf_/ ) ) name = '- ' + name;
+			out.innerHTML += name + '<br />';
+		}
+	
+	};
+
+</script>
+
+
+<div id="out"><button onclick="get();">Get</button></div>
+
+
+<div id="source" class="wrapper csx" style="display:none;" >
+
+	<div class="uicontainer">
+	
+		<div class="formatBar">
+			<button type="button" class="boldButton" title="Bold (Ctrl+B)"></button>
+			<button type="button" class="italicButton" title="Italic (Ctrl+I)"></button>
+			<button type="button" class="underlineButton" title="Underline (Ctrl+U)"></button>
+			<button type="button" class="indentButton" title="Indent (Ctrl+Tab)"></button>
+		</div>
+	
+		<div class="tipBox">
+			<div class="corner topLeft"></div>
+			<div class="corner topRight"></div>
+			<div class="corner bottomLeft"></div>
+			<div class="corner bottomRight"></div>
+			<div class="contentBox">
+				<div class="tipArea edit"></div>
+			</div>
+		</div>
+	
+	</div>
+				
+	<!-- Main Character Sheet Page Background Div -->
+	<div class="content">
+
+		<!-- General Character Information 724pxw -->
+		<div class="top" style="">
+		
+			<span class="linefield dsf dsf_name readonly" style="width:232px;text-align:left;"></span
+			><span class="boxfield box51 dsf dsf_level" style="top:2px;"></span
+			><span class="linefield dsf dsf_class" style="width:120px;"></span
+			><span class="linefield dsf dsf_paragon_path" style="width:120px;"></span
+			><span class="linefield dsf dsf_epic_destiny" style="width:120px;"></span
+			><span class="boxfield box51 dsf dsf_xp" style="top:2px;"></span>
+			
+			<div class="labelrow" style="white-space:nowrap;">
+				<span class="lable" style="width:232px;text-align:left;">Character Name</span
+				><span class="lable w51" style="margin-left:2px;">Level</span
+				><span class="lable" style="width:120px;">Class</span
+				><span class="lable" style="width:120px;">Paragon Path</span
+				><span class="lable" style="width:120px;">Epic Destiny</span
+				><span class="lable w51" style="margin-left:1px;">Total XP</span>
+			</div>
+			
+			<span class="linefield dsf dsf_race" style="width:142px;text-align:left;"></span
+			><span class="linefield dsf dsf_size" style="width:38px;"></span
+			><span class="linefield dsf dsf_age" style="width:38px;"></span
+			><span class="linefield dsf dsf_gender" style="width:38px;"></span
+			><span class="linefield dsf dsf_height" style="width:38px;"></span
+			><span class="linefield dsf dsf_weight" style="width:38px;"></span
+			><span class="linefield dsf dsf_alignment" style="width:76px;"></span
+			><span class="linefield dsf dsf_deity" style="width:76px;"></span
+			><span class="linefield dsf dsf_affiliation" style="width:195px;text-align:left;"></span>
+
+			<div class="labelrow" style="white-space:nowrap;">
+				<span class="lable" style="width:142px;text-align:left;">Race</span
+				><span class="lable" style="width:38px;">Size</span
+				><span class="lable" style="width:38px;">Age</span
+				><span class="lable" style="width:38px;">Gender</span
+				><span class="lable" style="width:38px;">Height</span
+				><span class="lable" style="width:38px;">Weight</span
+				><span class="lable" style="width:76px;">Alignment</span
+				><span class="lable" style="width:76px;">Deity</span
+				><span class="lable" style="width:195px;text-align:left;">Affiliation</span>
+			</div>
+		</div>
+
+		<!-- Crunch Page -->
+		<div class="main page page_crunch">
+		
+			<!-- Column One -->
+			<div class="column">
+
+				<!-- Initiative Block -->
+				<div class="section" style="min-height:70px;">
+					<div class="header">INITIATIVE</div>
+					<div class="labelrow">
+						<span class="lable w28">Score</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">&#189;Lv</span>
+						<span class="lable w24 right">Dex</span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_initiative"></span>
+						<span class="valtitle">Initiative</span>
+						<span class="boxfield box24 right dsf dsf_initiative_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_initiative_half"></span>
+						<span class="boxfield box24 right dsf dsf_initiative_dex"></span>
+					</div>
+					
+					<div class="lable listhead">Conditional Modifiers
+						<span class="interface trash"></span>
+						<span class="interface add addto_initMods" title="Add Modifier"></span>
+					</div>
+					<ul class="group list list_initMods">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_modifier fullcolumn singlerow" defaultString="Modifier">Modifier</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"modifier":"initiative_modifier","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_initMods readonly hidden"></span>
+					</ul>
+					
+				</div>
+				
+				<!-- Ability Scores Block -->
+				<div class="section" style="min-height:178px;left:0px;">
+					<div class="header">ABILITY SCORES</div>
+					<div class="labelrow">
+						<span class="lable w28">Score</span>
+						<span class="lable w24 right">M+&#189;</span>
+						<span class="lable w24 right">Mod</span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_strength"></span>
+						<span class="valtitle">Strength</span>
+						<span class="boxfield box24 right dsf dsf_strength_mod_plus_half"></span>							
+						<span class="boxfield box24 right dsf dsf_strength_mod"></span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_constitution"></span>
+						<span class="valtitle">Constitution</span>
+						<span class="boxfield box24 right dsf dsf_constitution_mod_plus_half"></span>							
+						<span class="boxfield box24 right dsf dsf_constitution_mod"></span>
+					</div>
+					<div class="labelrow">
+						<span class="lable w28">Score</span>
+						<span class="lable w24 right">M+&#189;</span>
+						<span class="lable w24 right">Mod</span>
+					</div>
+
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_dexterity"></span>
+						<span class="valtitle">Dexterity</span>
+						<span class="boxfield box24 right dsf dsf_dexterity_mod_plus_half"></span>							
+						<span class="boxfield box24 right dsf dsf_dexterity_mod"></span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_intelligence"></span>
+						<span class="valtitle">Intelligence</span>
+						<span class="boxfield box24 right dsf dsf_intelligence_mod_plus_half"></span>							
+						<span class="boxfield box24 right dsf dsf_intelligence_mod"></span>
+					</div>
+					<div class="labelrow">
+						<span class="lable w28">Score</span>
+						<span class="lable w24 right">M+&#189;</span>
+						<span class="lable w24 right">Mod</span>
+					</div>
+
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_wisdom"></span>
+						<span class="valtitle">Wisdom</span>
+						<span class="boxfield box24 right dsf dsf_wisdom_mod_plus_half"></span>							
+						<span class="boxfield box24 right dsf dsf_wisdom_mod"></span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_charisma"></span>
+						<span class="valtitle">Charisma</span>
+						<span class="boxfield box24 right dsf dsf_charisma_mod_plus_half"></span>							
+						<span class="boxfield box24 right dsf dsf_charisma_mod"></span>
+					</div>
+				</div>
+				
+				<!-- Hit Points Block -->
+				<div class="section" style="min-height:70px;">
+					<div class="header">HIT POINTS</div>
+					<div class="labelrow" style="white-space:nowrap;">
+						<span class="lable w51">Max HP</span>
+						<span class="lable w51">Bloodied</span>
+						<span class="lable w51">Surge Val</span>
+						<span class="lable w51">Surges</span>
+					</div>
+					<span class="boxfield box51 dsf dsf_hit_points"></span>
+					<span class="boxfield box51 dsf dsf_bloodied"></span>
+					<span class="boxfield box51 dsf dsf_surge_value"></span>
+					<span class="boxfield box51 dsf dsf_surges"></span>
+					
+					<div class="labelrow" style="white-space:nowrap;">
+						<span class="lable w51">Current</span>
+						<span class="lable w51">Temp HP</span>
+						<span class="lable w51">Surge Used</span>
+						<span class="lable w51">Death Saves</span>
+					</div>
+					<span class="boxfield box51 dsf dsf_hit_points_current"></span>
+					<span class="boxfield box51 dsf dsf_hit_points_temporary"></span>
+					<span class="boxfield box51 dsf dsf_surges_used"></span>
+					<span class="boxfield box51 dsf dsf_death_saves"></span>
+					
+					<div class="lable listhead" style="margin-top:2px;">Resistances
+						<span class="interface trash"></span>
+						<span class="interface add addto_resists" title="Add Resist"></span>
+					</div>
+					<ul class="group list list_resists">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_resist fullcolumn singlerow" defaultString="Resist">Resist</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"resist":"resist","tip":"resist_tip"}]</span>
+						<span class="dsf dsf_resists readonly hidden"></span>
+					</ul>
+					
+				</div>
+				
+				<!-- Save Modifiers Block -->
+				<div class="section" style="min-height:42px;">
+					<div class="header">SAVE MODIFIERS</div>
+					<div class="lable listhead">Modifiers
+						<span class="interface trash"></span>
+						<span class="interface add addto_saveMods" title="Add Modifier"></span>
+					</div>
+					<ul class="group list list_saveMods">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Modifier">Modifier</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"save_modifier","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_saveMods readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Skills Block -->
+				<div class="section" style="margin-bottom:5px;">
+					<div class="header">SKILLS</div>
+					<div class="labelrow">
+						<span class="lable w28">Bonus</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">Arm</span>
+						<span class="lable w24 right">Trnd</span>
+						<span class="lable w24 right">A+&#189;</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_acrobatics"></span>
+						<span class="valtitle">Acrobatics</span>
+						<span class="boxfield box24 right dsf dsf_acrobatics_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_acrobatics_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_acrobatics_training"></span>							
+						<span class="boxfield box24 right dsf dsf_acrobatics_ability_plus_half"></span>							
+						<span class="lable right">Dex</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_arcana"></span>
+						<span class="valtitle">Arcana</span>
+						<span class="boxfield box24 right dsf dsf_arcana_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_arcana_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_arcana_training"></span>							
+						<span class="boxfield box24 right dsf dsf_arcana_ability_plus_half"></span>							
+						<span class="lable right">Int</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_athletics"></span>
+						<span class="valtitle">Athletics</span>
+						<span class="boxfield box24 right dsf dsf_athletics_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_athletics_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_athletics_training"></span>							
+						<span class="boxfield box24 right dsf dsf_athletics_ability_plus_half"></span>							
+						<span class="lable right">Str</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_bluff"></span>
+						<span class="valtitle">Bluff</span>
+						<span class="boxfield box24 right dsf dsf_bluff_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_bluff_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_bluff_training"></span>							
+						<span class="boxfield box24 right dsf dsf_bluff_ability_plus_half"></span>							
+						<span class="lable right">Cha</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_diplomacy"></span>
+						<span class="valtitle">Diplomacy</span>
+						<span class="boxfield box24 right dsf dsf_diplomacy_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_diplomacy_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_diplomacy_training"></span>							
+						<span class="boxfield box24 right dsf dsf_diplomacy_ability_plus_half"></span>							
+						<span class="lable right">Cha</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_dungeoneering"></span>
+						<span class="valtitle">Dungeoneering</span>
+						<span class="boxfield box24 right dsf dsf_dungeoneering_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_dungeoneering_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_dungeoneering_training"></span>							
+						<span class="boxfield box24 right dsf dsf_dungeoneering_ability_plus_half"></span>							
+						<span class="lable right">Wis</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_endurance"></span>
+						<span class="valtitle">Endurance</span>
+						<span class="boxfield box24 right dsf dsf_endurance_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_endurance_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_endurance_training"></span>							
+						<span class="boxfield box24 right dsf dsf_endurance_ability_plus_half"></span>							
+						<span class="lable right">Con</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_heal"></span>
+						<span class="valtitle">Heal</span>
+						<span class="boxfield box24 right dsf dsf_heal_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_heal_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_heal_training"></span>							
+						<span class="boxfield box24 right dsf dsf_heal_ability_plus_half"></span>							
+						<span class="lable right">Wis</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_history"></span>
+						<span class="valtitle">History</span>
+						<span class="boxfield box24 right dsf dsf_history_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_history_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_history_training"></span>							
+						<span class="boxfield box24 right dsf dsf_history_ability_plus_half"></span>							
+						<span class="lable right">Int</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_insight"></span>
+						<span class="valtitle">Insight</span>
+						<span class="boxfield box24 right dsf dsf_insight_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_insight_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_insight_training"></span>							
+						<span class="boxfield box24 right dsf dsf_insight_ability_plus_half"></span>							
+						<span class="lable right">Wis</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_intimidate"></span>
+						<span class="valtitle">Intimidate</span>
+						<span class="boxfield box24 right dsf dsf_intimidate_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_intimidate_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_intimidate_training"></span>							
+						<span class="boxfield box24 right dsf dsf_intimidate_ability_plus_half"></span>							
+						<span class="lable right">Cha</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_nature"></span>
+						<span class="valtitle">Nature</span>
+						<span class="boxfield box24 right dsf dsf_nature_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_nature_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_nature_training"></span>							
+						<span class="boxfield box24 right dsf dsf_nature_ability_plus_half"></span>							
+						<span class="lable right">Wis</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_perception"></span>
+						<span class="valtitle">Perception</span>
+						<span class="boxfield box24 right dsf dsf_perception_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_perception_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_perception_training"></span>							
+						<span class="boxfield box24 right dsf dsf_perception_ability_plus_half"></span>							
+						<span class="lable right">Wis</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_religion"></span>
+						<span class="valtitle">Religion</span>
+						<span class="boxfield box24 right dsf dsf_religion_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_religion_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_religion_training"></span>							
+						<span class="boxfield box24 right dsf dsf_religion_ability_plus_half"></span>							
+						<span class="lable right">Int</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_stealth"></span>
+						<span class="valtitle">Stealth</span>
+						<span class="boxfield box24 right dsf dsf_stealth_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_stealth_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_stealth_training"></span>							
+						<span class="boxfield box24 right dsf dsf_stealth_ability_plus_half"></span>							
+						<span class="lable right">Dex</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_streetwise"></span>
+						<span class="valtitle">Streetwise</span>
+						<span class="boxfield box24 right dsf dsf_streetwise_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_streetwise_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_streetwise_training"></span>							
+						<span class="boxfield box24 right dsf dsf_streetwise_ability_plus_half"></span>							
+						<span class="lable right">Cha</span>
+					</div>
+					<div class="skillbar">
+						<span class="boxfield box28 dsf dsf_thievery"></span>
+						<span class="valtitle">Thievery</span>
+						<span class="boxfield box24 right dsf dsf_thievery_misc"></span>							
+						<span class="boxfield box24 right dsf dsf_thievery_armor"></span>							
+						<span class="boxfield box24 right dsf dsf_thievery_training"></span>							
+						<span class="boxfield box24 right dsf dsf_thievery_ability_plus_half"></span>							
+						<span class="lable right">Dex</span>
+					</div>
+				</div>
+
+				<!-- Notes Block -->
+				<div class="section" style="min-height:70px;">
+					<div class="header">NOTES</div>
+					
+					<div class="lable listhead">Note
+						<span class="interface trash"></span>
+						<span class="interface add addto_notes" title="Add Note"></span>
+					</div>
+					<ul class="group list list_notes">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_note fullcolumn singlerow" defaultString="Note">Note</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"note":"note","tip":"note_tip"}]</span>
+						<span class="dsf dsf_notes readonly hidden"></span>
+					</ul>
+				</div>
+				
+			</div><div class="column gutter">
+			<!-- Column Two -->
+			
+				<!-- Defenses: Armor Class Block -->
+				<div class="section" style="min-height:70px;">
+					<div class="header">DEFENSES</div>
+					<div class="labelrow">
+						<span class="lable w28">Score</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">Enh</span>
+						<span class="lable w24 right">Feat</span>
+						<span class="lable w24 right">Cls</span>
+						<span class="lable w24 right">Abil</span>
+						<span class="lable w24 right">10+&#189;</span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_ac"></span>
+						<span class="valtitle">AC</span>
+						<span class="boxfield right dsf dsf_ac_misc_b"></span>							
+						<span class="boxfield right dsf dsf_ac_misc_a"></span>							
+						<span class="boxfield right dsf dsf_ac_enhancement"></span>							
+						<span class="boxfield right dsf dsf_ac_feat"></span>							
+						<span class="boxfield right dsf dsf_ac_class"></span>							
+						<span class="boxfield right dsf dsf_ac_ability"></span>
+						<span class="boxfield right dsf dsf_ac_ten_plus_half"></span>
+					</div>
+					
+					<div class="lable listhead">Conditional Bonuses
+						<span class="interface trash"></span>
+						<span class="interface add addto_ACMods" title="Add Modifier"></span>
+					</div>
+					<ul class="group list list_ACMods">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Modifier">Modifier</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"AC_modifier","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_ACMods readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Defenses: Fortitude Block -->
+				<div class="section">
+					<div class="labelrow">
+						<span class="lable w28">Score</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">Enh</span>
+						<span class="lable w24 right">Feat</span>
+						<span class="lable w24 right">Cls</span>
+						<span class="lable w24 right">Abil</span>
+						<span class="lable w24 right">10+&#189;</span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_fortitude"></span>
+						<span class="valtitle">Fort</span>
+						<span class="boxfield right dsf dsf_fortitude_misc_b"></span>							
+						<span class="boxfield right dsf dsf_fortitude_misc_a"></span>							
+						<span class="boxfield right dsf dsf_fortitude_enhancement"></span>							
+						<span class="boxfield right dsf dsf_fortitude_feat"></span>							
+						<span class="boxfield right dsf dsf_fortitude_class"></span>							
+						<span class="boxfield right dsf dsf_fortitude_ability"></span>
+						<span class="boxfield right dsf dsf_fortitude_ten_plus_half"></span>
+					</div>
+					
+					<div class="lable listhead">Conditional Bonuses
+						<span class="interface trash"></span>
+						<span class="interface add addto_fortMods" title="Add Modifier"></span>
+					</div>
+					<ul class="group list list_fortMods">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Modifier">Modifier</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"fortitude_modifier","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_fortMods readonly hidden"></span>
+					</ul>
+				</div>
+
+				<!-- Defenses: Reflex Block -->
+				<div class="section">
+					<div class="labelrow">
+						<span class="lable w28">Score</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">Enh</span>
+						<span class="lable w24 right">Feat</span>
+						<span class="lable w24 right">Cls</span>
+						<span class="lable w24 right">Abil</span>
+						<span class="lable w24 right">10+&#189;</span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_reflex"></span>
+						<span class="valtitle">Ref</span>
+						<span class="boxfield right dsf dsf_reflex_misc_b"></span>							
+						<span class="boxfield right dsf dsf_reflex_misc_a"></span>							
+						<span class="boxfield right dsf dsf_reflex_enhancement"></span>							
+						<span class="boxfield right dsf dsf_reflex_feat"></span>							
+						<span class="boxfield right dsf dsf_reflex_class"></span>							
+						<span class="boxfield right dsf dsf_reflex_ability"></span>
+						<span class="boxfield right dsf dsf_reflex_ten_plus_half"></span>
+					</div>
+					
+					<div class="lable listhead">Conditional Bonuses
+						<span class="interface trash"></span>
+						<span class="interface add addto_refMods" title="Add Modifier"></span>
+					</div>
+					<ul class="group list list_refMods">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Modifier">Modifier</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"reflex_modifier","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_refMods readonly hidden"></span>
+					</ul>
+				</div>
+
+				<!-- Defenses: Will Block -->
+				<div class="section">
+					<div class="labelrow">
+						<span class="lable w28">Score</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">Misc</span>
+						<span class="lable w24 right">Enh</span>
+						<span class="lable w24 right">Feat</span>
+						<span class="lable w24 right">Cls</span>
+						<span class="lable w24 right">Abil</span>
+						<span class="lable w24 right">10+&#189;</span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_will"></span>
+						<span class="valtitle">Will</span>
+						<span class="boxfield right dsf dsf_will_misc_b"></span>							
+						<span class="boxfield right dsf dsf_will_misc_a"></span>							
+						<span class="boxfield right dsf dsf_will_enhancement"></span>							
+						<span class="boxfield right dsf dsf_will_feat"></span>							
+						<span class="boxfield right dsf dsf_will_class"></span>							
+						<span class="boxfield right dsf dsf_will_ability"></span>
+						<span class="boxfield right dsf dsf_will_ten_plus_half"></span>
+					</div>
+					
+					<div class="lable listhead">Conditional Bonuses
+						<span class="interface trash"></span>
+						<span class="interface add addto_willMods" title="Add Modifier"></span>
+					</div>
+					<ul class="group list list_willMods">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Modifier">Modifier</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"will_modifier","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_willMods readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Action Points Block -->
+				<div class="section" style="min-height:70px;">
+					<div class="header">ACTION POINTS</div>
+					<div class="labelrow">
+						<span class="lable w28">Points</span>
+						<span class="lable w24 right">MSs</span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_action_points"></span>
+						<span class="valtitle">Action Points</span>
+						<span class="boxfield right dsf dsf_milestones"></span>							
+					</div>
+					
+					<div class="lable listhead">Additional Action Point Effects
+						<span class="interface trash"></span>
+						<span class="interface add addto_apMods" title="Add Effect"></span>
+					</div>
+					<ul class="group list list_apMods">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Effect">Effect</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"actionpoint_effect","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_apMods readonly hidden"></span>
+					</ul>
+				</div>
+
+				<!-- Racial Features Block -->
+				<div class="section" style="min-height:42px;left:0px;min-height:40px\9">
+					<div class="header">RACE FEATURES</div>
+					
+					<div class="lable listhead">Feature
+						<span class="interface trash"></span>
+						<span class="interface add addto_raceFeature" title="Add Feature"></span>
+					</div>
+					<ul class="group list list_raceFeature">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Feature">Feature</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"race_feature","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_raceFeature readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Class Features Block -->
+				<div class="section" style="min-height:120px;left:0px;min-height:100px\9">
+					<div class="header">CLASS FEATURES</div>
+					
+					<div class="lable listhead">Feature
+						<span class="interface trash"></span>
+						<span class="interface add addto_classFeature" title="Add Feature"></span>
+					</div>
+					<ul class="group list list_classFeature">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Feature">Feature</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"class_feature","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_classFeature readonly hidden"></span>
+					</ul>
+				</div>
+
+				<!-- Feats Block -->
+				<div class="section" style="min-height:180px;left:0px;min-height:170px\9">
+					<div class="header">FEATS</div>
+					
+					<div class="lable listhead">Feat
+						<span class="interface trash"></span>
+						<span class="interface add addto_feats" title="Add Feat"></span>
+					</div>
+					<ul class="group list list_feats">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Feat">Feat</span>
+							<span class="link_address dslf dslf_link"></span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"feat","link":"feat_link","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_feats readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Languages Block -->
+				<div class="section" style="min-height:68px;left:0px;min-height:53px\9">
+					<div class="header">LANGUAGES KNOWN</div>
+					
+					<div class="lable listhead">Language
+						<span class="interface trash"></span>
+						<span class="interface add addto_languages" title="Add Language"></span>
+					</div>
+					<ul class="group list list_languages">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Feature">Language</span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"language"}]</span>
+						<span class="dsf dsf_languages readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Backgrounds Block -->
+				<div class="section" style="min-height:44px;left:0px;min-height:35px\9">
+					<div class="header">BACKGROUNDS</div>
+					
+					<div class="lable listhead">Background
+						<span class="interface trash"></span>
+						<span class="interface add addto_backgrounds" title="Add Background"></span>
+					</div>
+					<ul class="group list list_backgrounds">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Background">Background</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"background","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_backgrounds readonly hidden"></span>
+					</ul>
+				</div>
+
+			</div><div class="column gutter">
+			<!-- Column Three -->
+			
+				<!-- Movement Speeds Block -->
+				<div class="section" style="min-height:70px;left:0px;min-height:50px\9">
+					<div class="header">MOVEMENT</div>
+					<div class="labelrow">
+						<span class="lable w28">Speed</span>
+						<span class="lable w24 right">Base</span>
+						<span class="lable w24 right">Arm</span>
+						<span class="lable w24 right">Item</span>
+						<span class="lable w24 right">Misc</span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_speed"></span>
+						<span class="valtitle">Speed</span>
+						<span class="boxfield right dsf dsf_speed_base"></span>							
+						<span class="boxfield right dsf dsf_speed_armor"></span>							
+						<span class="boxfield right dsf dsf_speed_item"></span>							
+						<span class="boxfield right dsf dsf_speed_misc"></span>							
+					</div>
+					
+					<div class="lable listhead">Special Movement
+						<span class="interface trash"></span>
+						<span class="interface add addto_movementModes" title="Add Movement Mode"></span>
+					</div>
+					<ul class="group list list_movementModes">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Mode">Mode</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"movement_mode","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_movementModes readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Passive Senses Block -->
+				<div class="section" style="min-height:94px;left:0px;min-height:74px\9">
+					<div class="header">SENSES</div>
+					<div class="labelrow">
+						<span class="lable w28">Score</span>
+						<span class="lable w24 right">Base</span>
+						<span class="lable w24 right">Skill</span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_passive_insight"></span>
+						<span class="valtitle">Passive Insight</span>
+						<span class="boxfield right dsf dsf_passive_insight_skill"></span>							
+						<span class="w24 valtitle right" style="text-align:right;top:3px;">10+ </span>
+					</div>
+					<div class="valbar">
+						<span class="boxfield box28 dsf dsf_passive_perception"></span>
+						<span class="valtitle">Passive Perception</span>
+						<span class="boxfield right dsf dsf_passive_perception_skill"></span>							
+						<span class="w24 valtitle right" style="text-align:right;top:3px;">10+ </span>
+					</div>
+					
+					<div class="lable listhead">Special Senses
+						<span class="interface trash"></span>
+						<span class="interface add addto_senses" title="Add Sense"></span>
+					</div>
+					<ul class="group list list_senses">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Sense">Sense</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"sense","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_senses readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Combat Workspace Block -->
+				<div class="section" style="min-height:97px;left:0px;min-height:74px\9">
+					<div class="header">COMBAT WORKSPACE</div>
+					
+					<div class="lable listhead">Attack
+						<span class="interface trash"></span>
+						<span class="interface add addto_attacks" title="Add Attack"></span>
+					</div>
+					<ul class="group list list_attacks">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_type fullcolumn singlerow" defaultString="Attack Type">Attack Type</span>
+							<div class="labelrow" style="margin-top:5px;">
+								<div class="lable w51 attackbox">Attack</div>
+								<div class="lable w24 right">&#189;Lv</div>
+								<div class="lable w24 right">Abil</div>
+								<div class="lable w24 right">Cls</div>
+								<div class="lable w24 right">Prof</div>
+								<div class="lable w24 right">Feat</div>
+								<div class="lable w24 right">Enh</div>
+								<div class="lable w24 right">Misc</div>
+							</div>
+							<div class="valbar">
+								<span class="boxfield box51 attackbox dslf dslf_attack_hit"></span>
+								<span class="boxfield right dslf dslf_attack_hit_half_level"></span>
+								<span class="boxfield right dslf dslf_attack_hit_ability"></span>
+								<span class="boxfield right dslf dslf_attack_hit_class"></span>							
+								<span class="boxfield right dslf dslf_attack_hit_proficiency"></span>							
+								<span class="boxfield right dslf dslf_attack_hit_feat"></span>							
+								<span class="boxfield right dslf dslf_attack_hit_enhancement"></span>							
+								<span class="boxfield right dslf dslf_attack_hit_misc"></span>							
+							</div>
+							<div class="labelrow">
+								<div class="lable w51 attackbox">Damage</div>
+								<div class="lable w24 right">Abil</div>
+								<div class="lable w24 right">Feat</div>
+								<div class="lable w24 right">Enh</div>
+								<div class="lable w24 right">Misc</div>
+								<div class="lable w24 right">Misc</div>
+							</div>
+							<div class="valbar">
+								<span class="boxfield box51 attackbox dslf dslf_attack_damage"></span>
+								<span class="boxfield right dslf dslf_attack_damage_ability"></span>							
+								<span class="boxfield right dslf dslf_attack_damage_feat"></span>							
+								<span class="boxfield right dslf dslf_attack_damage_enhancement"></span>							
+								<span class="boxfield right dslf dslf_attack_damage_misc_a"></span>							
+								<span class="boxfield right dslf dslf_attack_damage_misc_b"></span>							
+							</div>
+						</li>
+						<span class="oldfields hidden">
+							[{
+								"type":"attack_type",
+								"attack_hit":"attack_hit","attack_hit_half_level":"attack_hit_half_level","attack_hit_ability":"attack_hit_ability",
+								"attack_hit_class":"attack_hit_class","attack_hit_proficiency":"attack_hit_proficiency","attack_hit_feat":"attack_hit_feat",
+								"attack_hit_enhancement":"attack_hit_enhancement","attack_hit_misc":"attack_hit_misc",
+								"attack_damage":"attack_damage","attack_damage_ability":"attack_damage_ability","attack_damage_feat":"attack_damage_feat",
+								"attack_damage_enhancement":"attack_damage_enhancement","attack_damage_misc_a":"attack_damage_misc_a",
+								"attack_damage_misc_b":"attack_damage_misc_b"
+							}]
+						</span>
+						<span class="dsf dsf_attacks readonly hidden"></span>
+					</ul>
+				</div>
+
+				<!-- At-Will Powers Block -->
+				<div class="section" style="min-height:66px;left:0px;min-height:46px\9">
+					<div class="header">AT-WILL POWERS</div>
+					
+					<div class="lable listhead">Power
+						<span class="interface trash"></span>
+						<span class="interface add addto_atwillPowers" title="Add Power"></span>
+					</div>
+					<ul class="group list list_atwillPowers">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Power">Power</span>
+							<span class="link_address dslf dslf_link"></span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"atwill_power","link":"atwill_power_link","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_atwillPowers readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Encounter Powers Block -->
+				<div class="section" style="min-height:122px;left:0px;min-height:102px\9">
+					<div class="header">ENCOUNTER POWERS</div>
+					
+					<div class="lable listhead">Power
+						<span class="interface trash"></span>
+						<span class="interface add addto_encounterPowers" title="Add Power"></span>
+					</div>
+					<ul class="group list list_encounterPowers">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Power">Power</span>
+							<span class="link_address dslf dslf_link"></span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"encounter_power","link":"encounter_power_link","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_encounterPowers readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Daily Powers Block -->
+				<div class="section" style="min-height:122px;left:0px;min-height:102px\9">
+					<div class="header">DAILY POWERS</div>
+
+					<div class="lable listhead">Power
+						<span class="interface trash"></span>
+						<span class="interface add addto_dailyPowers" title="Add Power"></span>
+					</div>
+					<ul class="group list list_dailyPowers">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Power">Power</span>
+							<span class="link_address dslf dslf_link"></span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"daily_power","link":"daily_power_link","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_dailyPowers readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Equipment Block -->
+				<div class="section" style="min-height:142px;left:0px;min-height:122px\9">
+					<div class="header">EQUIPMENT</div>
+					
+					<div class="lable listhead">Item
+						<span class="interface trash"></span>
+						<span class="interface add addto_items" title="Add Item"></span>
+					</div>
+					<ul class="group list list_items">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mod fullcolumn singlerow" defaultString="Item">Item</span>
+							<span class="link_address dslf dslf_link"></span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mod":"item","link":"item_link","tip":"mod_tip"}]</span>
+						<span class="dsf dsf_items readonly hidden"></span>
+					</ul>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<!-- Fluff Page -->
+		<div class="main page page_fluff" style="min-height:400px;margin-bottom:-4px;">
+
+			<div style="margin:0px 4px 4px 4px;position:relative;z-index:3;">
+				<span style="display:inline-block;float:right;width:234px;margin-left:6px;position:relative;">
+					<span class="dsf dsf_avatar_image readonly" style="width:234px"></span>
+				</span>
+				<span class="dsf dsf_bio readonly" style="font-size:9pt;"></span>
+			</div>
+
+		</div>
+		
+		<!-- Management Page -->
+		<div class="main page page_manage" style="min-height:400px;">
+
+			<input id="browse" type="file" onchange="chainsawxiv_dd4e_simple_importFile();" />
+
+		</div>
+		
+	</div>
+
+	<!-- Page Tabs -->
+	<div style="text-align:right;position:relative;">
+
+		<div style="position:absolute;left:10px;top:10px;text-align:left;font-size:9pt;">
+			Character By <span class="dsf dsf_player readonly"></span><br/>
+			Sheet By <span class="dsf dsf_dst_author readonly"></span>
+		</div>
+
+		<span class="tabs" style="display:inline-block;position:relative;width:296px;height:71px;">
+			<a class="tab manage tab_manage" style="left:-104px;top:0px;">Manage</a>
+			<a class="tab crunch tab_crunch" style="left:24px;top:0px;">Crunch</a>
+			<a class="tab fluff tab_fluff" style="right:17px;top:0px;">Misc</a>
+		</span>
+		
+	</div>
+	
+</div>
