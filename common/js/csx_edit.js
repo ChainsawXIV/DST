@@ -223,6 +223,10 @@ function csx_edit(context){
 			var field = document.createElement('div');
 			field.className = baseField.className;
 			field.innerHTML = baseField.innerHTML;
+			field.style.left = baseField.style.left;
+			field.style.top = baseField.style.top;
+			field.style.width = baseField.style.width;
+			field.style.textAlign = baseField.style.textAlign;
 			baseField.parentNode.insertBefore(field,baseField);
 			baseField.parentNode.removeChild(baseField);
 		}
