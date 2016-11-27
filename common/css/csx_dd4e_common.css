@@ -1,0 +1,830 @@
+
+/* Edit Fields */
+
+.csx .dsf,
+.csx .edit{
+	position:relative;
+	display:inline-block;
+	cursor:default;
+}
+
+.csx .dsf p,
+.csx .edit p{
+	margin:0px;
+	line-height:inherit;
+}
+
+.csx .dsf:not(.readonly),
+.csx .edit:not(.readonly){
+
+}
+
+.editable .csx .dsf,
+.editable .csx .edit{
+	cursor:text;
+}
+
+.editable .csx .dsf:hover:not(.readonly),
+.editable .csx .edit:hover:not(.readonly){
+	background-color:rgba(0,0,0,0.02);
+}
+
+.editable .csx .dsf:focus,
+.editable .csx .edit:focus,
+.editable .csx .dsf:focus:hover,
+.editable .csx .edit:focus:hover{
+	background-color:rgba(0,0,0,0.05);
+}
+
+.csx .dsf ul,
+.csx .edit ul{
+	margin:0px;
+	padding: 0px 0px 0px 20px;
+	list-style: url('https://innersecure.net/~omnichr/external/op/dst/images/bullet.png');
+}
+.csx .dsf ul li,
+.csx .edit ul li{
+	margin:0px;
+	display:list-item;
+}
+
+/* Format Bar */
+
+.csx .formatBar{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fb_back_top.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fb_back_main.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fb_back_bottom.png');
+	background-position:bottom center, center 1px, top center;
+	background-repeat:no-repeat, no-repeat, no-repeat;
+	position:absolute;
+	display:none;
+	padding-bottom:7px;
+	padding-top:3px;
+	margin-bottom:4px;
+	width:140px;
+	text-align:center;
+	font-size:12px;
+	z-index:10;	
+	height:28px;
+}
+
+.csx .formatBar button{
+	display:inline-block;
+	height:28px;
+	width:28px;
+	border:none;
+}
+
+.csx .formatBar .boldButton{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/bold.png');
+}
+.csx .formatBar .boldButton:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/bold_hover.png');
+}
+.csx .formatBar .boldButton:active{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/bold_active.png');
+}
+
+.csx .formatBar .italicButton{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/italic.png');
+}
+.csx .formatBar .italicButton:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/italic_hover.png');
+}
+.csx .formatBar .italicButton:active{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/italic_active.png');
+}
+
+.csx .formatBar .underlineButton{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/underline.png');
+}
+.csx .formatBar .underlineButton:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/underline_hover.png');
+}
+.csx .formatBar .underlineButton:active{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/underline_active.png');
+}
+
+.csx .formatBar .indentButton{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/indent.png');
+}
+.csx .formatBar .indentButton:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/indent_hover.png');
+}
+.csx .formatBar .indentButton:active{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/indent_active.png');
+}
+
+/* List Interface */
+
+.csx .add,
+.csx .trash,
+.csx .balance,
+.csx .autobalance{
+	display:none;
+	float:right;
+	height:15px;
+	width:15px;
+	margin-bottom:0px;
+	cursor:default;
+	background-size:contain;
+}
+
+.csx .autobalance{
+	position:relative;
+	top:-1px;
+	margin-right:0px;
+}
+
+.csx .trash{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash.png');
+}
+
+.csx .trash.active{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_active.png');
+}
+
+.csx .trash.over{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_hover.png');
+}
+
+.csx .add{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/add.png');
+	cursor:pointer;
+}
+
+.csx .add:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/add_hover.png');
+}
+
+.csx .balance{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/balance.png');
+	cursor:pointer;
+}
+
+.csx .balance:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/balance_hover.png');
+}
+
+.csx .list{
+	padding:0px;
+	line-height:inherit;
+}
+
+.csx .list li.item{
+	display:inline-block;
+	width:100%;
+	position:relative;
+	border-color:red;
+	border-radius:2px;
+}
+
+.csx .list li.item:nth-of-type(odd){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.csx .list li.item:nth-of-type(even){
+	background-color:initial;
+}
+
+.csx .list .column li.item:nth-of-type(even){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.csx .list .column li.item:nth-of-type(odd){
+	background-color:initial;
+}
+
+.csx .list li.proto{
+	display:none;
+}
+
+.csx .list li.over-below{
+	border-bottom:1px dashed rgb(0,0,0);
+}
+
+.csx .list li.over-below:before{
+	content:"▶";
+	position:absolute;
+	left:-10px;
+	bottom:-9px;
+	z-index:10;
+}
+
+.csx .list li.over-below:after{
+	content:"◀";
+	position:absolute;
+	right:-10px;
+	bottom:-9px;
+	z-index:10;
+}
+
+.csx .list li.over-above{
+	border-top:1px dashed rgb(0,0,0);
+	line-height:16px;
+}
+
+.csx .list li.over-above:before{
+	content:"▶";
+	position:absolute;
+	left:-10px;
+	top:-8px;
+	z-index:10;
+}
+
+.csx .list li.over-above:after{
+	content:"◀";
+	position:absolute;
+	right:-10px;
+	top:-8px;
+	z-index:10;
+}
+
+.csx .list li.source{
+	background-color:rgba(0,0,0,0.1);
+	box-shadow:0px 0px 4px rgba(0,0,0,0.1);
+}
+
+.csx .list li .handle{
+	display:none;
+	float: left;
+	position: relative;
+	top: -1px;
+	left: -6px;
+	height:18px;
+	width:19px;
+	margin-right:-5px;
+}
+
+.csx .list li .handle div{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/grab.png');
+	background-position:2px 0px;
+	background-repeat:no-repeat;
+	height:12px;
+	width:13px;
+	margin:3px;
+}
+
+.csx .list li .handle div:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/grab_hover.png');
+}
+
+.csx .list li .handle img{
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	height:13px;
+}
+
+.editable .csx .list li .handle,
+.editable .csx .add,
+.editable .csx .trash,
+.editable .csx .balance,
+.editable .csx .autobalance{
+	display:inline-block;
+}
+
+.csx .list .item ul,
+.csx .list .item li{
+	line-height:inherit;
+}
+
+/* Page Tabs */
+
+.csx .tabs{
+	position:absolute;
+	padding-right:90px;
+	top:-37px;
+	right:0px;
+	z-index:3;
+}
+
+.csx .tab{
+	display:inline-block;
+	float:right;
+	height:40px;
+	width:46px;
+}
+.csx .tab:not(.active){
+	cursor:pointer;
+}
+
+.csx .tab.crunch{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png') no-repeat 50% 50%,
+		url('../images/tab01_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+.csx .tab.crunch:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch_hover.png'),
+		url('../images/tab01_inactive.png');
+}
+.csx .tab.crunch.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png'),
+		url('../images/tab01_active.png');
+}
+
+.csx .tab.magic{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png') no-repeat 50% 50%,
+		url('../images/tab02_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+.csx .tab.magic:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/magic_hover.png'),
+		url('../images/tab02_inactive.png');
+}
+.csx .tab.magic.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png'),
+		url('../images/tab02_active.png');
+}
+
+.csx .tab.equipment{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png') no-repeat 50% 50%,
+		url('../images/tab03_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+.csx .tab.equipment:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment_hover.png'),
+		url('../images/tab03_inactive.png');
+}
+.csx .tab.equipment.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png'),
+		url('../images/tab03_active.png');
+}
+
+.csx .tab.fluff{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png') no-repeat 50% 50%,
+		url('../images/tab04_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+.csx .tab.fluff:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff_hover.png'),
+		url('../images/tab04_inactive.png');
+}
+.csx .tab.fluff.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png'),
+		url('../images/tab04_active.png');
+}
+
+/* Tooltip Interface */
+
+.csx .tip{
+	display:none;
+}
+
+.csx .highlight{
+	background-color:rgba(0,0,0,0.4);
+}
+
+.editable .csx .tip{
+	display:inline-block;
+	float:right;
+	cursor: pointer;
+	position: relative;
+	top:4px;
+	height:12px;
+	width:12px;
+	background:url('https://innersecure.net/~omnichr/external/op/dst/images/tip.png') no-repeat;
+	color:transparent;
+	overflow:hidden;
+	background-size:11px;
+	opacity:0.7;
+}
+
+.editable .csx .tip:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/tip_hover.png');
+}
+
+.csx .tipBox{
+	display:none;
+	position:absolute;
+	z-index:25;
+	left:50%;
+	top:50%;
+}
+
+.csx .tipBox .corner.topLeft{
+	background:url('https://innersecure.net/~omnichr/external/op/dst/solar/brass-corner-top-left.png') top left no-repeat;
+	background-size:15px 15px;
+	top:-1px;
+	left:-1px;
+}
+.csx .tipBox .corner.topRight{
+	background:url('https://innersecure.net/~omnichr/external/op/dst/solar/brass-corner-top-right.png') top right no-repeat;
+	background-size:15px 15px;
+	top:-1px;
+	right:-1px;
+}
+.csx .tipBox .corner.bottomLeft{
+	background:url('https://innersecure.net/~omnichr/external/op/dst/solar/brass-corner-bottom-left.png') bottom left no-repeat;
+	background-size:15px 15px;
+	bottom:-1px;
+	left:-1px;
+}
+.csx .tipBox .corner.bottomRight{
+	background:url('https://innersecure.net/~omnichr/external/op/dst/solar/brass-corner-bottom-right.png') bottom right no-repeat;
+	background-size:15px 15px;
+	bottom:-1px;
+	right:-1px;
+}
+.csx .tipBox .corner{
+	position:absolute;
+	height:15px;
+	width:15px;
+	border-radius:3px;
+}
+
+.csx .tipBox .contentBox{
+	min-height:100px;
+	width:300px;
+	
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/solar/background.jpg') top left no-repeat;
+	background-size:
+		730px 730px;
+	background-color:#e4e5d5;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+	
+	box-shadow:0px 0px 15px rgba(0,0,0,0.3);
+}
+
+.csx .tipBox .contentBox .tipArea,
+.csx .tipBox .contentBox .tipArea:hover{
+	background-color:rgba(255,255,224,0.7);
+	margin:5px;
+	width:278px;
+	min-height:88px;
+	border:1px dotted rgba(0,0,0,0.3);
+	border-radius:4px;
+	padding:0px 5px 2px 5px;
+	font-family:'EB Garamond',Sans Serif;
+	font-size: 15px;
+	line-height: 18px;
+	color:#554220;
+}
+
+.csx .tipBox .contentBox .tipArea ul{
+	margin:0px;
+	padding: 0px 0px 0px 20px;
+	list-style: url('../images/bullet.png');
+}
+.csx .tipBox .contentBox .tipArea ul li{
+	margin:0px;
+	line-height:18px;
+}
+
+/* Sheet Layout */
+
+.wrapper.csx{
+	position:relative;
+	width:730px;
+	margin:0px auto;
+	line-height:1.0;
+}
+
+.csx .content{
+	width:730px;
+	font-family:arial;
+	padding-bottom:51px;
+	position:relative;
+}
+
+.csx .page{
+	display:none;
+}
+
+.csx .page.active{
+	display:block;
+}
+
+.csx .top{
+	padding:5px 5px 10px 1px;
+}
+
+.csx .column{
+	vertical-align:top;
+	display:inline-block;
+	width:242px;	
+}
+
+.csx .gutter{
+	margin-left:2px;
+}
+
+.csx .group{
+	margin:0px 0px 8px 0px;
+	padding:0px 3px 0px 3px;
+	position:relative;
+}
+
+.csx .section{
+	width:240px;
+	margin:0px 2px;
+}
+
+.csx .tabs{
+	padding:0px;
+	top:0px;
+}
+
+.csx .tab.tab_crunch,
+.csx .tab.tab_fluff{
+	display:inline-block;
+	width:125px;
+	height:60px;
+	position:absolute;
+	cursor:pointer;
+	z-index:3;
+	padding:0px;
+}
+
+.csx .tab.tab_crunch,
+.csx .tab.tab_fluff,
+.csx .tab.tab_crunch.active,
+.csx .tab.tab_fluff.active,
+.csx .tab.tab_crunch:hover,
+.csx .tab.tab_fluff:hover,
+.csx .tab.tab_crunch:not(.active):hover,
+.csx .tab.tab_fluff:not(.active):hover{
+	background-image:none;
+}
+
+.csx .avatar_image{
+	width:234px;
+}
+
+/* General Styling */
+
+.csx a{
+	text-decoration:none;
+	color:#554220;
+}
+
+.csx .section a{
+	text-decoration:underline;
+}
+
+.csx .right{
+	float:right;
+}
+
+.csx .hidden{
+	display:none;
+}
+
+/* Page Formatting */
+
+.csx .header{
+	position:relative;
+	padding-bottom:3px;
+	padding-top:4px;
+	margin-top:-1px;
+	text-align:center;
+	font-size:9pt;
+	font-weight:bold;
+	height:13px;
+}
+
+.csx .valbar{
+	position:relative;
+	height:16px;
+	width:236px;
+	margin-left:2px;
+	margin-bottom:2px;
+	padding-bottom:2px;
+	font-size:9pt;
+	font-weight:bold;
+	vertical-align:top;
+}
+
+.csx .skillbar{
+	height:17px;
+	width:236px;
+	padding-top:1px;
+	margin-left:2px;
+	margin-bottom:1px;
+	font-size:8pt;
+}
+
+.csx .skillbar .lable{
+	position:relative;
+	top:5px;
+	margin-right:2px;
+}
+
+.csx .valtitle{
+	position:relative;
+	top:-3px;
+}
+
+.csx .skillbar .valtitle{
+	top:-4px;
+}
+
+/* Editable Fields */
+
+.csx .dsf.fullcolumn,
+.csx .edit.fullcolumn {
+  width: 200px;
+	top:2px;
+}
+
+.csx .dsf.fullwidth,
+.csx .edit.fullwidth{
+	width:704px;
+	min-height:50px;
+	display:inline-block;
+	line-height:17px;
+	text-align:justify;
+}
+
+.editable .csx .list .dsf.fullwidth,
+.editable .csx .list .edit.fullwidth{
+	width:684px;
+}
+
+.editable .csx .dsf:hover:not(.readonly),
+.editable .csx .edit:hover:not(.readonly){
+	color:#957438;
+	background-color:rgba(0,0,0,0.02);
+}
+
+.editable .csx .dsf:focus,
+.editable .csx .edit:focus,
+.editable .csx .dsf:focus:hover,
+.editable .csx .edit:focus:hover{
+	color:#957438;
+	background-color:rgba(0,0,0,0.05);
+}
+
+/* Input Field Layout */
+
+.csx .boxfield{
+	display:inline-block;
+	width:24px;
+	height:16px;
+	padding-bottom:1px;
+	margin-left:1px;
+	text-align:center;
+	font-weight:normal;
+	line-height:150%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:clip;
+}
+
+.csx .box28{
+	width:28px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:clip;
+}
+
+.csx .box51{
+	width:51px;
+	font-size:9pt;
+	margin:0px 0px 0px 5px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:clip;
+}
+
+.csx .linefield{
+	display:inline-block;
+	height:13px;
+	margin-top:3px;
+	text-align:center;
+	font-size:9pt;
+	border-width:1px;
+	border-bottom-style:solid;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:clip;
+	top:1px;
+}
+
+.csx .top .linefield,
+.csx .top .lable:not(.w51){
+	margin-left:5px;
+}
+
+/* Field Label Layout */
+
+.csx .w24{
+	width:24px;
+	margin-left:1px;
+}
+
+.csx .w28{
+	width:28px;
+	
+}
+
+.csx .w51{
+	width:56px;
+	text-align:center;
+	
+}
+
+.csx .labelrow{
+	height:9px;
+	margin-left:2px;
+	margin-right:2px;
+}
+
+.csx .top .labelrow{
+	margin:0px;
+	height:8px;
+}
+
+.csx .lable{
+	display:inline-block;
+	font-size:7pt;
+	font-variant:small-caps;
+	vertical-align:top;
+	text-align:center;
+}
+
+
+/* List Interface Styles */
+
+.csx .list{
+	position:relative;
+	width:237px;
+	margin-left:auto;
+	font-size:8pt;
+	margin-top:-8px;
+}
+
+.csx .listhead{
+	width: 235px;
+	text-align: left;
+	padding-left: 3px;
+}
+
+.csx .add, 
+.csx .trash, 
+.csx .balance, 
+.csx .autobalance{
+	height:10px;
+	width:10px;
+}
+
+.csx .list li .handle {
+	height:14px;
+}
+
+.csx .list li.item{
+	min-height:14px;
+}
+
+.csx .list_attacks{
+	margin-left:0px;
+	padding-left:0px;
+}
+
+.csx .list_attacks .labelrow{
+	width:235px;
+}
+
+.csx .attackbox{
+	margin-left:0px;
+}
+
+.csx .list_attacks .w51{
+	width:51px;
+}
+
+.csx .list.list_attacks li .handle{
+	margin-left:3px;	
+}
+
+
+/* Tool Tip Styles */
+
+.editable .csx .tip {
+	top:3px;
+}

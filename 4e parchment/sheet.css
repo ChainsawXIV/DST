@@ -1,0 +1,125 @@
+/* Component Includes */
+
+@import url(https://innersecure.net/~omnichr/external/op/dst/css/csx_dd4e_common.css);
+
+/* Parchment Sheet Customization */
+
+div.ds_chainsawxiv_dd4e .content{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_back_deco.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_back_bottom.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_back.jpg');
+	background-position:
+		bottom left,
+		bottom center,
+		top center;
+	background-repeat:
+		no-repeat,
+		no-repeat,
+		repeat-y;
+	color:#776655;
+	padding-bottom:0px;
+}
+
+div.ds_chainsawxiv_dd4e .boxfield{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_box.png');
+}
+
+div.ds_chainsawxiv_dd4e .box28{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_box_28.png');
+}
+
+div.ds_chainsawxiv_dd4e .box51{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_box_51.png');
+}
+
+div.ds_chainsawxiv_dd4e .linefield{
+	border-color:#BBAA99;
+}
+
+
+div.ds_chainsawxiv_dd4e h1,h2,h3,h4{
+	color:#776655;
+}
+
+div.ds_chainsawxiv_dd4e .top{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_back_top.png');
+}
+
+div.ds_chainsawxiv_dd4e .header{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_head.png');
+	color:#776655;
+}
+
+div.ds_chainsawxiv_dd4e .valbar{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_valbar.png');
+	color:#776655;
+}
+
+div.ds_chainsawxiv_dd4e .skillbar:nth-of-type(odd){
+	background-color:rgba(96,24,12,0.05);
+}
+
+div.ds_chainsawxiv_dd4e .lable{
+	color:#998877;
+}
+
+div.ds_chainsawxiv_dd4e a{
+	text-decoration:none;
+	color:#776655;
+}
+
+/* Optional Link Styles */
+
+div.ds_chainsawxiv_dd4e .link_address{
+	display:none;
+}
+
+div.ds_chainsawxiv_dd4e .link_active{
+	color:#7766AA;
+}
+
+div.ds_chainsawxiv_dd4e .link_active:hover{
+	color:#AA88DD;
+}
+
+div.ds_chainsawxiv_dd4e .list li.item{
+	border-bottom:1px solid rgba(96,24,12,0.1);
+	border-radius:0px;
+}
+
+div.ds_chainsawxiv_dd4e .dsf.fullcolumn, 
+div.ds_chainsawxiv_dd4e .edit.fullcolumn{
+	width:237px;
+	padding-bottom:4px;
+}
+
+div.ds_chainsawxiv_dd4e.editable  .dsf.fullcolumn, 
+div.ds_chainsawxiv_dd4e.editable  .edit.fullcolumn{
+	width:211px;
+}
+
+div.ds_chainsawxiv_dd4e .tab.tab_manage,
+div.ds_chainsawxiv_dd4e .tab.tab_crunch,
+div.ds_chainsawxiv_dd4e .tab.tab_fluff{
+	width:125px;
+	height:60px;
+	position:absolute;
+}
+
+div.ds_chainsawxiv_dd4e:not(.editable) .tab.tab_manage{
+	display:none;
+}
+
+div.ds_chainsawxiv_dd4e .tabs{
+	display: inline-block;
+  position: relative;
+  width: 421px;
+  height: 71px;
+  background-image: url(https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_tabs.png);
+}
+
+div.ds_chainsawxiv_dd4e:not(.editable) .tabs{
+	width:275px;
+	background-position:right;
+}

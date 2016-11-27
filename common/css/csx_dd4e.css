@@ -1,0 +1,333 @@
+
+/* Sheet Layout */
+
+.wrapper.csx{
+	position:relative;
+	width:730px;
+	margin:0px auto;
+	line-height:1.0;
+}
+
+.csx .content{
+	width:730px;
+	font-family:arial;
+	padding-bottom:51px;
+	position:relative;
+}
+
+.csx .page{
+	display:none;
+}
+
+.csx .page.active{
+	display:block;
+}
+
+.csx .top{
+	padding:5px 5px 10px 1px;
+}
+
+.csx .column{
+	vertical-align:top;
+	display:inline-block;
+	width:242px;	
+}
+
+.csx .gutter{
+	margin-left:2px;
+}
+
+.csx .group{
+	margin:0px 0px 8px 0px;
+	padding:0px 3px 0px 3px;
+	position:relative;
+}
+
+.csx .section{
+	width:240px;
+	margin:0px 2px;
+}
+
+.csx .tabs{
+	padding:0px;
+	top:0px;
+}
+
+.csx .tab.tab_crunch,
+.csx .tab.tab_fluff{
+	display:inline-block;
+	width:125px;
+	height:60px;
+	position:absolute;
+	cursor:pointer;
+	z-index:3;
+	padding:0px;
+}
+
+.csx .tab.tab_crunch,
+.csx .tab.tab_fluff,
+.csx .tab.tab_crunch.active,
+.csx .tab.tab_fluff.active,
+.csx .tab.tab_crunch:hover,
+.csx .tab.tab_fluff:hover,
+.csx .tab.tab_crunch:not(.active):hover,
+.csx .tab.tab_fluff:not(.active):hover{
+	background-image:none;
+}
+
+.csx .avatar_image{
+	width:234px;
+}
+
+/* General Styling */
+
+.csx a{
+	text-decoration:none;
+	color:#554220;
+}
+
+.csx .section a{
+	text-decoration:underline;
+}
+
+.csx .right{
+	float:right;
+}
+
+.csx .hidden{
+	display:none;
+}
+
+/* Page Formatting */
+
+.csx .header{
+	position:relative;
+	padding-bottom:3px;
+	padding-top:4px;
+	margin-top:-1px;
+	text-align:center;
+	font-size:9pt;
+	font-weight:bold;
+	height:13px;
+}
+
+.csx .valbar{
+	position:relative;
+	height:16px;
+	width:236px;
+	margin-left:2px;
+	margin-bottom:2px;
+	padding-bottom:2px;
+	font-size:9pt;
+	font-weight:bold;
+	vertical-align:top;
+}
+
+.csx .skillbar{
+	height:17px;
+	width:236px;
+	padding-top:1px;
+	margin-left:2px;
+	margin-bottom:1px;
+	font-size:8pt;
+}
+
+.csx .skillbar .lable{
+	position:relative;
+	top:5px;
+	margin-right:2px;
+}
+
+.csx .valtitle{
+	position:relative;
+	top:-3px;
+}
+
+.csx .skillbar .valtitle{
+	top:-4px;
+}
+
+/* Editable Fields */
+
+.csx .dsf.fullcolumn,
+.csx .edit.fullcolumn {
+  width: 200px;
+	top:2px;
+}
+
+.csx .dsf.fullwidth,
+.csx .edit.fullwidth{
+	width:704px;
+	min-height:50px;
+	display:inline-block;
+	line-height:17px;
+	text-align:justify;
+}
+
+.editable .csx .list .dsf.fullwidth,
+.editable .csx .list .edit.fullwidth{
+	width:684px;
+}
+
+.editable .csx .dsf:hover:not(.readonly),
+.editable .csx .edit:hover:not(.readonly){
+	color:#957438;
+	background-color:rgba(0,0,0,0.02);
+}
+
+.editable .csx .dsf:focus,
+.editable .csx .edit:focus,
+.editable .csx .dsf:focus:hover,
+.editable .csx .edit:focus:hover{
+	color:#957438;
+	background-color:rgba(0,0,0,0.05);
+}
+
+/* Input Field Layout */
+
+.csx .boxfield{
+	display:inline-block;
+	width:24px;
+	height:16px;
+	padding-bottom:1px;
+	margin-left:1px;
+	text-align:center;
+	font-weight:normal;
+	line-height:150%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:clip;
+}
+
+.csx .box28{
+	width:28px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:clip;
+}
+
+.csx .box51{
+	width:51px;
+	font-size:9pt;
+	margin:0px 0px 0px 5px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:clip;
+}
+
+.csx .linefield{
+	display:inline-block;
+	height:13px;
+	margin-top:3px;
+	text-align:center;
+	font-size:9pt;
+	border-width:1px;
+	border-bottom-style:solid;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:clip;
+	top:1px;
+}
+
+.csx .top .linefield,
+.csx .top .lable:not(.w51){
+	margin-left:5px;
+}
+
+/* Field Label Layout */
+
+.csx .w24{
+	width:24px;
+	margin-left:1px;
+}
+
+.csx .w28{
+	width:28px;
+	
+}
+
+.csx .w51{
+	width:56px;
+	text-align:center;
+	
+}
+
+.csx .labelrow{
+	height:9px;
+	margin-left:2px;
+	margin-right:2px;
+}
+
+.csx .top .labelrow{
+	margin:0px;
+	height:8px;
+}
+
+.csx .lable{
+	display:inline-block;
+	font-size:7pt;
+	font-variant:small-caps;
+	vertical-align:top;
+	text-align:center;
+}
+
+
+/* List Interface Styles */
+
+.csx .list{
+	position:relative;
+	width:237px;
+	margin-left:auto;
+	font-size:8pt;
+	margin-top:-8px;
+}
+
+.csx .listhead{
+	width: 235px;
+	text-align: left;
+	padding-left: 3px;
+}
+
+.csx .add, 
+.csx .trash, 
+.csx .balance, 
+.csx .autobalance{
+	height:10px;
+	width:10px;
+}
+
+.csx .list li .handle {
+	height:14px;
+}
+
+.csx .list li.item{
+	min-height:14px;
+}
+
+.csx .list_attacks{
+	margin-left:0px;
+	padding-left:0px;
+}
+
+.csx .list_attacks .labelrow{
+	width:235px;
+}
+
+.csx .attackbox{
+	margin-left:0px;
+}
+
+.csx .list_attacks .w51{
+	width:51px;
+}
+
+.csx .list.list_attacks li .handle{
+	margin-left:3px;	
+}
+
+
+/* Tool Tip Styles */
+
+.editable .csx .tip {
+	top:3px;
+}
