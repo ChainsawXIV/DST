@@ -11,6 +11,7 @@
 	width:15px;
 	margin-bottom:0px;
 	cursor:default;
+	background-size:contain;
 }
 
 .csx .autobalance{
@@ -20,33 +21,33 @@
 }
 
 .csx .trash{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/trash.png');
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash.png');
 }
 
 .csx .trash.active{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_active.png');
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_active.png');
 }
 
 .csx .trash.over{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_hover.png');
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_hover.png');
 }
 
 .csx .add{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/add.png');
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/add.png');
 	cursor:pointer;
 }
 
 .csx .add:hover{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/add_hover.png');
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/add_hover.png');
 }
 
 .csx .balance{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/balance.png');
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/balance.png');
 	cursor:pointer;
 }
 
 .csx .balance:hover{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/balance_hover.png');
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/balance_hover.png');
 }
 
 .csx .list{
