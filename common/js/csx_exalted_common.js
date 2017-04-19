@@ -330,6 +330,10 @@ function csx_edit(context){
 			var field = document.createElement('div');
 			field.className = baseField.className;
 			field.innerHTML = baseField.innerHTML;
+			field.style.left = baseField.style.left;
+			field.style.top = baseField.style.top;
+			field.style.width = baseField.style.width;
+			field.style.textAlign = baseField.style.textAlign;
 			baseField.parentNode.insertBefore(field,baseField);
 			baseField.parentNode.removeChild(baseField);
 		}
@@ -1142,9 +1146,19 @@ function csx_pips(context){
 			// Return the cached value if it exists
 			if(this.valueCache != null)
 				return this.valueCache.toString();
-		
+			
 			// Get the value from the text content, cache, and return
 			var value = this.innerHTML;
+
+			// Catch and fix rare cases of HTML being saved instead of a number
+			if(isNaN(value)){
+				var pips = this.querySelectorAll( '.pipOn' );
+				if(pips)
+					value = pips.length;
+				else
+					value = 0;
+			}
+		
 			if (this.innerHTML == '') value = 0;
 			this.valueCache = value;
 			return value.toString();
@@ -1305,19 +1319,19 @@ function csx_tab(context){
 				localStorage.lastPage = pageName;
 			
 			// Clear active class from current tab and page
-			var activeTab = this.parentNode.querySelectorAll('.tab.active');
+			var activeTab = context.querySelectorAll('.tab.active');
 			for (var i = 0; i < activeTab.length; i++)
 				activeTab[i].className = activeTab[i].className.replace(/[\s]*active/g,'');
 			
-			var activePage = this.parentNode.parentNode.querySelectorAll('.page.active');
+			var activePage = context.querySelectorAll('.page.active');
 			for (var i = 0; i < activePage.length; i++)
 				activePage[i].className = activePage[i].className.replace(/[\s]*active/g,'');
 			
 			// Make the proper page and tab active
-			activeTab = this.parentNode.querySelector('.tab.tab_' + pageName);
+			activeTab = context.querySelector('.tab.tab_' + pageName);
 			activeTab.className += ' active';
 			
-			activePage = this.parentNode.parentNode.querySelector('.page.page_' + pageName);
+			activePage = context.querySelector('.page.page_' + pageName);
 			activePage.className += ' active';
 		};
 		

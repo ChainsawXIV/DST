@@ -79,9 +79,19 @@ function csx_pips(context){
 			// Return the cached value if it exists
 			if(this.valueCache != null)
 				return this.valueCache.toString();
-		
+			
 			// Get the value from the text content, cache, and return
 			var value = this.innerHTML;
+
+			// Catch and fix rare cases of HTML being saved instead of a number
+			if(isNaN(value)){
+				var pips = this.querySelectorAll( '.pipOn' );
+				if(pips)
+					value = pips.length;
+				else
+					value = 0;
+			}
+		
 			if (this.innerHTML == '') value = 0;
 			this.valueCache = value;
 			return value.toString();
