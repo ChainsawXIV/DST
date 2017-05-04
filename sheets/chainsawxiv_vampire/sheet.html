@@ -1,0 +1,367 @@
+<div class="wrapper">
+	<div class="tab_bar">
+		<span class="tab" onclick="chainsawxiv_vampire_tabClick(this,'sheet');">
+			CHARACTER
+		</span>
+		<span class="tab" onclick="chainsawxiv_vampire_tabClick(this,'bio');">
+			BIOGRAPHY
+		</span>
+	</div>
+	
+	<div class="main page_sheet" style="display:block;">
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-top-left.png" class="corner_top_left" />
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-top-right.png" class="corner_top_right" />
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-bottom-left.png" class="corner_bottom_left" />
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-bottom-right.png" class="corner_bottom_right" />
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-bottom.png" class="brass_bottom" />
+		
+		<div class="page_head">
+			<div class="section_head">
+				<span class="name dsf dsf_name"></span>
+			</div>
+			<span class="align_right dsf dsf_type typev"></span> &#8226; <span class="align_left dsf dsf_campaign"></span>
+		</div>
+
+		<div class="section_head">ATTRIBUTES</div>
+		<div class="section">
+			<div class="column column_spacing">
+				Strength<span class="readonly pipsRange_10 dsf dsf_strength"></span><br />
+				Dexterity<span class="readonly pipsRange_10 dsf dsf_dexterity"></span><br />
+				Stamina<span class="readonly pipsRange_10 dsf dsf_stamina"></span><br />
+			</div>
+			<div class="column column_spacing">
+				Charisma<span class="readonly pipsRange_10 dsf dsf_charisma"></span><br />
+				Manipulation<span class="readonly pipsRange_10 dsf dsf_manipulation"></span><br />
+				Appearance<span class="readonly pipsRange_10 dsf dsf_appearance"></span><br />
+			</div>
+			<div class="column">
+				Perception<span class="readonly pipsRange_10 dsf dsf_perception"></span><br />
+				Intelligence<span class="readonly pipsRange_10 dsf dsf_intelligence"></span><br />
+				Wits<span class="readonly pipsRange_10 dsf dsf_wits"></span><br />
+			</div>
+		</div>
+
+		<div class="section_head">ABILITIES</div>
+		<div class="section">
+			<div class="column column_spacing">
+				<b>Talents</b><a class="listAdd listAdd_small interface" title="Add Special Talent" onclick="chainsawxiv_vampire_getElementsByClassName('list_abilities')[0].addItem();">+</a><br />
+				Alertness<span class="readonly pipsRange_10 dsf dsf_alertness"></span><br />
+				Athletics<span class="readonly pipsRange_10 dsf dsf_athletics"></span><br />
+				Awareness<span class="readonly pipsRange_10 dsf dsf_awareness"></span><br />
+				Brawl<span class="readonly pipsRange_10 dsf dsf_brawl"></span><br />
+				Empathy<span class="readonly pipsRange_10 dsf dsf_empathy"></span><br />
+				Expression<span class="readonly pipsRange_10 dsf dsf_expression"></span><br />
+				Intimidation<span class="readonly pipsRange_10 dsf dsf_intimidation"></span><br />
+				Leadership<span class="readonly pipsRange_10 dsf dsf_leadership"></span><br />
+				Streetwise<span class="readonly pipsRange_10 dsf dsf_streewise"></span><br />
+				Subterfuge<span class="readonly pipsRange_10 dsf dsf_subterfuge"></span><br />
+				<div class="list_abilities listColumns_1">
+					<div class="template">
+						<div>
+							<a class="listDelete interface" title="Delete this item">&#10008;</a>
+							<a class="listPromote interface" title="Move this item up">&#8593;</a>
+							<a class="listDemote interface" title="Move this item down">&#8595;</a>
+							<span class="dsf dsf_ability_type_ type10"></span><span class="readonly pipsRange_10 dsf dsf_ability_value_">0</span><br />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column column_spacing">
+				<b>Skills</b><a class="listAdd listAdd_small interface" title="Add Special Skill" onclick="chainsawxiv_vampire_getElementsByClassName('list_talents')[0].addItem();">+</a><br />
+				Animal Ken<span class="readonly pipsRange_10 dsf dsf_animalken"></span><br />
+				Crafts<span class="readonly pipsRange_10 dsf dsf_crafts"></span><br />
+				Drive<span class="readonly pipsRange_10 dsf dsf_drive"></span><br />
+				Etiquette<span class="readonly pipsRange_10 dsf dsf_etiquette"></span><br />
+				Firearms<span class="readonly pipsRange_10 dsf dsf_firearms"></span><br />
+				Larceny<span class="readonly pipsRange_10 dsf dsf_larceny"></span><br />
+				Melee<span class="readonly pipsRange_10 dsf dsf_melee"></span><br />
+				Performance<span class="readonly pipsRange_10 dsf dsf_performance"></span><br />
+				Stealth<span class="readonly pipsRange_10 dsf dsf_stealth"></span><br />
+				Survival<span class="readonly pipsRange_10 dsf dsf_survival"></span><br />
+				<div class="list_talents listColumns_1">
+					<div class="template">
+						<div>
+							<a class="listDelete interface" title="Delete this item">&#10008;</a>
+							<a class="listPromote interface" title="Move this item up">&#8593;</a>
+							<a class="listDemote interface" title="Move this item down">&#8595;</a>
+							<span class="dsf dsf_talent_type_ type10"></span><span class="readonly pipsRange_10 dsf dsf_talent_value_">0</span><br />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<b>Knowledges</b><a class="listAdd listAdd_small interface" title="Add Special Knowledge" onclick="chainsawxiv_vampire_getElementsByClassName('list_knowledges')[0].addItem();">+</a><br />
+				Academics<span class="readonly pipsRange_10 dsf dsf_academics"></span><br />
+				Computer<span class="readonly pipsRange_10 dsf dsf_computer"></span><br />
+				Finance<span class="readonly pipsRange_10 dsf dsf_finance"></span><br />
+				Investigation<span class="readonly pipsRange_10 dsf dsf_investigation"></span><br />
+				Law<span class="readonly pipsRange_10 dsf dsf_law"></span><br />
+				Medicine<span class="readonly pipsRange_10 dsf dsf_medicine"></span><br />
+				Occult<span class="readonly pipsRange_10 dsf dsf_occult"></span><br />
+				Politics<span class="readonly pipsRange_10 dsf dsf_politics"></span><br />
+				Science<span class="readonly pipsRange_10 dsf dsf_science"></span><br />
+				Technology<span class="readonly pipsRange_10 dsf dsf_technology"></span><br />
+				<div class="list_knowledges listColumns_1">
+					<div class="template">
+						<div>
+							<a class="listDelete interface" title="Delete this item">&#10008;</a>
+							<a class="listPromote interface" title="Move this item up">&#8593;</a>
+							<a class="listDemote interface" title="Move this item down">&#8595;</a>
+							<span class="dsf dsf_knowledge_type_ type10"></span><span class="readonly pipsRange_10 dsf dsf_knowledge_value_">0</span><br />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+
+			<div class="column column_spacing">
+				<div class="section_head">PATHS<a class="interface listAdd" title="Add Path" onclick="chainsawxiv_vampire_getElementsByClassName('list_paths')[0].addItem();">+</a></div>
+				<div class="list_paths listColumns_1">
+					<div class="template">
+						<div>
+							<a class="listDelete interface" title="Delete this item">&#10008;</a>
+							<a class="listPromote interface" title="Move this item up">&#8593;</a>
+							<a class="listDemote interface" title="Move this item down">&#8595;</a>
+							<span class="dsf dsf_path_type_ type5"></span><span class="readonly pipsRange_5 dsf dsf_path_value_">0</span><br />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="column column_spacing">
+				<div class="section_head">MERITS<a class="listAdd interface" title="Add Merit" onclick="chainsawxiv_vampire_getElementsByClassName('list_merits')[0].addItem();">+</a></div>
+				<div class="list_merits listColumns_1">
+					<div class="template">
+						<div>
+							<a class="listDelete interface" title="Delete this item">&#10008;</a>
+							<a class="listPromote interface" title="Move this item up">&#8593;</a>
+							<a class="listDemote interface" title="Move this item down">&#8595;</a>
+							<span class="dsf dsf_merit_ typef"></span><br />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="section_head">FLAWS<a class="listAdd interface" title="Add Flaw" onclick="chainsawxiv_vampire_getElementsByClassName('list_flaws')[0].addItem();">+</a></div>
+				<div class="list_flaws listColumns_1">
+					<div class="template">
+						<div>
+							<a class="listDelete interface" title="Delete this item">&#10008;</a>
+							<a class="listPromote interface" title="Move this item up">&#8593;</a>
+							<a class="listDemote interface" title="Move this item down">&#8595;</a>
+							<span class="dsf dsf_flaw_ typef"></span><br />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="section">
+			<div class="column column_spacing">
+				<div class="section_head">VIRTUES</div>
+				Conscience / Conviction<span class="readonly pipsRange_5 dsf dsf_conscience"></span><br />
+				Self-Control / Instinct<span class="readonly pipsRange_5 dsf dsf_selfcontrol"></span><br />
+				Courage<span class="readonly pipsRange_5 dsf dsf_courage"></span><br />
+			</div>
+			
+			<div class="column column_spacing">
+				<div class="section_head">MISCELLANEOUS</div>
+				Humanity / Path: <span class="dsf dsf_humanity typer"></span><br />
+				Rating<span class="readonly pipsRange_10 dsf dsf_humanity_rating"></span><br />
+				Bearing: <span class="dsf dsf_bearing typer"></span><br />
+				Weakness: <span class="dsf dsf_weakness typer"></span><br />
+				Experiance: <span class="dsf dsf_experiance typer"></span><br />
+			</div>					
+
+			<div class="column">
+				<div class="section_head">BLOOD</div>
+				Willpower<span class="readonly pipsRange_10 dsf dsf_willpower"></span><br />
+				Generation<span class="readonly pipsRange_10 dsf dsf_generation"></span><br />
+				Blood Pool: <span class="dsf dsf_bloodpool typer"></span><br />
+				Blood Per Turn: <span class="dsf dsf_bloodperturn typer"></span><br />
+			</div>					
+			
+		</div>
+		
+		<div class="section_head">BACKGROUNDS<a class="listAdd interface" title="Add Background" onclick="chainsawxiv_vampire_getElementsByClassName('list_backgrounds')[0].addItem();">+</a></div>
+		<div class="section">
+			<div class="list_backgrounds listColumns_3">
+				<div class="template">
+					<div class="has_tooltip">
+						<a class="listDelete interface" title="Delete this item">&#10008;</a>
+						<a class="listPromote interface" title="Move this item up">&#8593;</a>
+						<a class="listDemote interface" title="Move this item down">&#8595;</a>
+						<span class="dsf type5 dsf dsf_background_type_"></span><span class="readonly pipsRange_5 dsf dsf_background_value_">0</span><br />	
+						<span class="readonly area dsf dsf_background_tootip_ is_tooltip button_float"></span>								
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section_head">DISCIPLINES<a class="listAdd interface" title="Add Discipline" onclick="chainsawxiv_vampire_getElementsByClassName('list_disciplines')[0].addItem();">+</a></div>
+		<div class="section">
+			<div class="list_disciplines listColumns_3">
+				<div class="template">
+					<div class="has_tooltip">
+						<a class="listDelete interface" title="Delete this item">&#10008;</a>
+						<a class="listPromote interface" title="Move this item up">&#8593;</a>
+						<a class="listDemote interface" title="Move this item down">&#8595;</a>
+						<span class="dsf type5 dsf dsf_discipline_type_"></span><span class="readonly pipsRange_5 dsf dsf_discipline_value_">0</span><br />	
+						<span class="readonly area dsf dsf_discipline_tootip_ is_tooltip button_float"></span>								
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section_head">RITUALS<a class="listAdd interface" title="Add Ritual" onclick="chainsawxiv_vampire_getElementsByClassName('list_rituals')[0].addItem();">+</a></div>
+		<div class="section">
+			<div class="list_rituals listColumns_3">
+				<div class="template">
+					<div class="has_tooltip">
+						<a class="listDelete interface" title="Delete this item">&#10008;</a>
+						<a class="listPromote interface" title="Move this item up">&#8593;</a>
+						<a class="listDemote interface" title="Move this item down">&#8595;</a>
+						<span class="dsf dsf_ritual_ typef"></span><br />				
+						<span class="readonly area dsf dsf_ritual_tootip_ is_tooltip button_float"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section_head">EQUIPMENT<a class="listAdd interface" title="Add Equipment" onclick="chainsawxiv_vampire_getElementsByClassName('list_equipment')[0].addItem();">+</a></div>
+		<div class="section">
+			<div class="list_equipment listColumns_3">
+			<div class="template">
+				<div class="has_tooltip">
+					<a class="listDelete interface" title="Delete this item">&#10008;</a>
+					<a class="listPromote interface" title="Move this item up">&#8593;</a>
+					<a class="listDemote interface" title="Move this item down">&#8595;</a>
+					<span class="dsf dsf_equipment_name_ typef"></span><br />
+					<span class="readonly area dsf dsf_equipment_tootip_ is_tooltip button_float"></span>								
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<div class="section_head">ATTACKS<a class="listAdd interface" title="Add Attack" onclick="chainsawxiv_vampire_getElementsByClassName('list_attacks')[0].addItem();">+</a></div>
+		<div class="section" style="position:relative;">
+			<span class="typea" style="text-decoration:underline;margin-right:103px;">Weapon</span>
+			<span class="typed" style="text-decoration:underline;">Difficulty</span>
+			<span class="typed" style="text-decoration:underline;">Damage</span>
+			<span class="typed" style="text-decoration:underline;">Range</span>
+			<span class="typed" style="text-decoration:underline;">Rate</span>
+			<span class="typed" style="text-decoration:underline;">Clip</span>
+			<span class="typed" style="text-decoration:underline;">Conceal</span>
+			<div class="list_attacks listColumns_1">
+				<div class="template">
+					<div style="position:relative;">
+						<a class="listDelete interface" title="Delete this item">&#10008;</a>
+						<a class="listPromote interface" title="Move this item up">&#8593;</a>
+						<a class="listDemote interface" title="Move this item down">&#8595;</a>
+						<span class="dsf typea dsf_attack_weapon_"></span>
+						<span class="dsf typed dsf_attack_difficulty_" style="position:absolute;left:251px;top:0px;"></span>
+						<span class="dsf typed dsf_attack_damage_" style="position:absolute;left:327px;top:0px;"></span>
+						<span class="dsf typed dsf_attack_range_" style="position:absolute;left:403px;top:0px;"></span>
+						<span class="dsf typed dsf_attack_rate_" style="position:absolute;left:479px;top:0px;"></span>
+						<span class="dsf typed dsf_attack_clip_" style="position:absolute;left:555px;top:0px;"></span>
+						<span class="dsf typed dsf_attack_conceal_" style="position:absolute;left:631px;top:0px;"></span>
+						<br />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page_foot">
+			<div class="section_head">
+			</div>
+			Character By <span class="align_right dsf dsf_player"></span> &#8226; Sheet By <span class="align_left dsf dsf_dst_author"></span>
+		</div>
+	</div>
+	
+	<div class="main page_bio" style="display:none;">
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-top-left.png" class="corner_top_left" />
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-top-right.png" class="corner_top_right" />
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-bottom-left.png" class="corner_bottom_left" />
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-bottom-right.png" class="corner_bottom_right" />
+		<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-bottom.png" class="brass_bottom" />
+		
+		<div class="page_head">
+			<div class="section_head">
+				<span class="name dsf dsf_name"></span>
+			</div>
+			<span class="align_right dsf dsf_type typev"></span> &#8226; <span class="align_left dsf dsf_campaign"></span>
+		</div>
+
+		<div class="section_head">BIOGRAPHY</div>
+		<div class="section section_bio">
+			<span class="portrait_holder">
+				<span class="portrait dsf dsf_avatar_image"></span>
+				<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-top-left.png" class="portrait_corner_top_left" />
+				<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-top-right.png" class="portrait_corner_top_right" />
+				<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-bottom-left.png" class="portrait_corner_bottom_left" />
+				<img alt="" src="http://omnichron.net/external/op/src/vampire/brass-corner-bottom-right.png" class="portrait_corner_bottom_right" />
+			</span>
+			<span class="dsf dsf_bio"></span>
+		</div>
+
+		<div class="section_head">APPEARANCE</div>
+		<div class="section">
+			<span class="area motivation readonly dsf dsf_desc"></span>
+		</div>
+		
+		<div class="section_head">NATURE</div>
+		<div class="section">
+			<span class="area motivation dsf readonly dsf_nature"></span>
+		</div>
+		
+		<div class="section_head">DEMEANOR</div>
+		<div class="section">
+			<span class="area motivation dsf readonly dsf_demeanor"></span>
+		</div>
+		
+		<div class="section_head">CONCEPT</div>
+		<div class="section">
+			<span class="area motivation dsf readonly dsf_concept"></span>
+		</div>
+		
+		<div class="section_head">GOALS<a class="listAdd interface" title="Add Goal" onclick="chainsawxiv_vampire_getElementsByClassName('list_goals')[0].addItem();">+</a></div>
+		<div class="section">
+			<div class="listColumns_1 list_goals">
+				<div class="template">
+					<div>
+						<a class="listDelete interface" title="Delete this item">&#10008;</a>
+						<a class="listPromote interface" title="Move this item up">&#8593;</a>
+						<a class="listDemote interface" title="Move this item down">&#8595;</a>
+						<span class="typew dsf dsf_goal_"></span><br />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section_head">ALLIES & CONTACTS<a class="listAdd interface" title="Add Contact" onclick="chainsawxiv_vampire_getElementsByClassName('list_contacts')[0].addItem();">+</a></div>
+		<div class="section">
+			<div class="list_contacts listColumns_3">
+				<div class="template">
+					<div class="has_tooltip">
+						<a class="listDelete interface" title="Delete this item">&#10008;</a>
+						<a class="listPromote interface" title="Move this item up">&#8593;</a>
+						<a class="listDemote interface" title="Move this item down">&#8595;</a>
+						<span class="dsf typef dsf dsf_contact_type_"></span><br />
+						<span class="readonly area dsf dsf_contact_tootip_ is_tooltip button_float"></span>								
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page_foot">
+			<div class="section_head">
+			</div>
+			Character By <span class="align_right dsf dsf_player"></span> &#8226; Sheet By <span class="align_left dsf dsf_dst_author"></span>
+		</div>				
+
+	</div>
+</div>

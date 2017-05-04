@@ -1,0 +1,535 @@
+/* Jedi Input Styles */
+
+div.ds_chainsawxiv_vampire form{
+	position:relative;
+}
+
+div.ds_chainsawxiv_vampire input {
+	padding:0px 0px 0px 0px;
+	margin:-1px 0px 0px -1px;
+	font-family:palatino;
+	font-size:8pt;
+	color:#1b110e;
+}
+
+div.ds_chainsawxiv_vampire .jeditable_submit{
+	position:absolute;
+	right:-2px;
+	top:-1px;
+	height:18px;
+	width:10px;
+}
+
+div.ds_chainsawxiv_vampire .jeditable_submit_text {
+	position:relative;
+	top:-4px;
+	left:-1px;
+	font-size:9pt;
+	color:#070;
+}
+
+div.ds_chainsawxiv_vampire .type3{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:150px;
+}
+
+div.ds_chainsawxiv_vampire .type5{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:120px;
+}
+
+div.ds_chainsawxiv_vampire .type7{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:67px;
+}
+
+div.ds_chainsawxiv_vampire .type10{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:55px;
+}
+
+div.ds_chainsawxiv_vampire .typef{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:193px;
+}
+
+div.ds_chainsawxiv_vampire .typeq{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:576px;
+}
+
+div.ds_chainsawxiv_vampire .typew{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	min-height:16px;
+	width:673px;
+}
+
+div.ds_chainsawxiv_vampire .typer{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	float:right;
+	width:123px;
+	text-align:right;
+}
+
+div.ds_chainsawxiv_vampire .typed{
+	display:inline-block;
+	margin:0px 0px 1px 5px;
+	height:16px;
+	width:68px;
+	text-align:center;
+}
+
+div.ds_chainsawxiv_vampire .typea{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:142px;
+	text-align:left;
+}
+
+div.ds_chainsawxiv_vampire .typev{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+}
+
+div.ds_chainsawxiv_vampire span.typev button{
+	right:1px;
+}
+
+div.editable .dsf{
+	cursor:pointer;
+}
+
+div.editable .dsf:hover{
+	color:#5A5854;
+}
+
+div.editable .dsf_bio:hover{
+	color:#5A5854;
+	cursor:text;
+}
+
+/* Pips Interface Styles */
+
+div.ds_chainsawxiv_vampire .pipsRange_3{
+	position:relative;
+	z-index:2;
+	float:right;
+	top:3px;
+	width:41px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+div.ds_chainsawxiv_vampire .pipsRange_5{
+	position:relative;
+	z-index:2;
+	float:right;
+	top:3px;
+	width:70px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+div.ds_chainsawxiv_vampire .pipsRange_10{
+	position:relative;
+	z-index:2;
+	float:right;
+	top:3px;
+	width:142px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+/* Checks Interface Styles */
+
+div.ds_chainsawxiv_vampire .check{
+	position:relative;
+	top:1px;
+	margin:0px 3px 0px 0px;
+}
+
+/* List Interface Styles */
+
+div.ds_chainsawxiv_vampire .listAdd{
+	float:right;
+	cursor:pointer;
+	text-decoration:none;
+	color:#1b110e;
+	background-color:rgba(0,0,0,0.15);
+	border-radius:8px;
+	padding:0px 2px 0px 4px;
+	width:11px;
+}
+
+div.ds_chainsawxiv_vampire .listAdd_small{
+	font-size:12pt;
+	position:relative;
+	left:5px;
+}
+
+div.ds_chainsawxiv_vampire .listAdd:hover{
+	color:#5A5854;
+	background-color:rgba(0,0,0,0.2);
+}
+
+div.ds_chainsawxiv_vampire .listDelete{
+	color:#1b110e;
+	cursor:pointer;
+	letter-spacing:-1px;
+	text-decoration:none;
+}
+
+div.ds_chainsawxiv_vampire .listDelete:hover{
+	color:#5A5854;
+}
+
+div.ds_chainsawxiv_vampire .listPromote{
+	cursor:pointer;
+	letter-spacing:-1px;
+	text-decoration:none;
+	color:#1b110e;
+}
+
+div.ds_chainsawxiv_vampire .listPromote:hover{
+	color:#5A5854;
+}
+
+div.ds_chainsawxiv_vampire .listDemote{
+	cursor:pointer;
+	text-decoration:none;
+	color:#1b110e;
+}
+
+div.ds_chainsawxiv_vampire .listDemote:hover{
+	color:#5A5854;
+}
+
+div.ds_chainsawxiv_vampire .template{
+	display:none;
+}
+
+div.ds_chainsawxiv_vampire .column{
+	width:227px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+div.ds_chainsawxiv_vampire .half_sheet_column{
+	width:340px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+div.ds_chainsawxiv_vampire .double_column{
+	width:454px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+div.ds_chainsawxiv_vampire .column_spacing{
+	margin-right:9px;
+}
+
+/* Text Area Interface Styles */
+
+div.ds_chainsawxiv_vampire .area{
+	font-family:palatino;
+	font-size:9pt;
+	color:#1b110e;
+	margin:0px 0px 0px 0px;
+	padding:1px 0px 1px 1px;
+	position:absolute;
+}
+
+div.ds_chainsawxiv_vampire .area_submit{
+	position:absolute;
+	height:16px;
+	width:10px;
+	color:#070;
+	top:0px;
+	right:0px;
+}
+
+div.ds_chainsawxiv_vampire .area_submit_text {
+	position:relative;
+	top:-5px;
+	left:-1px;
+	font-size:9pt;
+}
+
+div.editable .area:hover{
+	color:#5A5854;
+}
+
+/* Tooltip Interface Styles */
+
+div.ds_chainsawxiv_vampire .has_tooltip{
+	position:relative;
+}
+
+div.ds_chainsawxiv_vampire .is_tooltip{
+	display:none;
+	position:absolute;
+	width:180px;
+	min-height:50px;
+	background-color:#9d988f;
+	background-color:rgba(157,152,143,0.95);
+	border-radius:4px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#1b110e;
+	padding:2px 4px 2px 6px;
+	z-index:5;
+	left:0px;
+	top:0px;
+}
+
+div.ds_chainsawxiv_vampire .tip_area{
+	position:relative;
+	left:-4px;
+}
+
+/* Exalted Sheet Styles */
+
+div.ds_chainsawxiv_vampire .wrapper{
+	position:relative;
+	width:730px;
+}
+
+div.ds_chainsawxiv_vampire .main{
+
+	position:relative;
+	width:708px;
+	padding:0px 10px 80px 10px;
+	margin:40px 0px 20px 0px;
+	
+	background-image:url('http://omnichron.net/external/op/src/vampire/background.jpg');
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#ada89f;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#1b110e;
+	
+	font-family:palatino;
+	font-size:8pt;
+	font-variant:small-caps;
+	line-height:17px;
+	color:#1b110e;
+	letter-spacing:1px;
+	
+}
+
+div.ds_chainsawxiv_vampire .small_font{
+	font-family:palatino;
+	font-size:6pt;
+	font-variant:small-caps;
+	line-height:17px;
+	color:#1b110e;
+}
+
+div.ds_chainsawxiv_vampire .corner_top_left{
+	position:absolute;
+	left:-7px;
+	top:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_vampire .corner_top_right{
+	position:absolute;
+	right:-7px;
+	top:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_vampire .corner_bottom_left{
+	position:absolute;
+	left:-7px;
+	bottom:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_vampire .corner_bottom_right{
+	position:absolute;
+	right:-7px;
+	bottom:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_vampire .brass_bottom{
+	position:absolute;
+	left:262px;
+	bottom:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_vampire .section{
+	padding:0px 0px 5px 0px;
+	margin:0px 0px 10px 1px;
+}
+
+div.ds_chainsawxiv_vampire .section_head{
+	font-size:12pt;
+	font-weight:bold;
+	letter-spacing:3px;
+	border-bottom:solid 1px #1b110e;
+	margin-bottom:5px;
+}
+
+div.ds_chainsawxiv_vampire .page_head{
+	text-align:center;
+	width:600px;
+	margin:22px 0px 0px 55px;
+	padding:0px 0px 30px 0px;
+}
+
+div.ds_chainsawxiv_vampire .align_right{
+	text-align:right;
+}
+
+div.ds_chainsawxiv_vampire .align_left{
+	text-align:left;
+}
+
+div.ds_chainsawxiv_vampire .motivation{
+	display:inline-block;
+	width:706px;
+	min-height:35px;
+	position:relative;
+}
+
+div.ds_chainsawxiv_vampire .virtue_flaw{
+	display:inline-block;
+	width:227px;
+	min-height:35px;
+	position:relative;
+}
+
+div.ds_chainsawxiv_vampire .name{
+	display:inline-block;
+	font-size:18pt;
+	margin:0px 0px 9px 0px;
+	width: 600px;
+	height:16px;
+}
+
+div.ds_chainsawxiv_vampire a{
+	text-decoration:none;
+	color:#1b110e;
+}
+
+div.ds_chainsawxiv_vampire .page_foot{
+	text-align:center;
+	width:600px;
+	margin:22px 0px 0px 55px;
+	padding:0px 0px 30px 0px;
+	position:absolute;
+	bottom:12px;
+}
+
+div.ds_chainsawxiv_vampire .page_bio{
+	display:none;
+}
+
+div.ds_chainsawxiv_vampire .tab_bar{
+	position:absolute;
+	top:-36px;
+	right:-5px;
+	z-index:3;
+	background-image:url('http://omnichron.net/external/op/src/vampire/brass-tab-left.png');
+	background-position:top center;
+	background-repeat:no-repeat;
+	height:39px;
+	width:380px;
+	text-align:center;
+}
+
+div.ds_chainsawxiv_vampire .tab{
+
+	display:inline-block;
+	width:155px;
+	padding:8px 0px 0px 0px;
+	
+	font-family:palatino;
+	font-size:12pt;
+	font-variant:small-caps;
+	text-align:center;
+	font-weight:bold;
+	color:#1b110e;
+	cursor:pointer;
+	
+}
+
+div.ds_chainsawxiv_vampire .portrait_holder{
+	display:inline-block;
+	position:relative;
+	float:right;
+	padding:0px 0px 0px 0px;
+	margin:3px 3px 5px 10px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#1b110e;
+}
+
+div.ds_chainsawxiv_vampire .portrait_corner_top_left{
+	position:absolute;
+	left:-4px;
+	top:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_vampire .portrait_corner_top_right{
+	position:absolute;
+	right:-4px;
+	top:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_vampire .portrait_corner_bottom_left{
+	position:absolute;
+	left:-4px;
+	bottom:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_vampire .portrait_corner_bottom_right{
+	position:absolute;
+	right:-4px;
+	bottom:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_vampire .section_bio{
+	margin-bottom:0px;
+	min-height:200px;
+}
+
+div.section a{
+	text-decoration:underline;
+}
