@@ -1,0 +1,514 @@
+/* Jedi Input Styles */
+
+div.ds_chainsawxiv_exalted_abyssal form{
+	position:relative;
+}
+
+div.ds_chainsawxiv_exalted_abyssal input {
+	padding:0px 0px 0px 0px;
+	margin:-1px 0px 0px -1px;
+	font-family:palatino;
+	font-size:8pt;
+	color:#282622;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .jeditable_submit{
+	position:absolute;
+	right:-2px;
+	top:-1px;
+	height:18px;
+	width:10px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .jeditable_submit_text {
+	position:relative;
+	top:-4px;
+	left:-1px;
+	font-size:9pt;
+	color:#070;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .type3{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:150px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .type5{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:120px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .type7{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:67px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .typef{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:193px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .typeq{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:576px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .typew{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	min-height:16px;
+	width:673px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .typer{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	float:right;
+	width:123px;
+	text-align:right;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .typed{
+	display:inline-block;
+	margin:0px 0px 1px 5px;
+	height:16px;
+	width:68px;
+	text-align:center;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .typea{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+	width:142px;
+	text-align:left;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .typev{
+	display:inline-block;
+	margin:0px 0px 1px 0px;
+	height:16px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal span.typev button{
+	right:1px;
+}
+
+div.editable .dsf{
+	cursor:pointer;
+}
+
+div.editable .dsf:hover{
+	color:#4A4844;
+}
+
+div.editable .dsf_bio:hover{
+	color:#4A4844;
+	cursor:text;
+}
+
+/* Pips Interface Styles */
+
+div.ds_chainsawxiv_exalted_abyssal .pipsRange_3{
+	position:relative;
+	z-index:2;
+	float:right;
+	top:3px;
+	width:41px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .pipsRange_5{
+	position:relative;
+	z-index:2;
+	float:right;
+	top:3px;
+	width:70px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+
+div.ds_chainsawxiv_exalted_abyssal .pipsRange_10{
+	position:relative;
+	z-index:2;
+	float:right;
+	top:3px;
+	width:142px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+/* Checks Interface Styles */
+
+div.ds_chainsawxiv_exalted_abyssal .check{
+	position:relative;
+	top:1px;
+	margin:0px 3px 0px 0px;
+}
+
+/* List Interface Styles */
+
+div.ds_chainsawxiv_exalted_abyssal .listAdd{
+	float:right;
+	cursor:pointer;
+	text-decoration:none;
+	color:#282622;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .listAdd:hover{
+	color:#4A4844;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .listDelete{
+	color:#282622;
+	cursor:pointer;
+	letter-spacing:-1px;
+	text-decoration:none;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .listDelete:hover{
+	color:#4A4844;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .listPromote{
+	cursor:pointer;
+	letter-spacing:-1px;
+	text-decoration:none;
+	color:#282622;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .listPromote:hover{
+	color:#4A4844;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .listDemote{
+	cursor:pointer;
+	text-decoration:none;
+	color:#282622;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .listDemote:hover{
+	color:#4A4844;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .template{
+	display:none;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .column{
+	width:227px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .half_sheet_column{
+	width:340px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .double_column{
+	width:454px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .column_spacing{
+	margin-right:10px;
+}
+
+/* Text Area Interface Styles */
+
+div.ds_chainsawxiv_exalted_abyssal .area{
+	font-family:palatino;
+	font-size:9pt;
+	color:#282622;
+	margin:0px 0px 0px 0px;
+	padding:1px 0px 1px 1px;
+	position:absolute;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .area_submit{
+	position:absolute;
+	height:16px;
+	width:10px;
+	color:#070;
+	top:0px;
+	right:0px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .area_submit_text {
+	position:relative;
+	top:-5px;
+	left:-1px;
+	font-size:9pt;
+}
+
+div.editable .area:hover{
+	color:#4A4844;
+}
+
+/* Tooltip Interface Styles */
+
+div.ds_chainsawxiv_exalted_abyssal .has_tooltip{
+	position:relative;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .is_tooltip{
+	display:none;
+	position:absolute;
+	width:180px;
+	min-height:50px;
+	background-color:#b3b0a3;
+	border-style:solid;
+	border-width:1px;
+	border-color:#282622;
+	padding:2px 4px 2px 6px;
+	z-index:5;
+	left:0px;
+	top:0px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .tip_area{
+	position:relative;
+	left:-4px;
+}
+/* Exalted Sheet Styles */
+
+div.ds_chainsawxiv_exalted_abyssal .wrapper{
+	position:relative;
+	width:730px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .main{
+
+	position:relative;
+	width:708px;
+	padding:0px 10px 80px 10px;
+	margin:40px 0px 20px 0px;
+	
+	background-image:url('http://omnichron.net/external/op/src/abyssal/background.jpg');
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#a6a091;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#282622;
+	
+	font-family:palatino;
+	font-size:8pt;
+	font-variant:small-caps;
+	line-height:17px;
+	color:#282622;
+	
+}
+
+div.ds_chainsawxiv_exalted_abyssal .small_font{
+	font-family:palatino;
+	font-size:6pt;
+	font-variant:small-caps;
+	line-height:17px;
+	color:#282622;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .corner_top_left{
+	position:absolute;
+	left:-7px;
+	top:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .corner_top_right{
+	position:absolute;
+	right:-7px;
+	top:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .corner_bottom_left{
+	position:absolute;
+	left:-7px;
+	bottom:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .corner_bottom_right{
+	position:absolute;
+	right:-7px;
+	bottom:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .brass_bottom{
+	position:absolute;
+	left:262px;
+	bottom:-7px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .section{
+	padding:0px 0px 5px 0px;
+	margin:0px 0px 10px 1px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .section_head{
+	font-size:12pt;
+	font-weight:bold;
+	letter-spacing:3px;
+	border-bottom:solid 1px #282622;
+	margin-bottom:5px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .page_head{
+	text-align:center;
+	width:600px;
+	margin:22px 0px 0px 55px;
+	padding:0px 0px 30px 0px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .align_right{
+	text-align:right;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .align_left{
+	text-align:left;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .motivation{
+	display:inline-block;
+	width:706px;
+	min-height:35px;
+	position:relative;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .virtue_flaw{
+	display:inline-block;
+	width:227px;
+	min-height:35px;
+	position:relative;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .name{
+	display:inline-block;
+	font-size:18pt;
+	margin:0px 0px 9px 0px;
+	width: 600px;
+	height:16px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal a{
+	text-decoration:none;
+	color:#282622;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .page_foot{
+	text-align:center;
+	width:600px;
+	margin:22px 0px 0px 55px;
+	padding:0px 0px 30px 0px;
+	position:absolute;
+	bottom:12px;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .page_bio{
+	display:none;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .tab_bar{
+	position:absolute;
+	top:-36px;
+	right:-5px;
+	z-index:3;
+	background-image:url('http://omnichron.net/external/op/src/abyssal/brass-tab-left.png');
+	background-position:top center;
+	background-repeat:no-repeat;
+	height:39px;
+	width:380px;
+	text-align:center;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .tab{
+
+	display:inline-block;
+	width:155px;
+	padding:8px 0px 0px 0px;
+	
+	font-family:palatino;
+	font-size:12pt;
+	font-variant:small-caps;
+	text-align:center;
+	font-weight:bold;
+	color:#282622;
+	cursor:pointer;
+	
+}
+
+div.ds_chainsawxiv_exalted_abyssal .portrait_holder{
+	display:inline-block;
+	position:relative;
+	float:right;
+	padding:0px 0px 0px 0px;
+	margin:3px 3px 5px 10px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#282622;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .portrait_corner_top_left{
+	position:absolute;
+	left:-4px;
+	top:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .portrait_corner_top_right{
+	position:absolute;
+	right:-4px;
+	top:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .portrait_corner_bottom_left{
+	position:absolute;
+	left:-4px;
+	bottom:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .portrait_corner_bottom_right{
+	position:absolute;
+	right:-4px;
+	bottom:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+div.ds_chainsawxiv_exalted_abyssal .section_bio{
+	margin-bottom:0px;
+	min-height:200px;
+}
+
+div.section a{
+	text-decoration:underline;
+}
