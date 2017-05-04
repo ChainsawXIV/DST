@@ -1,0 +1,383 @@
+/* Font Imports */
+
+@import url(https://fonts.googleapis.com/css?family=Cutive:400,700);
+@import url(https://fonts.googleapis.com/css?family=Sanchez:400,700);
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+/* Component Includes */
+
+@import url(https://innersecure.net/~omnichr/external/op/dst/css/csx_exalted_common.css);
+
+
+.csx .AttribGroup{
+	margin:0px 0px 8px 0px;
+	padding:0px 3px 0px 3px;
+	position:relative;
+	display:inline-block;
+}
+
+.csx .ShortSection{
+	display:inline-block;
+	width:100%;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 2px 1px;
+	min-height:50px;
+}
+
+/* Splat Specific: Checks */
+
+div.ds_Tendonin_nWoD_Hunter .check .checkBorder{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/check_border.svg');
+}
+
+div.ds_Tendonin_nWoD_Hunter .check .checkOff{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/check_off.png');
+}
+
+div.ds_Tendonin_nWoD_Hunter.editable .check .checkOff:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/check_off_hover.png');
+}
+
+div.ds_Tendonin_nWoD_Hunter .check .checkOn{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/check_on.png');
+}
+
+div.ds_Tendonin_nWoD_Hunter.editable .check .checkOn:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/check_on_hover.png');
+}
+
+/* Splat Specific: Pips */
+
+div.ds_Tendonin_nWoD_Hunter .pipBorder{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/pip_border.svg');
+}
+
+div.ds_Tendonin_nWoD_Hunter .pips .pipOff{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/pip_off.png');
+}
+
+div.ds_Tendonin_nWoD_Hunter.editable .pips .pipOff:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/pip_off_hover.png');
+}
+
+div.ds_Tendonin_nWoD_Hunter .pips .pipOn{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/pip_on.png');
+}
+
+div.ds_Tendonin_nWoD_Hunter.editable .pips .pipOn:hover{
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/pip_on_hover.png');
+}
+
+/* Splat Specific: Tabs */
+
+div.ds_Tendonin_nWoD_Hunter .tab.crunch{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png') no-repeat 50% 50%,
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab01_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_Tendonin_nWoD_Hunter .tab.crunch:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch_hover.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab01_inactive.png');
+}
+div.ds_Tendonin_nWoD_Hunter .tab.crunch.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab01_active.png');
+}
+
+div.ds_Tendonin_nWoD_Hunter .tab.magic{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png') no-repeat 50% 50%,
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab02_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_Tendonin_nWoD_Hunter .tab.magic:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/magic_hover.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab02_inactive.png');
+}
+div.ds_Tendonin_nWoD_Hunter .tab.magic.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab02_active.png');
+}
+
+div.ds_Tendonin_nWoD_Hunter .tab.equipment{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png') no-repeat 50% 50%,
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab03_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_Tendonin_nWoD_Hunter .tab.equipment:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment_hover.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab03_inactive.png');
+}
+div.ds_Tendonin_nWoD_Hunter .tab.equipment.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab03_active.png');
+}
+
+div.ds_Tendonin_nWoD_Hunter .tab.fluff{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png') no-repeat 50% 50%,
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab04_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_Tendonin_nWoD_Hunter .tab.fluff:not(.active):hover{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff_hover.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab04_inactive.png');
+}
+div.ds_Tendonin_nWoD_Hunter .tab.fluff.active{
+	background-image:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png'),
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/tab04_active.png');
+}
+
+/* Splat Specific: Tips */
+
+div.ds_Tendonin_nWoD_Hunter .tipBox .corner.topLeft{
+	background-size:15px 15px;
+}
+div.ds_Tendonin_nWoD_Hunter .tipBox .corner.topRight{
+	background-size:15px 15px;
+}
+div.ds_Tendonin_nWoD_Hunter .tipBox .corner.bottomLeft{
+	background-size:15px 15px;
+}
+div.ds_Tendonin_nWoD_Hunter .tipBox .corner.bottomRight{
+	background-size:15px 15px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .tipBox .contentBox{
+	background:
+		url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/background.jpg') top left no-repeat;
+	background-size:
+		730px 730px;
+	background-color:#e4e5d5;
+	border-color:#554220;
+}
+
+
+div.ds_Tendonin_nWoD_Hunter .tipBox .contentBox .tipArea,
+div.ds_Tendonin_nWoD_Hunter .tipBox .contentBox .tipArea:hover{
+	background-color:rgba(255,255,224,0.7);
+	border:1px dotted rgba(0,0,0,0.3);
+	border-radius:4px;
+	font-family:'Sanchez', Sans Serif;
+	color:#554220;
+}
+
+/* Splat Specific: Editable */
+
+div.ds_Tendonin_nWoD_Hunter .dsf:not(.readonly),
+div.ds_Tendonin_nWoD_Hunter .edit:not(.readonly),
+div.ds_Tendonin_nWoD_Hunter .dsf_bio{
+	font-family:'Sanchez',Sans Serif;
+}
+
+/* Splat Specific: Sheet */
+
+div.ds_Tendonin_nWoD_Hunter .main{
+
+	width:648px;
+	padding:0px 40px 80px 40px;
+	margin:40px 0px 20px 0px;
+	
+	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/top.png'), 
+					url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/bottom.png'), 
+					url('https://innersecure.net/~omnichr/external/op/dst/images/hunter/background.jpg');
+	background-position:top left, bottom left, top left;
+	background-repeat:no-repeat, no-repeat, repeat-y;
+	background-color:#e4e5d5;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+	
+	font-family:'Cutive', palatino, serif;
+	font-size:14px;
+	line-height:17px;
+	color:#554220;
+}
+
+
+div.ds_Tendonin_nWoD_Hunter .dsf.fullwidth,
+div.ds_Tendonin_nWoD_Hunter .edit.fullwidth{
+	width:648px;
+	min-height:50px;
+	display:inline-block;
+	line-height:17px;
+	text-align:justify;
+}
+
+div.ds_Tendonin_nWoD_Hunter.editable .list .dsf.fullwidth,
+div.ds_Tendonin_nWoD_Hunter.editable .list .edit.fullwidth{
+	width:550px;
+}
+
+
+div.ds_Tendonin_nWoD_Hunter .name{
+	display:inline-block;
+	font-size:18pt;
+	margin:0px 0px 9px 0px;
+	width: 540px;
+	height:16px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .head{
+	border-bottom:solid 1px #554220;
+}
+
+div.ds_Tendonin_nWoD_Hunter a{
+	text-decoration:none;
+	color:#554220;
+}
+
+div.ds_Tendonin_nWoD_Hunter .section a{
+	text-decoration:underline;
+}
+
+div.ds_Tendonin_nWoD_Hunter .attacks .labelrow span{
+	border-bottom:1px solid #A59270;
+}
+
+div.ds_Tendonin_nWoD_Hunter .dsf.dsf_type{
+	font-family:'Cutive', palatino, serif;
+}
+
+div.ds_Tendonin_nWoD_Hunter .edit.pips5label{
+	width:300px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .edit.pips5labelwtip{
+	width:210px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .page_foot{
+	text-align:center;
+	width:600px;
+	margin:22px 0px 0px 24px;
+	padding:0px 0px 30px 0px;
+	position:absolute;
+	bottom:12px;
+}
+
+
+div.ds_Tendonin_nWoD_Hunter .statwidth{
+	width:315px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .thirdwidth{
+	width:207px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .twothirdwidth{
+	width:431px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .halfwidth{
+	width:300px;
+}
+
+
+div.ds_Tendonin_nWoD_Hunter .SkillTypeHead{
+	font-size:12pt;
+	font-weight:normal;
+	letter-spacing:3px;
+	text-align:center;
+}
+
+div.ds_Tendonin_nWoD_Hunter .SkillTypeDesc{
+	font-size:9pt;
+	font-weight:normal;
+	text-align:center;
+}
+
+/* Attack List */
+div.ds_Tendonin_nWoD_Hunter .attacks .attackname{
+	width:180px;
+	margin-left:5px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .editable .attacks .labelrow .attackname{
+	margin-left:16px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .editable .attacks .attackname{
+	width:180px;
+	margin-left:0px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .attacks .bonus{
+	display:inline-block;
+	width:64px;
+	text-align:center;
+	margin-left:4px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .attacks .dicepool,
+div.ds_Tendonin_nWoD_Hunter .attacks .clip,
+div.ds_Tendonin_nWoD_Hunter .attacks .range,
+div.ds_Tendonin_nWoD_Hunter .attacks .size{
+	display:inline-block;
+	width:64px;
+	text-align:center;
+	margin-left:3px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .bulletproofrow{
+	float: right;
+	position: relative;
+	right: -5px;
+	top: 2px;
+}
+
+/* List item stuff */
+
+div.ds_Tendonin_nWoD_Hunter .dsf.fullcolumn,
+div.ds_Tendonin_nWoD_Hunter .edit.fullcolumn{
+	width:285px;
+}
+
+div.ds_Tendonin_nWoD_Hunter .list.twocolumn .column{
+	width:310px;
+}
+div.ds_Tendonin_nWoD_Hunter .twocolumn li.item{
+	width:312px;
+}
+div.ds_Tendonin_nWoD_Hunter.threecolumn .column{
+	width:207px;
+}
+div.ds_Tendonin_nWoD_Hunter .threecolumn li.item{
+	width:210px;
+}
+div.ds_Tendonin_nWoD_Hunter .list .column.colspace{
+	margin-right:12px;
+}
+
+
+div.ds_Tendonin_nWoD_Hunter .dsf.dsf_appearance{
+    width: auto;
+	display:block;
+}
+div.ds_Tendonin_nWoD_Hunter .dsf.dsf_appearance p{
+	margin-top:17px;
+}
+div.ds_Tendonin_nWoD_Hunter .dsf.dsf_appearance p:first-of-type{
+	margin-top:0px;
+}
