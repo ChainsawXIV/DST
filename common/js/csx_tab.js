@@ -68,6 +68,7 @@ function csx_tab(context){
 		
 		// Go back to the most recent tab if available
 		if(localStorage){
+			var storageKey = window.location.hostname + window.location.pathname + "#lastPage"
 			if(localStorage[storageKey])
 				tab.activate(localStorage[storageKey]);
 			else
