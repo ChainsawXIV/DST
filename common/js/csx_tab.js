@@ -66,7 +66,11 @@ function csx_tab(context){
 		if(localStorage){
 			if(localStorage[storageKey])
 				tab.activate(localStorage[storageKey]);
+			else
+				tab.activate('crunch');
 		}
+		else
+			tab.activate('crunch');
 	}
 
 }
