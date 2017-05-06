@@ -39,9 +39,11 @@ function csx_tab(context){
 		// Switch the active tab and sheet page
 		tab.activate = function(pageName){
 		
+			var storageKey = window.location.hostname + window.location.pathname + "#lastPage"
+		
 			// Remember the active tab across sessions
 			if(localStorage)
-				localStorage.lastPage = pageName;
+				localStorage[storageKey] = pageName;
 			
 			// Clear active class from current tab and page
 			var activeTab = context.querySelectorAll('.tab.active');
@@ -62,8 +64,8 @@ function csx_tab(context){
 		
 		// Go back to the most recent tab if available
 		if(localStorage){
-			if(localStorage.lastPage)
-				tab.activate(localStorage.lastPage);
+			if(localStorage[storageKey])
+				tab.activate(localStorage[storageKey]);
 		}
 	}
 
