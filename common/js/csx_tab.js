@@ -39,9 +39,13 @@ function csx_tab(context){
 		// Switch the active tab and sheet page
 		tab.activate = function(pageName){
 		
-			var storageKey = window.location.hostname + window.location.pathname + "#lastPage"
+			// Default the page name if the named one doesn't exist
+			var tab = context.querySelector('.tab.tab_' + pageName);
+			if(!tab)
+				pageName = 'crunch';
 		
 			// Remember the active tab across sessions
+			var storageKey = window.location.hostname + window.location.pathname + "#lastPage"
 			if(localStorage)
 				localStorage[storageKey] = pageName;
 			
