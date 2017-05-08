@@ -40,7 +40,7 @@
 .csx .edit ul{
 	margin:0px;
 	padding: 0px 0px 0px 20px;
-	list-style: url('https://innersecure.net/~omnichr/external/op/dst/images/bullet.png');
+	list-style: url('https://chainsawxiv.github.io/DST/common/images/bullet.png');
 }
 .csx .dsf ul li,
 .csx .edit ul li{
@@ -52,9 +52,9 @@
 
 .csx .formatBar{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fb_back_top.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fb_back_main.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fb_back_bottom.png');
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_top.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_main.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_bottom.png');
 	background-position:bottom center, center 1px, top center;
 	background-repeat:no-repeat, no-repeat, no-repeat;
 	position:absolute;
@@ -77,43 +77,43 @@
 }
 
 .csx .formatBar .boldButton{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/bold.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold.png');
 }
 .csx .formatBar .boldButton:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/bold_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold_hover.png');
 }
 .csx .formatBar .boldButton:active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/bold_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold_active.png');
 }
 
 .csx .formatBar .italicButton{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/italic.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic.png');
 }
 .csx .formatBar .italicButton:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/italic_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic_hover.png');
 }
 .csx .formatBar .italicButton:active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/italic_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic_active.png');
 }
 
 .csx .formatBar .underlineButton{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/underline.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline.png');
 }
 .csx .formatBar .underlineButton:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/underline_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline_hover.png');
 }
 .csx .formatBar .underlineButton:active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/underline_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline_active.png');
 }
 
 .csx .formatBar .indentButton{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/indent.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent.png');
 }
 .csx .formatBar .indentButton:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/indent_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent_hover.png');
 }
 .csx .formatBar .indentButton:active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/indent_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent_active.png');
 }
 
 /* List Interface */
@@ -138,33 +138,33 @@
 }
 
 .csx .trash{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/trash.png');
 }
 
 .csx .trash.active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/trash_active.png');
 }
 
 .csx .trash.over{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/trash_hover.png');
 }
 
 .csx .add{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/add.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/add.png');
 	cursor:pointer;
 }
 
 .csx .add:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/add_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/add_hover.png');
 }
 
 .csx .balance{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/balance.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/balance.png');
 	cursor:pointer;
 }
 
 .csx .balance:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/balance_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/balance_hover.png');
 }
 
 .csx .list{
@@ -258,7 +258,7 @@
 }
 
 .csx .list li .handle div{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/grab.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab.png');
 	background-position:2px 0px;
 	background-repeat:no-repeat;
 	height:12px;
@@ -267,7 +267,7 @@
 }
 
 .csx .list li .handle div:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/grab_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab_hover.png');
 }
 
 .csx .list li .handle img{
@@ -312,7 +312,7 @@
 
 .csx .tab.crunch{
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png') no-repeat 50% 50%,
 		url('../images/tab01_inactive.png');
 	background-size:
 		61% 70%,
@@ -320,18 +320,18 @@
 }
 .csx .tab.crunch:not(.active):hover{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch_hover.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/crunch_hover.png'),
 		url('../images/tab01_inactive.png');
 }
 .csx .tab.crunch.active{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png'),
 		url('../images/tab01_active.png');
 }
 
 .csx .tab.magic{
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png') no-repeat 50% 50%,
 		url('../images/tab02_inactive.png');
 	background-size:
 		61% 70%,
@@ -339,18 +339,18 @@
 }
 .csx .tab.magic:not(.active):hover{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/magic_hover.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/magic_hover.png'),
 		url('../images/tab02_inactive.png');
 }
 .csx .tab.magic.active{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png'),
 		url('../images/tab02_active.png');
 }
 
 .csx .tab.equipment{
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png') no-repeat 50% 50%,
 		url('../images/tab03_inactive.png');
 	background-size:
 		61% 70%,
@@ -358,18 +358,18 @@
 }
 .csx .tab.equipment:not(.active):hover{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment_hover.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/equipment_hover.png'),
 		url('../images/tab03_inactive.png');
 }
 .csx .tab.equipment.active{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png'),
 		url('../images/tab03_active.png');
 }
 
 .csx .tab.fluff{
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
 		url('../images/tab04_inactive.png');
 	background-size:
 		61% 70%,
@@ -377,12 +377,12 @@
 }
 .csx .tab.fluff:not(.active):hover{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff_hover.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
 		url('../images/tab04_inactive.png');
 }
 .csx .tab.fluff.active{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
 		url('../images/tab04_active.png');
 }
 
@@ -404,7 +404,7 @@
 	top:4px;
 	height:12px;
 	width:12px;
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/tip.png') no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/common/images/tip.png') no-repeat;
 	color:transparent;
 	overflow:hidden;
 	background-size:11px;
@@ -412,7 +412,7 @@
 }
 
 .editable .csx .tip:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/tip_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/tip_hover.png');
 }
 
 .csx .tipBox{
@@ -424,25 +424,25 @@
 }
 
 .csx .tipBox .corner.topLeft{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/solar/brass-corner-top-left.png') top left no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-left.png') top left no-repeat;
 	background-size:15px 15px;
 	top:-1px;
 	left:-1px;
 }
 .csx .tipBox .corner.topRight{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/solar/brass-corner-top-right.png') top right no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-right.png') top right no-repeat;
 	background-size:15px 15px;
 	top:-1px;
 	right:-1px;
 }
 .csx .tipBox .corner.bottomLeft{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/solar/brass-corner-bottom-left.png') bottom left no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-left.png') bottom left no-repeat;
 	background-size:15px 15px;
 	bottom:-1px;
 	left:-1px;
 }
 .csx .tipBox .corner.bottomRight{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/solar/brass-corner-bottom-right.png') bottom right no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-right.png') bottom right no-repeat;
 	background-size:15px 15px;
 	bottom:-1px;
 	right:-1px;
@@ -459,7 +459,7 @@
 	width:300px;
 	
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/solar/background.jpg') top left no-repeat;
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/background.jpg') top left no-repeat;
 	background-size:
 		730px 730px;
 	background-color:#e4e5d5;

@@ -40,7 +40,7 @@
 .csx .edit ul{
 	margin:0px;
 	padding: 0px 0px 0px 20px;
-	list-style: url('https://innersecure.net/~omnichr/external/op/dst/images/bullet.png');
+	list-style: url('https://chainsawxiv.github.io/DST/common/images/bullet.png');
 }
 .csx .dsf ul li,
 .csx .edit ul li{
@@ -52,9 +52,9 @@
 
 .csx .formatBar{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fb_back_top.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fb_back_main.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fb_back_bottom.png');
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_top.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_main.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_bottom.png');
 	background-position:bottom center, center 1px, top center;
 	background-repeat:no-repeat, no-repeat, no-repeat;
 	position:absolute;
@@ -77,41 +77,41 @@
 }
 
 .csx .formatBar .boldButton{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/bold.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold.png');
 }
 .csx .formatBar .boldButton:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/bold_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold_hover.png');
 }
 .csx .formatBar .boldButton:active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/bold_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold_active.png');
 }
 
 .csx .formatBar .italicButton{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/italic.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic.png');
 }
 .csx .formatBar .italicButton:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/italic_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic_hover.png');
 }
 .csx .formatBar .italicButton:active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/italic_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic_active.png');
 }
 
 .csx .formatBar .underlineButton{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/underline.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline.png');
 }
 .csx .formatBar .underlineButton:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/underline_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline_hover.png');
 }
 .csx .formatBar .underlineButton:active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/underline_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline_active.png');
 }
 
 .csx .formatBar .indentButton{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/indent.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent.png');
 }
 .csx .formatBar .indentButton:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/indent_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent_hover.png');
 }
 .csx .formatBar .indentButton:active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/indent_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent_active.png');
 }

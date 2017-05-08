@@ -21,33 +21,33 @@
 }
 
 .csx .trash{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/trash.png');
 }
 
 .csx .trash.active{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_active.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/trash_active.png');
 }
 
 .csx .trash.over{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/trash_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/trash_hover.png');
 }
 
 .csx .add{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/add.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/add.png');
 	cursor:pointer;
 }
 
 .csx .add:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/add_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/add_hover.png');
 }
 
 .csx .balance{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/balance.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/balance.png');
 	cursor:pointer;
 }
 
 .csx .balance:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/balance_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/balance_hover.png');
 }
 
 .csx .list{
@@ -141,7 +141,7 @@
 }
 
 .csx .list li .handle div{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/grab.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab.png');
 	background-position:2px 0px;
 	background-repeat:no-repeat;
 	height:12px;
@@ -150,7 +150,7 @@
 }
 
 .csx .list li .handle div:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/grab_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab_hover.png');
 }
 
 .csx .list li .handle img{
