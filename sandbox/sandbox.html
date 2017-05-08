@@ -46,7 +46,6 @@
 					<div class='large-12 columns'>
 						<div class='row'>
 							<div class='large-2 small-5 columns flame-dragon'>
-								<img alt="Dragon logo front" class="dragon-logo svg" src="http://obsidianportal.com/assets/global/dragon-logo-front-c3868639662fcfabc37bb98a982e146d.svg" />
 							</div>
 							<div class='large-10 small-7 columns campaign-public-title-container'>
 								<h2 class='campaign-title title'>DST Test Page</h2>
@@ -77,12 +76,13 @@
 					
 					<div class='columns full-width main-content-container'>
 						<main class='main-content'>
-							<script src='http://obsidianportal.com/javascript/game-characters.js.coffee'></script>
 							<div class='highlight-container'></div>
 							<form accept-charset="UTF-8" action="/characters" class="custom" id="new_game_character" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Z6ihJBwdXZugrmza92zW+iS/4Ga6Og9A0PMGezhbLkk=" /></div><section class='main-section'>
 
 								<div class='dynamic_sheet_container'>
 								</div>
+								
+								<input class="button fill" id="character-save-button" name="commit" type="submit" value="Save" />
 								
 							</form>
 						</main>
@@ -94,5 +94,7 @@
 
 		</div>
 
+		<script src="https://obsidianportal.com/assets/application-e9099e92c000ff92040ca17817dd0d0d.js"></script>
+		
 	</body>
 </html>
