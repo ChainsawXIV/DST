@@ -5,152 +5,152 @@
 
 /* Component Includes */
 
-@import url(https://innersecure.net/~omnichr/external/op/dst/css/csx_exalted_common.css);
+@import url(https://chainsawxiv.github.io/DST/common/css/csx_exalted_common.css);
 
 /* Splat Specific: Checks */
 
 div.ds_chainsawxiv_exalted .check .checkBorder{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/check_border.svg');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/check_border.svg');
 }
 
 div.ds_chainsawxiv_exalted .check .checkOff{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/check_off.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_off.png');
 }
 
 div.ds_chainsawxiv_exalted.editable .check .checkOff:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/check_off_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_off_hover.png');
 }
 
 div.ds_chainsawxiv_exalted .check .checkOn{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/check_on.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_on.png');
 }
 
 div.ds_chainsawxiv_exalted.editable .check .checkOn:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/check_on_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_on_hover.png');
 }
 
 /* Splat Specific: Pips */
 
 div.ds_chainsawxiv_exalted .pipBorder{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/pip_border.svg');
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/pip_border.svg');
 }
 
 div.ds_chainsawxiv_exalted .pips .pipOff{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/pip_off.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_off.png');
 }
 
 div.ds_chainsawxiv_exalted.editable .pips .pipOff:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/pip_off_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_off_hover.png');
 }
 
 div.ds_chainsawxiv_exalted .pips .pipOn{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/pip_on.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_on.png');
 }
 
 div.ds_chainsawxiv_exalted.editable .pips .pipOn:hover{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/pip_on_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_on_hover.png');
 }
 
 /* Splat Specific: Tabs */
 
 div.ds_chainsawxiv_exalted .tab.crunch{
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png') no-repeat 50% 50%,
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab01_inactive.png');
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab01_inactive.png');
 	background-size:
 		61% 70%,
 		100% 100%;
 }
 div.ds_chainsawxiv_exalted .tab.crunch:not(.active):hover{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch_hover.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab01_inactive.png');
+		url('https://chainsawxiv.github.io/DST/common/images/crunch_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab01_inactive.png');
 }
 div.ds_chainsawxiv_exalted .tab.crunch.active{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/crunch.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab01_active.png');
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab01_active.png');
 }
 
 div.ds_chainsawxiv_exalted .tab.magic{
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png') no-repeat 50% 50%,
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab02_inactive.png');
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab02_inactive.png');
 	background-size:
 		61% 70%,
 		100% 100%;
 }
 div.ds_chainsawxiv_exalted .tab.magic:not(.active):hover{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/magic_hover.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab02_inactive.png');
+		url('https://chainsawxiv.github.io/DST/common/images/magic_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab02_inactive.png');
 }
 div.ds_chainsawxiv_exalted .tab.magic.active{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/magic.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab02_active.png');
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab02_active.png');
 }
 
 div.ds_chainsawxiv_exalted .tab.equipment{
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png') no-repeat 50% 50%,
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab03_inactive.png');
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab03_inactive.png');
 	background-size:
 		61% 70%,
 		100% 100%;
 }
 div.ds_chainsawxiv_exalted .tab.equipment:not(.active):hover{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment_hover.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab03_inactive.png');
+		url('https://chainsawxiv.github.io/DST/common/images/equipment_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab03_inactive.png');
 }
 div.ds_chainsawxiv_exalted .tab.equipment.active{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/equipment.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab03_active.png');
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab03_active.png');
 }
 
 div.ds_chainsawxiv_exalted .tab.fluff{
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png') no-repeat 50% 50%,
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab04_inactive.png');
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab04_inactive.png');
 	background-size:
 		61% 70%,
 		100% 100%;
 }
 div.ds_chainsawxiv_exalted .tab.fluff:not(.active):hover{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff_hover.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab04_inactive.png');
+		url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab04_inactive.png');
 }
 div.ds_chainsawxiv_exalted .tab.fluff.active{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/fluff.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/tab04_active.png');
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab04_active.png');
 }
 
 /* Splat Specific: Tips */
 
 div.ds_chainsawxiv_exalted .tipBox .corner.topLeft{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/brass-corner-top-left.png') top left no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-left.png') top left no-repeat;
 	background-size:15px 15px;
 }
 div.ds_chainsawxiv_exalted .tipBox .corner.topRight{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/brass-corner-top-right.png') top right no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-right.png') top right no-repeat;
 	background-size:15px 15px;
 }
 div.ds_chainsawxiv_exalted .tipBox .corner.bottomLeft{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/brass-corner-bottom-left.png') bottom left no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-left.png') bottom left no-repeat;
 	background-size:15px 15px;
 }
 div.ds_chainsawxiv_exalted .tipBox .corner.bottomRight{
-	background:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/brass-corner-bottom-right.png') bottom right no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-right.png') bottom right no-repeat;
 	background-size:15px 15px;
 }
 
 div.ds_chainsawxiv_exalted .tipBox .contentBox{
 	background:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/solar/background.jpg') top left no-repeat;
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/background.jpg') top left no-repeat;
 	background-size:
 		730px 730px;
 	background-color:#e4e5d5;
@@ -177,7 +177,7 @@ div.ds_chainsawxiv_exalted .dsf_bio{
 /* Splat Specific: Sheet */
 
 div.ds_chainsawxiv_exalted .main{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/solar/background.jpg');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/background.jpg');
 	background-position:top left;
 	background-repeat:no-repeat;
 	background-color:#e4e5d5;

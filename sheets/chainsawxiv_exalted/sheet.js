@@ -3,7 +3,7 @@ csx_opts = {
 	'setupCallback': function(item){chainsawxiv_exalted_setup(item);},
 	'uiContainer': function(){return document;},
 	'defaultFieldValue':'Click to edit',
-	'imagePath':'https://innersecure.net/~omnichr/external/op/dst/images/',
+	'imagePath':'https://chainsawxiv.github.io/DST/common/images/',
 	'preloadFiles':[
 		'add.png',
 		'add_hover.png',
@@ -68,7 +68,7 @@ function chainsawxiv_exalted_dataPostLoad(data){
 	// Include the shared script file
 	var includes = document.createElement('script');
 	includes.type = 'text/javascript';
-	includes.src = 'https://innersecure.net/~omnichr/external/op/dst/js/csx_exalted_common.js?v=dev001';
+	includes.src = 'https://chainsawxiv.github.io/DST/common/js/csx_exalted_common.js?v=dev001';
 	includes.onload = function(){
 
 		// Fix container properties
