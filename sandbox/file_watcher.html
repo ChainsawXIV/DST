@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<title>Watch for a file change</title>
+		<style type='text/css'>
+			body {
+					font-family: sans-serif;
+			}
+		</style>
+		<script>
+			var input;
+			var lastMod;
+		
+			function watch() {
+				var file = input.files[0];
+				if (file.lastModifiedDate.getTime() !== lastMod.getTime()) {
+					lastMod = file.lastModifiedDate;
+					document.getElementById("stamp").innerHTML = lastMod;
+					
+					var reader = new FileReader();
+					reader.onload = function(){
+						document.getElementById("container").innerHTML = reader.result;
+					};
+					reader.readAsText(file);
+					
+				}
+				setTimeout(watch, 250);
+			}
+			
+			window.onload = function(){
+				document.getElementById('filename').onchange = function() {
+					input = document.getElementById('filename');
+					lastMod = new Date();
+					watch();
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<input type='file' id='filename'>
+		Last Update: <span id="stamp"></span><br>
+		<div id="container"></div>
+	</body>
+</html>
