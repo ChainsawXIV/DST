@@ -133,8 +133,8 @@ function csx_list(context, addItemCallback){
 			}
 		}
 	
-        // Core function to load list data from JSON string
-        lists[listIndex].render = function(listData){
+		// Core function to load list data from JSON string
+		lists[listIndex].render = function(listData){
 			
 			// Add the contents of the object to the list
 			var rebalance = false;
@@ -183,8 +183,8 @@ function csx_list(context, addItemCallback){
 		else
 			lists[listIndex].itemAdded = function(){};
 		
-        // Core function to add an item to the list
-        lists[listIndex].addItem = function(data){
+		// Core function to add an item to the list
+		lists[listIndex].addItem = function(data){
 			
 			// Clone the embeded prototype as a basis
 			var proto = this.querySelector('.proto');
