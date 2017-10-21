@@ -21,7 +21,7 @@ function chainsawxiv_exalted_alchemical_dataPostLoad(opts){
 	chainsawxiv_exalted_alchemical_context = document.getElementById(opts['containerId']);
 
 	// Set additional options
-	opts['imagePath'] = 'http://omnichron.net/external/op/src/alchemical/';
+	opts['imagePath'] = 'https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted_alchemical/images/';
 	opts['context'] = document.getElementById(opts['containerId']);
 	opts['debugThreshold'] = -1;
 	
@@ -1206,12 +1206,12 @@ function chainsawxiv_exalted_alchemical_tabClick(oTab,sPageClass){
 	
 	// Show the proper pages and tabs
 	if (sPageClass == 'sheet'){
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/alchemical/brass-tab-left.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted_alchemical/images/brass-tab-left.png)";
 		chainsawxiv_exalted_alchemical_getElementsByClassName('page_sheet')[0].style.display = 'block';
 		chainsawxiv_exalted_alchemical_getElementsByClassName('page_bio')[0].style.display = 'none';
 	}
 	else{
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/alchemical/brass-tab-right.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted_alchemical/images/brass-tab-right.png)";
 		chainsawxiv_exalted_alchemical_getElementsByClassName('page_bio')[0].style.display = 'block';
 		chainsawxiv_exalted_alchemical_getElementsByClassName('page_sheet')[0].style.display = 'none';	
 	}

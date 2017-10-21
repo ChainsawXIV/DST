@@ -3,7 +3,7 @@ csx_opts = {
 	'setupCallback': function(item){chainsawxiv_dd4e_simple_setup(item);},
 	'uiContainer': function(){return document;},
 	'defaultFieldValue':'',
-	'imagePath':'https://innersecure.net/~omnichr/external/op/dst/images/',
+	'imagePath':'https://chainsawxiv.github.io/DST/common/images/',
 	'preloadFiles':[
 		'add.png',
 		'add_hover.png',
@@ -53,7 +53,7 @@ function chainsawxiv_dd4e_simple_dataPostLoad(data){
 	// Include the shared script file
 	var includes = document.createElement('script');
 	includes.type = 'text/javascript';
-	includes.src = 'https://innersecure.net/~omnichr/external/op/dst/js/csx_dd4e_common.js';
+	includes.src = 'https://chainsawxiv.github.io/DST/common/js/csx_dd4e_common.js';
 	includes.onload = function(){
 
 		// Fix container properties

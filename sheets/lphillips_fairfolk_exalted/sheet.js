@@ -22,7 +22,7 @@ function lphillips_fairfolk_exalted_dataPostLoad(opts){
 	lphillips_fairfolk_exalted_context = document.getElementById(opts['containerId']);
 
 	// Set additional options
-	opts['imagePath'] = 'http://omnichron.net/external/op/src/fairfolk/';
+	opts['imagePath'] = 'https://chainsawxiv.github.io/DST/sheets/lphillips_fairfolk_exalted/images/';
 	opts['context'] = document.getElementById(opts['containerId']);
 	opts['debugThreshold'] = -1;
 	
@@ -980,12 +980,12 @@ function lphillips_fairfolk_exalted_tabClick(oTab,sPageClass){
 	
 	// Show the proper pages and tabs
 	if (sPageClass == 'sheet'){
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/fairfolk/brass-tab-left.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/lphillips_fairfolk_exalted/images/brass-tab-left.png)";
 		lphillips_fairfolk_exalted_getElementsByClassName('page_sheet')[0].style.display = 'block';
 		lphillips_fairfolk_exalted_getElementsByClassName('page_bio')[0].style.display = 'none';
 	}
 	else{
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/fairfolk/brass-tab-right.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/lphillips_fairfolk_exalted/images/brass-tab-right.png)";
 		lphillips_fairfolk_exalted_getElementsByClassName('page_bio')[0].style.display = 'block';
 		lphillips_fairfolk_exalted_getElementsByClassName('page_sheet')[0].style.display = 'none';	
 	}

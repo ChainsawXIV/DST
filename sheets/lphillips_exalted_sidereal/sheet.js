@@ -22,7 +22,7 @@ function lphillips_exalted_sidereal_dataPostLoad(opts){
 	lphillips_exalted_sidereal_context = document.getElementById(opts['containerId']);
 
 	// Set additional options
-	opts['imagePath'] = 'http://omnichron.net/external/op/src/sidereal/';
+	opts['imagePath'] = 'https://chainsawxiv.github.io/DST/sheets/lphillips_exalted_sidereal/images/';
 	opts['context'] = document.getElementById(opts['containerId']);
 	opts['debugThreshold'] = -1;
 	
@@ -980,12 +980,12 @@ function lphillips_exalted_sidereal_tabClick(oTab,sPageClass){
 	
 	// Show the proper pages and tabs
 	if (sPageClass == 'sheet'){
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/sidereal/brass-tab-left.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/lphillips_exalted_sidereal/images/brass-tab-left.png)";
 		lphillips_exalted_sidereal_getElementsByClassName('page_sheet')[0].style.display = 'block';
 		lphillips_exalted_sidereal_getElementsByClassName('page_bio')[0].style.display = 'none';
 	}
 	else{
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/sidereal/brass-tab-right.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/lphillips_exalted_sidereal/images/brass-tab-right.png)";
 		lphillips_exalted_sidereal_getElementsByClassName('page_bio')[0].style.display = 'block';
 		lphillips_exalted_sidereal_getElementsByClassName('page_sheet')[0].style.display = 'none';	
 	}

@@ -21,7 +21,7 @@ function lphillips_lunar_exalted_dataPostLoad(opts){
 	lphillips_lunar_exalted_context = document.getElementById(opts['containerId']);
 
 	// Set additional options
-	opts['imagePath'] = 'http://omnichron.net/external/op/src/lunar/';
+	opts['imagePath'] = 'https://chainsawxiv.github.io/DST/sheets/lphillips_lunar_exalted/images/';
 	opts['context'] = document.getElementById(opts['containerId']);
 	opts['debugThreshold'] = -1;
 	
@@ -979,12 +979,12 @@ function lphillips_lunar_exalted_tabClick(oTab,sPageClass){
 	
 	// Show the proper pages and tabs
 	if (sPageClass == 'sheet'){
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/lunar/brass-tab-left.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/lphillips_lunar_exalted/images/brass-tab-left.png)";
 		lphillips_lunar_exalted_getElementsByClassName('page_sheet')[0].style.display = 'block';
 		lphillips_lunar_exalted_getElementsByClassName('page_bio')[0].style.display = 'none';
 	}
 	else{
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/lunar/brass-tab-right.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/lphillips_lunar_exalted/images/brass-tab-right.png)";
 		lphillips_lunar_exalted_getElementsByClassName('page_bio')[0].style.display = 'block';
 		lphillips_lunar_exalted_getElementsByClassName('page_sheet')[0].style.display = 'none';
 	}

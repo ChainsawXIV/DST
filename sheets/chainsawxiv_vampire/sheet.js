@@ -21,7 +21,7 @@ function chainsawxiv_vampire_dataPostLoad(opts){
 	chainsawxiv_vampire_context = document.getElementById(opts['containerId']);
 
 	// Set additional options
-	opts['imagePath'] = 'http://omnichron.net/external/op/src/vampire/';
+	opts['imagePath'] = 'https://chainsawxiv.github.io/DST/sheets/chainsawxiv_vampire/images/';
 	opts['context'] = document.getElementById(opts['containerId']);
 	opts['debugThreshold'] = -1;
 	
@@ -116,7 +116,7 @@ function chainsawxiv_vampire_pips(oElement,opts){
 		if (this.getAttribute('optsImagePath')) var sPath = this.getAttribute('optsImagePath');
 		else{
 			this.error(2,'No imagePath specified in options for pips element (Element Class: ' + this.className + ')');
-			sPath = 'http://omnichron.net/external/op/src/vampire/';
+			sPath = 'https://chainsawxiv.github.io/DST/sheets/chainsawxiv_vampire/images/';
 		}
 		
 		// Skip fields with a value of -1
@@ -908,7 +908,7 @@ function chainsawxiv_vampire_check(oElement,opts){
 		if (this.getAttribute('optsImagePath')) var sPath = this.getAttribute('optsImagePath');
 		else{
 			this.error(2,'No imagePath specified in options for Checks element (Element Class: ' + this.className + ')');
-			sPath = 'http://omnichron.net/external/op/src/vampire/';
+			sPath = 'https://chainsawxiv.github.io/DST/sheets/chainsawxiv_vampire/images/';
 		}
 		
 		// Replace the contents with the appropriate check image
@@ -1206,12 +1206,12 @@ function chainsawxiv_vampire_tabClick(oTab,sPageClass){
 	
 	// Show the proper pages and tabs
 	if (sPageClass == 'sheet'){
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/vampire/brass-tab-left.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/chainsawxiv_vampire/images/brass-tab-left.png)";
 		chainsawxiv_vampire_getElementsByClassName('page_sheet')[0].style.display = 'block';
 		chainsawxiv_vampire_getElementsByClassName('page_bio')[0].style.display = 'none';
 	}
 	else{
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/vampire/brass-tab-right.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/chainsawxiv_vampire/images/brass-tab-right.png)";
 		chainsawxiv_vampire_getElementsByClassName('page_bio')[0].style.display = 'block';
 		chainsawxiv_vampire_getElementsByClassName('page_sheet')[0].style.display = 'none';	
 	}

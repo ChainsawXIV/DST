@@ -1,14 +1,14 @@
 /* Component Includes */
 
-@import url(https://innersecure.net/~omnichr/external/op/dst/css/csx_dd4e_common.css);
+@import url(https://chainsawxiv.github.io/DST/common/css/csx_dd4e_common.css);
 
 /* Parchment Sheet Customization */
 
 div.ds_chainsawxiv_dd4e .content{
 	background-image:
-		url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_back_deco.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_back_bottom.png'),
-		url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_back.jpg');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_back_deco.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_back_bottom.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_back.jpg');
 	background-position:
 		bottom left,
 		bottom center,
@@ -22,15 +22,15 @@ div.ds_chainsawxiv_dd4e .content{
 }
 
 div.ds_chainsawxiv_dd4e .boxfield{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_box.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_box.png');
 }
 
 div.ds_chainsawxiv_dd4e .box28{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_box_28.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_box_28.png');
 }
 
 div.ds_chainsawxiv_dd4e .box51{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_box_51.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_box_51.png');
 }
 
 div.ds_chainsawxiv_dd4e .linefield{
@@ -43,16 +43,16 @@ div.ds_chainsawxiv_dd4e h1,h2,h3,h4{
 }
 
 div.ds_chainsawxiv_dd4e .top{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_back_top.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_back_top.png');
 }
 
 div.ds_chainsawxiv_dd4e .header{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_head.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_head.png');
 	color:#776655;
 }
 
 div.ds_chainsawxiv_dd4e .valbar{
-	background-image:url('https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_valbar.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_valbar.png');
 	color:#776655;
 }
 
@@ -116,7 +116,7 @@ div.ds_chainsawxiv_dd4e .tabs{
   position: relative;
   width: 421px;
   height: 71px;
-  background-image: url(https://innersecure.net/~omnichr/external/op/dst/images/4e/dd4e_tabs.png);
+  background-image: url(https://chainsawxiv.github.io/DST/sheets/chainsawxiv_dd4e/images/dd4e_tabs.png);
 }
 
 div.ds_chainsawxiv_dd4e:not(.editable) .tabs{

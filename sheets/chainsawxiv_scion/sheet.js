@@ -3,7 +3,7 @@ csx_opts = {
 	'setupCallback': function(item){chainsawxiv_scion_setup(item);},
 	'uiContainer': function(){return document;},
 	'defaultFieldValue':'Click to edit',
-	'imagePath':'https://innersecure.net/~omnichr/external/op/dst/images/',
+	'imagePath':'https://chainsawxiv.github.io/DST/common/images/',
 	'preloadFiles':[
 		'add.png',
 		'add_hover.png',
@@ -38,23 +38,7 @@ csx_opts = {
 		'trash_hover.png',
 		'underline.png',
 		'underline_active.png',
-		'underline_hover.png',
-		'scion/pip_off.png',
-		'scion/pip_off_hover.png',
-		'scion/pip_on.png',
-		'scion/pip_on_hover.png',
-		'scion/tab01_active.png',
-		'scion/tab01_inactive.png',
-		'scion/tab02_active.png',
-		'scion/tab02_inactive.png',
-		'scion/tab03_active.png',
-		'scion/tab03_inactive.png',
-		'scion/tab04_active.png',
-		'scion/tab04_inactive.png',
-		'scion/check_off.png',
-		'scion/check_off_hover.png',
-		'scion/check_on.png',
-		'scion/check_on_hover.png',
+		'underline_hover.png'
 	],
 };
 
@@ -68,7 +52,7 @@ function chainsawxiv_scion_dataPostLoad(data){
 	// Include the shared script file
 	var includes = document.createElement('script');
 	includes.type = 'text/javascript';
-	includes.src = 'https://innersecure.net/~omnichr/external/op/dst/js/csx_exalted_common.js?v=dev002';
+	includes.src = 'https://chainsawxiv.github.io/DST/common/js/csx_exalted_common.js?v=dev002';
 	includes.onload = function(){
 
 		// Fix container properties

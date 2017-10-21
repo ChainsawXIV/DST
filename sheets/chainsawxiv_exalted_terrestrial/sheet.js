@@ -22,7 +22,7 @@ function chainsawxiv_exalted_terrestrial_dataPostLoad(opts){
 	chainsawxiv_exalted_terrestrial_context = document.getElementById(opts['containerId']);
 
 	// Set additional options
-	opts['imagePath'] = 'http://omnichron.net/external/op/src/terrestrial/';
+	opts['imagePath'] = 'https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted_terrestrial/images/';
 	opts['context'] = document.getElementById(opts['containerId']);
 	opts['debugThreshold'] = -1;
 	
@@ -117,7 +117,7 @@ function chainsawxiv_exalted_terrestrial_pips(oElement,opts){
 		if (this.getAttribute('optsImagePath')) var sPath = this.getAttribute('optsImagePath');
 		else{
 			this.error(2,'No imagePath specified in options for pips element (Element Class: ' + this.className + ')');
-			sPath = 'http://omnichron.net/external/op/src/terrestrial/';
+			sPath = 'https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted_terrestrial/images/';
 		}
 		
 		// Skip fields with a value of -1
@@ -909,7 +909,7 @@ function chainsawxiv_exalted_terrestrial_check(oElement,opts){
 		if (this.getAttribute('optsImagePath')) var sPath = this.getAttribute('optsImagePath');
 		else{
 			this.error(2,'No imagePath specified in options for Checks element (Element Class: ' + this.className + ')');
-			sPath = 'http://omnichron.net/external/op/src/terrestrial/';
+			sPath = 'https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted_terrestrial/images/';
 		}
 		
 		// Replace the contents with the appropriate check image
@@ -1207,12 +1207,12 @@ function chainsawxiv_exalted_terrestrial_tabClick(oTab,sPageClass){
 	
 	// Show the proper pages and tabs
 	if (sPageClass == 'sheet'){
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/terrestrial/brass-tab-left.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted_terrestrial/images/brass-tab-left.png)";
 		chainsawxiv_exalted_terrestrial_getElementsByClassName('page_sheet')[0].style.display = 'block';
 		chainsawxiv_exalted_terrestrial_getElementsByClassName('page_bio')[0].style.display = 'none';
 	}
 	else{
-		oTab.parentNode.style.backgroundImage = "url(http://omnichron.net/external/op/src/terrestrial/brass-tab-right.png)";
+		oTab.parentNode.style.backgroundImage = "url(https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted_terrestrial/images/brass-tab-right.png)";
 		chainsawxiv_exalted_terrestrial_getElementsByClassName('page_bio')[0].style.display = 'block';
 		chainsawxiv_exalted_terrestrial_getElementsByClassName('page_sheet')[0].style.display = 'none';	
 	}
