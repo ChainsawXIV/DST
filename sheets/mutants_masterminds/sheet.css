@@ -1,0 +1,1357 @@
+/* Font Imports */
+
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand);
+@import url(https://fonts.googleapis.com/css?family=Graduate);
+
+/* Component Includes */
+
+div.ds_mutants_masterminds .check .checkBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/check_border.svg');
+}
+
+div.ds_mutants_masterminds .check .checkOff{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_off.png');
+}
+
+div.ds_mutants_masterminds.editable .check .checkOff:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_off_hover.png');
+}
+
+div.ds_mutants_masterminds .check .checkOn{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_on.png');
+}
+
+div.ds_mutants_masterminds.editable .check .checkOn:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_on_hover.png');
+}
+
+/* Splat Specific: Tabs */
+
+div.ds_mutants_masterminds .tab.crunch{
+	background:
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/641216/Twenty_sided_dice-2.png') no-repeat 50% 50%,
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/642485/tab_inactive.png');
+	background-size:
+		60% 70%,
+		100% 100%;
+}
+div.ds_mutants_masterminds .tab.crunch:not(.active):hover{
+	background-image:
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/641217/Twenty_sided_dice.png'),
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/642485/tab_inactive.png');
+}
+div.ds_mutants_masterminds .tab.crunch.active{
+	background-image:
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/641216/Twenty_sided_dice-2.png'),
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/642484/tab_active.png');
+}
+
+div.ds_mutants_masterminds .tab.fluff{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/642485/tab_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_mutants_masterminds .tab.fluff:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/642485/tab_inactive.png');
+}
+div.ds_mutants_masterminds .tab.fluff.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/642484/tab_active.png');
+}
+
+/* Splat Specific: Tips */
+
+div.ds_mutants_masterminds .tipBox .corner.topLeft{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-left.png') top left no-repeat;
+	background-size:15px 15px;
+}
+div.ds_mutants_masterminds .tipBox .corner.topRight{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-right.png') top right no-repeat;
+	background-size:15px 15px;
+}
+div.ds_mutants_masterminds .tipBox .corner.bottomLeft{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-left.png') bottom left no-repeat;
+	background-size:15px 15px;
+}
+div.ds_mutants_masterminds .tipBox .corner.bottomRight{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-right.png') bottom right no-repeat;
+	background-size:15px 15px;
+}
+
+div.ds_mutants_masterminds .tipBox .contentBox{
+	background:
+		url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/637364/charsheet-background-yellow2.png') top left no-repeat;
+	background-size:
+		730px 730px;
+	background-color:#fff1b7;
+	border-color:#002569;
+}
+
+div.ds_mutants_masterminds .tipBox .contentBox .tipArea,
+div.ds_mutants_masterminds .tipBox .contentBox .tipArea:hover{
+	background-color:rgba(255,255,224,0.7);
+	border:1px dotted rgba(0,0,0,0.3);
+	border-radius:4px;
+	font-family:'Patrick Hand',Sans Serif;
+	color:black;
+}
+
+/* Splat Specific: Editable */
+
+div.ds_mutants_masterminds .dsf:not(.readonly),
+div.ds_mutants_masterminds .edit:not(.readonly),
+div.ds_mutants_masterminds .dsf_bio{
+	font-family:'Patrick Hand',Sans Serif;
+	font-size:16px;
+}
+
+/* Splat Specific: Sheet */
+
+div.ds_mutants_masterminds .main{
+	background: url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/637364/charsheet-background-yellow2.png') top left no-repeat,
+	url('https://db4sgowjqfwig.cloudfront.net/campaigns/145848/assets/637365/charsheet-background-yellow2-flip.png') bottom left no-repeat;
+	background-color:#fff1b7;
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+	
+	font-family:'Graduate', palatino, serif;
+	font-size:14px;
+	line-height:17px;
+	color:#black;
+}
+
+div.ds_mutants_masterminds .head{
+	border-bottom:solid 1px #554220;
+	padding-bottom: 3px;
+}
+
+div.ds_mutants_masterminds a{
+	text-decoration:none;
+	color:#554220;
+}
+
+div.ds_mutants_masterminds .section a{
+	text-decoration:underline;
+}
+
+div.ds_mutants_masterminds .labelrow span{
+	border-bottom:1px solid #A59270;
+	padding-bottom: 3px;
+}
+
+div.ds_mutants_masterminds .dsf.dsf_type{
+	font-family:'Graduate', palatino, serif;
+}
+
+
+/* Checks Interface */
+
+.mandm .check{
+	position:relative;
+	top:1px;
+	margin:0px 3px 0px 0px;
+}
+
+.mandm .check .checkMark{
+	display:inline-block;
+	width:12px;
+	height:12px;
+}
+
+.editable .mandm .checkMark{
+	cursor:pointer;
+}
+
+.mandm .check .checkBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/check_border.svg');
+	display:inline-block;
+	height:12px;
+	width:12px;
+}
+
+.mandm .check .checkOff{
+	background-image:url('../images/check_off.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+.editable .mandm .check .checkOff:hover{
+	background-image:url('../images/check_off_hover.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+.mandm .check .checkOn{
+	background-image:url('../images/check_on.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+.editable .mandm .check .checkOn:hover{
+	background-image:url('../images/check_on_hover.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+/* Edit Fields */
+
+.mandm .dsf,
+.mandm .edit{
+	position:relative;
+	display:inline-block;
+	cursor:default;
+}
+
+.mandm .dsf p,
+.mandm .edit p{
+	margin:0px;
+	line-height:inherit;
+}
+
+.mandm .dsf:not(.readonly),
+.mandm .edit:not(.readonly){
+
+}
+
+.editable .mandm .dsf,
+.editable .mandm .edit{
+	cursor:text;
+}
+
+.editable .mandm .dsf:hover:not(.readonly),
+.editable .mandm .edit:hover:not(.readonly){
+	background-color:rgba(0,0,0,0.02);
+}
+
+.editable .mandm .dsf:focus,
+.editable .mandm .edit:focus,
+.editable .mandm .dsf:focus:hover,
+.editable .mandm .edit:focus:hover{
+	background-color:rgba(0,0,0,0.05);
+}
+
+.mandm .dsf ul,
+.mandm .edit ul{
+	margin:0px;
+	padding: 0px 0px 0px 20px;
+	list-style: url('https://chainsawxiv.github.io/DST/common/images/bullet.png');
+}
+.mandm .dsf ul li,
+.mandm .edit ul li{
+	margin:0px;
+	display:list-item;
+}
+
+.mandm ul, ol, dl{
+	line-height: 1;
+}
+
+/* Format Bar */
+
+.mandm .formatBar{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_top.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_main.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_bottom.png');
+	background-position:bottom center, center 1px, top center;
+	background-repeat:no-repeat, no-repeat, no-repeat;
+	position:absolute;
+	display:none;
+	padding-bottom:7px;
+	padding-top:3px;
+	margin-bottom:4px;
+	width:140px;
+	text-align:center;
+	font-size:12px;
+	z-index:10;	
+	height:28px;
+}
+
+.mandm .formatBar button{
+	display:inline-block;
+	height:28px;
+	width:28px;
+	border:none;
+}
+
+.mandm .formatBar .boldButton{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold.png');
+}
+.mandm .formatBar .boldButton:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold_hover.png');
+}
+.mandm .formatBar .boldButton:active{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold_active.png');
+}
+
+.mandm .formatBar .italicButton{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic.png');
+}
+.mandm .formatBar .italicButton:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic_hover.png');
+}
+.mandm .formatBar .italicButton:active{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic_active.png');
+}
+
+.mandm .formatBar .underlineButton{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline.png');
+}
+.mandm .formatBar .underlineButton:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline_hover.png');
+}
+.mandm .formatBar .underlineButton:active{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline_active.png');
+}
+
+.mandm .formatBar .indentButton{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent.png');
+}
+.mandm .formatBar .indentButton:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent_hover.png');
+}
+.mandm .formatBar .indentButton:active{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent_active.png');
+}
+
+/* List Interface */
+
+.mandm .add,
+.mandm .trash,
+.mandm .balance,
+.mandm .autobalance{
+	display:none;
+	float:right;
+	height:15px;
+	width:15px;
+	margin-bottom:0px;
+	cursor:default;
+}
+
+.mandm .autobalance{
+	position:relative;
+	top:-1px;
+	margin-right:0px;
+}
+
+.mandm .trash{
+	background:url('https://chainsawxiv.github.io/DST/common/images/trash.png');
+}
+
+.mandm .trash.active{
+	background:url('https://chainsawxiv.github.io/DST/common/images/trash_active.png');
+}
+
+.mandm .trash.over{
+	background:url('https://chainsawxiv.github.io/DST/common/images/trash_hover.png');
+}
+
+.mandm .add{
+	background:url('https://chainsawxiv.github.io/DST/common/images/add.png');
+	cursor:pointer;
+}
+
+.mandm .add:hover{
+	background:url('https://chainsawxiv.github.io/DST/common/images/add_hover.png');
+}
+
+.mandm .balance{
+	background:url('https://chainsawxiv.github.io/DST/common/images/balance.png');
+	cursor:pointer;
+}
+
+.mandm .balance:hover{
+	background:url('https://chainsawxiv.github.io/DST/common/images/balance_hover.png');
+}
+
+.mandm .list{
+	padding:0px;
+	line-height:inherit;
+}
+
+.mandm .list li.item{
+	display:inline-block;
+	width:100%;
+	position:relative;
+	border-color:red;
+	border-radius:2px;
+}
+
+.mandm .list li.item:nth-of-type(odd){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.mandm .list li.item:nth-of-type(even){
+	background-color:initial;
+}
+
+.mandm .list .column li.item:nth-of-type(even){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.mandm .list .column li.item:nth-of-type(odd){
+	background-color:initial;
+}
+
+.mandm .list li.proto{
+	display:none;
+}
+
+.mandm .list li.over-below{
+	border-bottom:1px dashed rgb(0,0,0);
+}
+
+.mandm .list li.over-below:before{
+	content:"â–¶";
+	position:absolute;
+	left:-10px;
+	bottom:-9px;
+	z-index:10;
+}
+
+.mandm .list li.over-below:after{
+	content:"â—€";
+	position:absolute;
+	right:-10px;
+	bottom:-9px;
+	z-index:10;
+}
+
+.mandm .list li.over-above{
+	border-top:1px dashed rgb(0,0,0);
+	line-height:16px;
+}
+
+.mandm .list li.over-above:before{
+	content:"â–¶";
+	position:absolute;
+	left:-10px;
+	top:-8px;
+	z-index:10;
+}
+
+.mandm .list li.over-above:after{
+	content:"â—€";
+	position:absolute;
+	right:-10px;
+	top:-8px;
+	z-index:10;
+}
+
+.mandm .list li.source{
+	background-color:rgba(0,0,0,0.1);
+	box-shadow:0px 0px 4px rgba(0,0,0,0.1);
+}
+
+.mandm .list li .handle{
+	display:none;
+	float: left;
+	position: relative;
+	top: -1px;
+	left: -6px;
+	height:18px;
+	width:19px;
+	margin-right:-5px;
+}
+
+.mandm .list li .handle div{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab.png');
+	background-position:2px 0px;
+	background-repeat:no-repeat;
+	height:12px;
+	width:13px;
+	margin:3px;
+}
+
+.mandm .list li .handle div:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab_hover.png');
+}
+
+.mandm .list li .handle img{
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	height:13px;
+}
+
+.editable .mandm .list li .handle,
+.editable .mandm .add,
+.editable .mandm .trash,
+.editable .mandm .balance,
+.editable .mandm .autobalance{
+	display:inline-block;
+}
+
+.mandm .list .item ul,
+.mandm .list .item li{
+	line-height:16px;
+}
+
+/* Pips Interface */
+
+.mandm .pips{
+	position:relative;
+	z-index:2;
+	float:right;
+	top:3px;
+	height:17px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 2px;
+}
+
+.mandm .pips.pipsRange_3{
+	width:41px;
+}
+
+.mandm .pips.pipsRange_5{
+	width:70px;
+}
+
+.mandm .pips.pipsRange_10{
+	width:142px;
+}
+
+.mandm .pips .pip{
+	position:absolute;
+	top:-2px;
+	height:15px;
+	width:15px;
+	display:inline-block;
+}
+
+.mandm .pipBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/pip_border.svg');
+	display:inline-block;
+	height:15px;
+	width:15px;
+}
+
+.mandm .pips .pipOff{
+	background-image:url('../images/pip_off.png');
+}
+
+.editable .mandm .pips .pipOff:hover{
+	background-image:url('../images/pip_off_hover.png');
+}
+
+.mandm .pips .pipOn{
+	background-image:url('../images/pip_on.png');
+}
+
+.editable .mandm .pips .pipOn:hover{
+	background-image:url('../images/pip_on_hover.png');
+}
+
+.mandm .pips svg{
+	position:absolute;
+}
+
+/* Page Tabs */
+
+.mandm .tabs{
+	position:absolute;
+	padding-right:90px;
+	top:-37px;
+	right:0px;
+	z-index:3;
+}
+
+.mandm .tab{
+	display:inline-block;
+	float:right;
+	height:40px;
+	width:46px;
+}
+.mandm .tab:not(.active){
+	cursor:pointer;
+}
+
+.mandm .tab.crunch{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png') no-repeat 50% 50%,
+		url('../images/tab01_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+.mandm .tab.crunch:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch_hover.png'),
+		url('../images/tab01_inactive.png');
+}
+.mandm .tab.crunch.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png'),
+		url('../images/tab01_active.png');
+}
+
+.mandm .tab.magic{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png') no-repeat 50% 50%,
+		url('../images/tab02_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+.mandm .tab.magic:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/magic_hover.png'),
+		url('../images/tab02_inactive.png');
+}
+.mandm .tab.magic.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png'),
+		url('../images/tab02_active.png');
+}
+
+.mandm .tab.equipment{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png') no-repeat 50% 50%,
+		url('../images/tab03_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+.mandm .tab.equipment:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment_hover.png'),
+		url('../images/tab03_inactive.png');
+}
+.mandm .tab.equipment.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png'),
+		url('../images/tab03_active.png');
+}
+
+.mandm .tab.fluff{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
+		url('../images/tab04_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+.mandm .tab.fluff:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
+		url('../images/tab04_inactive.png');
+}
+.mandm .tab.fluff.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
+		url('../images/tab04_active.png');
+}
+
+/* Tooltip Interface */
+
+.mandm .tip{
+	display:none;
+}
+
+.mandm .highlight{
+	background-color:rgba(0,0,0,0.4);
+}
+
+.editable .mandm .tip{
+	display:inline-block;
+	float:right;
+	cursor: pointer;
+	position: relative;
+	top:4px;
+	height:12px;
+	width:12px;
+	background:url('https://chainsawxiv.github.io/DST/common/images/tip.png') no-repeat;
+	color:transparent;
+	overflow:hidden;
+	background-size:11px;
+	opacity:0.7;
+}
+
+.editable .mandm .tip:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/tip_hover.png');
+}
+
+.mandm .tipBox{
+	display:none;
+	position:absolute;
+	z-index:25;
+	left:50%;
+	top:50%;
+}
+
+.mandm .tipBox .corner.topLeft{
+	background:url('https://chainsawxiv.github.io/DST/common/solar/brass-corner-top-left.png') top left no-repeat;
+	background-size:15px 15px;
+	top:-1px;
+	left:-1px;
+}
+.mandm .tipBox .corner.topRight{
+	background:url('https://chainsawxiv.github.io/DST/common/solar/brass-corner-top-right.png') top right no-repeat;
+	background-size:15px 15px;
+	top:-1px;
+	right:-1px;
+}
+.mandm .tipBox .corner.bottomLeft{
+	background:url('https://chainsawxiv.github.io/DST/common/solar/brass-corner-bottom-left.png') bottom left no-repeat;
+	background-size:15px 15px;
+	bottom:-1px;
+	left:-1px;
+}
+.mandm .tipBox .corner.bottomRight{
+	background:url('https://chainsawxiv.github.io/DST/common/solar/brass-corner-bottom-right.png') bottom right no-repeat;
+	background-size:15px 15px;
+	bottom:-1px;
+	right:-1px;
+}
+.mandm .tipBox .corner{
+	position:absolute;
+	height:15px;
+	width:15px;
+	border-radius:3px;
+}
+
+.mandm .tipBox .contentBox{
+	min-height:100px;
+	width:300px;
+	
+	background:
+		url('https://chainsawxiv.github.io/DST/common/solar/background.jpg') top left no-repeat;
+	background-size:
+		730px 730px;
+	background-color:#e4e5d5;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+	
+	box-shadow:0px 0px 15px rgba(0,0,0,0.3);
+}
+
+.mandm .tipBox .contentBox .tipArea,
+.mandm .tipBox .contentBox .tipArea:hover{
+	background-color:rgba(255,255,224,0.7);
+	margin:5px;
+	width:278px;
+	min-height:88px;
+	border:1px dotted rgba(0,0,0,0.3);
+	border-radius:4px;
+	padding:0px 5px 2px 5px;
+	font-family:'Patrick Hand',Sans Serif;
+	font-size: 15px;
+	line-height: 18px;
+	color:#554220;
+}
+
+.mandm .tipBox .contentBox .tipArea ul{
+	margin:0px;
+	padding: 0px 0px 0px 20px;
+	list-style: url('../images/bullet.png');
+}
+.mandm .tipBox .contentBox .tipArea ul li{
+	margin:0px;
+	line-height:18px;
+}
+
+/* Sheet Content */
+
+.wrapper.mandm{
+	position:relative;
+	width:730px;
+	margin:0px auto;
+}
+
+.mandm .main{
+
+	position:relative;
+	width:708px;
+	padding:0px 10px 80px 10px;
+	margin:40px 0px 20px 0px;
+	min-height: 795px;
+	
+	background-image:url('https://chainsawxiv.github.io/DST/common/solar/background.jpg');
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#e4e5d5;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+	
+	font-family:'Cinzel', palatino, serif;
+	font-size:14px;
+	line-height:17px;
+	color:#black;
+	
+}
+
+.mandm .list.twocolumn .column{
+	width:343px;
+}
+.mandm .twocolumn li.item{
+	width:345px;
+}
+.mandm .threecolumn .column{
+	width:223px;
+}
+.mandm .threecolumn li.item{
+	width:226px;
+}
+.mandm .list .column.colspace{
+	margin-right:12px;
+}
+
+.mandm .group{
+	margin:0px 0px 8px 0px;
+	padding:0px 3px 0px 3px;
+	position:relative;
+}
+
+.mandm .section{
+	display:inline-block;
+	width:100%;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 2px 1px;
+	min-height:30px;
+}
+
+.mandm .halfwidth{
+	width:348px;
+}
+
+.mandm .thirdwidth{
+	width:219px;
+}
+
+.mandm .thirdwidthinside{
+	width:219px;
+	font-size:17px;
+}
+
+.mandm dl dt {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.mandm dl {
+	overflow: hidden;
+	margin: 0;
+	font-weight: normal;
+}
+.mandm dt {
+	float: left;
+	padding: 0 .4em 0 0;
+	margin: 0;
+	font-weight: normal;
+}
+.mandm dd {
+	float: right;
+	padding: 0 0 0 .4em;
+	margin: 0;
+	font-weight: normal;
+}
+
+.mandm .column{
+	vertical-align:top;
+	display:inline-block;
+}
+
+.mandm .colspace{
+	margin-right:6px;
+}
+
+.mandm .head{
+	font-size:14pt;
+	font-weight:normal;
+	letter-spacing:3px;
+	border-bottom:solid 1px #554220;
+	margin-bottom:5px;
+}
+
+.mandm .pagehead{
+	text-align:center;
+	width:600px;
+	margin:22px auto 10px auto;
+}
+
+.mandm .hidden{
+	display:none;
+}
+
+.mandm .page{
+	display:none;
+}
+
+.mandm .page.active{
+	display:block;
+}
+
+.mandm .page_foot{
+	text-align:center;
+	width:600px;
+	margin:22px 0px 0px 55px;
+	padding:0px 0px 30px 0px;
+	position:absolute;
+	bottom:12px;
+	font-size: 12px;
+}
+
+.mandm a{
+	text-decoration:none;
+	color:#554220;
+}
+
+.mandm .section a{
+	text-decoration:underline;
+}
+
+.mandm .right{
+	float:right;
+	text-align:right;
+}
+
+/* Corner Brass */
+
+.mandm .corner_top_left{
+	position:absolute;
+	left:-7px;
+	top:-7px;
+	z-index:4;
+}
+
+.mandm .corner_top_right{
+	position:absolute;
+	right:-7px;
+	top:-7px;
+	z-index:4;
+}
+
+.mandm .corner_bottom_left{
+	position:absolute;
+	left:-7px;
+	bottom:-7px;
+	z-index:4;
+}
+
+.mandm .corner_bottom_right{
+	position:absolute;
+	right:-7px;
+	bottom:-7px;
+	z-index:4;
+}
+
+.mandm .logo_bottom{
+	position:absolute;
+	left:279px;
+	bottom:-17px;
+	z-index:4;
+	width:150px;
+	height:38px:
+}
+
+/* Caste Icons */
+
+.mandm .casteIcon{
+	position:absolute;
+	left:118px;
+	top:0px;
+	height:85px;
+}
+
+/* Portrait */
+.mandm .portraitholder{
+	display:inline-block;
+	position:relative;
+	float:right;
+	margin:3px 3px 5px 10px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 8px;
+}
+.mandm .portraitholder .portrait .avatar_image {
+	min-height: 150px;
+    min-width: 150px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    max-height: 300px;
+    max-width: 300px;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: black;
+	border-radius:8px 8px 0 0;
+}
+.mandm .portraitholder .topleft{
+	position:absolute;
+	left:-4px;
+	top:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+.mandm .portraitholder .topright{
+	position:absolute;
+	right:-4px;
+	top:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+.mandm .portraitholder .bottomleft{
+	position:absolute;
+	left:-4px;
+	bottom:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+.mandm .portraitholder .bottomright{
+	position:absolute;
+	right:-4px;
+	bottom:-4px;
+	width:64px;
+	height:64px;
+	z-index:4;
+}
+
+.mandm .portraitholder .container{
+	text-align: center;
+	padding: 10px 20px;
+}
+/* Editable Fields */
+
+.mandm .dsf:not(.readonly),
+.mandm .edit:not(.readonly){
+	line-height: 14px;
+}
+
+.mandm .dsf.pips10label,
+.mandm .edit.pips10label{
+	width:180px;
+}
+
+.mandm .dsf.pips5label,
+.mandm .edit.pips5label{
+	width:244px;
+}
+
+.mandm .dsf.pips3label,
+.mandm .edit.pips3label{
+	width:281px;
+}
+
+.mandm .dsf.fullcolumn,
+.mandm .edit.fullcolumn{
+	width:312px;
+}
+
+.mandm .threecolumn .dsf.fullcolumn,
+.mandm .threecolumn .edit.fullcolumn{
+	width:196px;
+}
+
+.mandm .thirdwidth{
+	width:230px;
+}
+
+.mandm .twothirdwidth{
+	width:472px;
+}
+
+.mandm .dsf.fullwidth,
+.mandm .edit.fullwidth{
+	width:704px;
+	min-height:50px;
+	display:inline-block;
+	line-height:17px;
+	text-align:justify;
+}
+
+.editable .mandm .list .dsf.fullwidth,
+.editable .mandm .list .edit.fullwidth{
+	width:674px;
+}
+
+.mandm .list .dsf.fullwidth,
+.mandm .list .edit.fullwidth{
+	min-height:0px;
+	line-height:14px;
+}
+
+.mandm .dsf.right,
+.mandm .edit.right{
+	max-width:180px;
+	min-width:100px;
+}
+
+.editable .mandm .dsf:hover:not(.readonly),
+.editable .mandm .edit:hover:not(.readonly){
+	color:#957438;
+	background-color:rgba(0,0,0,0.02);
+}
+
+.editable .mandm .dsf:focus,
+.editable .mandm .edit:focus,
+.editable .mandm .dsf:focus:hover,
+.editable .mandm .edit:focus:hover{
+	color:#957438;
+	background-color:rgba(0,0,0,0.05);
+}
+
+/* Attack List */
+
+.mandm .attacks .weapon{
+	width:193px;
+	margin-left:5px;
+}
+
+.editable .mandm .attacks .weapon{
+	width:180px;
+	margin-left:0px;
+}
+
+.editable .mandm .attacks .labelrow .weapon{
+	margin-left:16px;
+}
+.mandm .attacks .labelrow span{
+	display:inline-block;
+	border-bottom:1px solid #A59270;
+	line-height:12px;
+}
+.mandm .attacks .bonus,
+.mandm .attacks .resist{
+	display:inline-block;
+	width:50px;
+	text-align:center;
+	margin-left:3px;
+}
+
+.mandm .attacks .notes{
+	display:inline-block;
+	width:137px;
+	margin-left:3px;
+}
+
+.mandm .list li.item.highlight,.mandm .list .column li.item.highlight{
+	background-color:rgba(255,255,255,0.4);
+}
+.mandm .skills .skill{
+	width:170px;
+	margin-left:13px;
+}
+
+.editable .mandm .skills .skill{
+	width:170px;
+	margin-left:0px;
+}
+
+.mandm .skills .labelrow .skill{
+	margin-left:16px;
+}
+.mandm .skills .labelrow span{
+	display:inline-block;
+	border-bottom:1px solid #A59270;
+	line-height:12px;
+}
+.mandm .skills .total,
+.mandm .skills .ability,
+.mandm .skills .rank,
+.mandm .skills .other,
+.mandm .slist .total,
+.mandm .slist .ability,
+.mandm .slist .ranks,
+.mandm .slist .other{
+	display:inline-block;
+	width:49px;
+	text-align:center;
+	margin-left:3px;
+}
+
+.mandm .skills .symbol{
+	display:inline-block;
+	width:10px;
+	text-align:center;
+	margin-left:3px;
+}
+
+
+/* Misc */
+
+.mandm .name{
+	display:inline-block;
+	font-size:24pt;
+	margin:0px 0px 9px 0px;
+	width: 600px;
+	height:16px;
+}
+
+.mandm .dsf.dsf_type{
+	font-family:'Cinzel', palatino, serif;
+	font-size:14px;
+	line-height:17px;
+}
+
+.mandm .dsf.dsf_bio{
+    width: auto;
+	display:block;
+}
+.mandm .dsf.dsf_bio p{
+	margin-top:17px;
+}
+.mandm .dsf.dsf_bio p:first-of-type{
+	margin-top:0px;
+}
+
+.editable .mandm .list_combos .edit.fullwidth{
+	width:672px;
+}
+
+.mandm .check.autobalance .checkMark{
+	background-position: 1px 3px;
+	position: relative;
+	left: 2px;
+}
+
+/* Static List Interface */
+
+.mandm .slist{
+	padding:0px;
+	line-height:inherit;
+}
+
+.mandm .slist .sskill{
+	width:170px;
+	margin-left:16px;
+	display: inline-block;
+	position: relative;
+}
+
+.mandm .slist li.item{
+	display:inline-block;
+	width:100%;
+	position:relative;
+	border-color:red;
+	border-radius:2px;
+}
+
+.mandm .slist li.item:nth-of-type(odd){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.mandm .slist li.item:nth-of-type(even){
+	background-color:initial;
+}
+
+.mandm .slist .column li.item:nth-of-type(even){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.mandm .slist .column li.item:nth-of-type(odd){
+	background-color:initial;
+}
+
+.mandm .slist li.proto{
+	display:none;
+}
+
+.mandm .slist li.over-below{
+	border-bottom:1px dashed rgb(0,0,0);
+}
+
+.mandm .slist li.over-below:before{
+	content:"â–¶";
+	position:absolute;
+	left:-10px;
+	bottom:-9px;
+	z-index:10;
+}
+
+.mandm .slist li.over-below:after{
+	content:"â—€";
+	position:absolute;
+	right:-10px;
+	bottom:-9px;
+	z-index:10;
+}
+
+.mandm .slist li.over-above{
+	border-top:1px dashed rgb(0,0,0);
+	line-height:16px;
+}
+
+.mandm .slist li.over-above:before{
+	content:"â–¶";
+	position:absolute;
+	left:-10px;
+	top:-8px;
+	z-index:10;
+}
+
+.mandm .slist li.over-above:after{
+	content:"â—€";
+	position:absolute;
+	right:-10px;
+	top:-8px;
+	z-index:10;
+}
+
+.mandm .slist li.source{
+	background-color:rgba(0,0,0,0.1);
+	box-shadow:0px 0px 4px rgba(0,0,0,0.1);
+}
+
+.mandm .slist li .handle{
+	display:none;
+	float: left;
+	position: relative;
+	top: -1px;
+	left: -6px;
+	height:18px;
+	width:19px;
+	margin-right:-5px;
+}
+
+.mandm .slist li .handle div{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab.png');
+	background-position:2px 0px;
+	background-repeat:no-repeat;
+	height:12px;
+	width:13px;
+	margin:3px;
+}
+
+.mandm .slist li .handle div:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab_hover.png');
+}
+
+.mandm .slist li .handle img{
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	height:13px;
+}
+
+.editable .mandm .slist li .handle,
+.editable .mandm .add,
+.editable .mandm .trash,
+.editable .mandm .balance,
+.editable .mandm .autobalance{
+	display:inline-block;
+}
+
+.mandm .slist .item ul,
+.mandm .slist .item li{
+	line-height:inherit;
+}

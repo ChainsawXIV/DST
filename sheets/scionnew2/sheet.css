@@ -1,0 +1,308 @@
+/* Font Imports */
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+/* Component Includes */
+
+@import url(https://dl.dropbox.com/s/z54rwhsjyqaellk/csx_exalted_common.css?dl=0);
+
+/* Splat Specific: Checks */
+
+div.ds_scionnew2 .check .checkBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/check_border.svg');
+}
+
+div.ds_scionnew2 .check .checkOff{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/check_off.png');
+}
+
+div.ds_scionnew2.editable .check .checkOff:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/check_off_hover.png');
+}
+
+div.ds_scionnew2 .check .checkOn{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/check_on.png');
+}
+
+div.ds_scionnew2.editable .check .checkOn:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/check_on_hover.png');
+}
+
+
+
+div.ds_scionnew2 .check.epicstat .checkBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/epic_check_border.svg');
+}
+
+div.ds_scionnew2 .check.epicstat .checkOff{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/pip_off.png');
+	background-size: 15px;
+	background-position: 7px 7px;
+}
+
+div.ds_scionnew2.editable .check.epicstat .checkOff:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/pip_off_hover.png');
+	background-size: 15px;
+	background-position: 7px 7px;
+}
+
+div.ds_scionnew2 .check.epicstat .checkOn{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/pip_on.png');
+	background-size: 15px;
+	background-position: 7px 7px;
+}
+
+div.ds_scionnew2.editable .check.epicstat .checkOn:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/pip_on_hover.png');
+	background-size: 15px;
+	background-position: 7px 7px;
+}
+
+/* Splat Specific: Pips */
+
+div.ds_scionnew2 .pipBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/pip_border.svg');
+}
+
+div.ds_scionnew2 .pips .pipOff{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/pip_off.png');
+}
+
+div.ds_scionnew2.editable .pips .pipOff:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/pip_off_hover.png');
+}
+
+div.ds_scionnew2 .pips .pipOn{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/pip_on.png');
+}
+
+div.ds_scionnew2.editable .pips .pipOn:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/pip_on_hover.png');
+}
+
+/* Splat Specific: Tabs */
+
+div.ds_scionnew2 .tab.crunch{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab01_inactive.png');
+	background-size:
+		70% 70%,
+		100% 100%;
+}
+div.ds_scionnew2 .tab.crunch:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab01_inactive.png');
+}
+div.ds_scionnew2 .tab.crunch.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab01_active.png');
+}
+
+div.ds_scionnew2 .tab.magic{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab02_inactive.png');
+	background-size:
+		70% 70%,
+		100% 100%;
+}
+div.ds_scionnew2 .tab.magic:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/magic_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab02_inactive.png');
+}
+div.ds_scionnew2 .tab.magic.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab02_active.png');
+}
+
+div.ds_scionnew2 .tab.equipment{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab03_inactive.png');
+	background-size:
+		70% 70%,
+		100% 100%;
+}
+div.ds_scionnew2 .tab.equipment:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab03_inactive.png');
+}
+div.ds_scionnew2 .tab.equipment.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab03_active.png');
+}
+
+div.ds_scionnew2 .tab.fluff{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab04_inactive.png');
+	background-size:
+		70% 70%,
+		100% 100%;
+}
+div.ds_scionnew2 .tab.fluff:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab04_inactive.png');
+}
+div.ds_scionnew2 .tab.fluff.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_scion/images/tab04_active.png');
+}
+
+/* Splat Specific: Tips */
+
+div.ds_scionnew2 .tipBox .corner.topLeft{
+	background:url('') top left no-repeat;
+	background-size:15px 15px;
+}
+div.ds_scionnew2 .tipBox .corner.topRight{
+	background:url('') top right no-repeat;
+	background-size:15px 15px;
+}
+div.ds_scionnew2 .tipBox .corner.bottomLeft{
+	background:url('') bottom left no-repeat;
+	background-size:15px 15px;
+}
+div.ds_scionnew2 .tipBox .corner.bottomRight{
+	background:url('') bottom right no-repeat;
+	background-size:15px 15px;
+}
+
+div.ds_scionnew2 .tipBox .contentBox{
+	background:
+		url('') top left no-repeat;
+	background-size:
+		730px 730px;
+	background-color:#e4e5d5;
+	border-color:#554220;
+}
+
+div.ds_scionnew2 .tipBox .contentBox .tipArea,
+div.ds_scionnew2 .tipBox .contentBox .tipArea:hover{
+	background-color:rgba(255,255,255,0.2);
+	border:1px dotted rgba(0,0,0,0.3);
+	border-radius:4px;
+	font-family:'EB Garamond',Sans Serif;
+	color:#000000;
+}
+
+/* Splat Specific: Editable */
+
+div.ds_scionnew2 .dsf:not(.readonly),
+div.ds_scionnew2 .edit:not(.readonly),
+div.ds_scionnew2 .dsf_bio{
+	font-family:'EB Garamond',Sans Serif;
+}
+
+/* Splat Specific: Sheet */
+
+div.ds_scionnew2 .main{
+	background-image:url('');
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#bab5ae;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#000000;
+	
+	font-family:'Cinzel', palatino, serif;
+	font-size:14px;
+	line-height:17px;
+	color:#000000;
+}
+
+div.ds_scionnew2 .head{
+	border-bottom:solid 1px #000000;
+}
+
+div.ds_scionnew2 a{
+	text-decoration:none;
+	color:#000000;
+}
+
+div.ds_scionnew2 .section a{
+	text-decoration:underline;
+}
+
+div.ds_scionnew2 .attacks .labelrow span{
+	border-bottom:1px solid #000000;
+}
+
+div.ds_scionnew2 .dsf.dsf_type{
+	font-family:'Cinzel', palatino, serif;
+}
+
+div.ds_scionnew2 .edit.abilitylabel{
+	width:100px;
+	font-family:'Cinzel', palatino, serif;
+}
+
+div.ds_scionnew2 .corner_top_left{
+	left:-28px;
+	top:-28px;
+}
+div.ds_scionnew2 .corner_top_right{
+	right:-28px;
+	top:-28px;
+}
+div.ds_scionnew2 .corner_bottom_left{
+	left:-28px;
+	bottom:-28px;
+}
+div.ds_scionnew2 .corner_bottom_right{
+	right:-28px;
+	bottom:-28px;
+}
+div.ds_scionnew2 .brass_bottom{
+	bottom:-28px;
+}
+
+.csx .portraitholder .topleft{
+	top:-19px;
+	left:-19px;
+}
+.csx .portraitholder .topright{
+	top:-19px;
+	right:-19px;
+}
+.csx .portraitholder .bottomleft{
+	bottom:-19px;
+	left:-19px;
+}
+.csx .portraitholder .bottomright{
+	bottom:-19px;
+	right:-19px;
+}
+
+.csx .pips.pipsRange_12 {
+	width: 172px;
+}
+
+div.ds_scionnew2 .epicstat{
+	float:left;
+	position:relative;
+	top:-5px;
+	height:30px;
+	width:30px;
+}
+
+div.ds_scionnew2 .epicstat .checkMark,
+div.ds_scionnew2 .epicstat .checkBorder{
+	height:30px;
+	width:30px;
+}
+
+div.ds_scionnew2 .scionstat{
+	height:36px;
+}

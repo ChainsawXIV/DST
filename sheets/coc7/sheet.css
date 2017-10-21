@@ -1,0 +1,460 @@
+/* Font Imports */
+@import url(https://fonts.googleapis.com/css?family=Cutive);
+
+/* Edit Fields */
+
+.coc7 .dsf,
+.coc7 .edit{
+    position:relative;
+    display:inline-block;
+    cursor:default;
+}
+
+.coc7 .dsf p,
+.coc7 .edit p{
+    margin:0px;
+    line-height:inherit;
+}
+
+.coc7 .dsf:not(.readonly),
+.coc7 .edit:not(.readonly){
+
+}
+
+.editable .coc7 .dsf,
+.editable .coc7 .edit{
+    cursor:text;
+}
+
+.editable .coc7 .dsf:hover:not(.readonly),
+.editable .coc7 .edit:hover:not(.readonly){
+    background-color:rgba(0,0,0,0.02);
+}
+
+.editable .coc7 .dsf:focus,
+.editable .coc7 .edit:focus,
+.editable .coc7 .dsf:focus:hover,
+.editable .coc7 .edit:focus:hover{
+    background-color:rgba(0,0,0,0.05);
+}
+
+.coc7 .dsf ul,
+.coc7 .edit ul{
+    margin:0px;
+    padding: 0px 0px 0px 20px;
+    list-style: url('https://chainsawxiv.github.io/DST/common/images/bullet.png');
+}
+.coc7 .dsf ul li,
+.coc7 .edit ul li{
+    margin:0px;
+    display:list-item;
+}
+
+/* Sheet Content */
+
+.wrapper.coc7{
+    position:relative;
+    width:730px;
+    margin:0px auto;
+}
+
+.coc7 .main{
+
+    position:relative;
+    width:708px;
+    padding:0px 10px 80px 10px;
+    margin:40px 0px 20px 0px;
+    min-height: 795px;
+    
+    background-position:top left;
+    background-repeat:no-repeat;
+    background-color:#e4e5d5;
+    
+    border-style:solid;
+    border-width:1px;
+    border-color:#554220;
+    
+    font-family:'Cutive', palatino, serif;
+    font-size:13px;
+    line-height:20px;
+    color:black;
+}
+
+.coc7 .list.twocolumn .column{
+    width:343px;
+}
+.coc7 .twocolumn li.item{
+    width:345px;
+}
+.coc7 .threecolumn .column{
+    width:223px;
+}
+.coc7 .twothreecolumn .column{
+    width:440px;
+}
+.coc7 .threecolumn li.item{
+    width:226px;
+}
+.coc7 .list .column.colspace{
+    margin-right:10px;
+}
+
+.coc7 .group{
+    margin:0px 0px 8px 0px;
+    padding:0px 3px 0px 3px;
+    position:relative;
+}
+
+.coc7 .section{
+    display:inline-block;
+    width:100%;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 2px 1px;
+    min-height:30px;
+}
+
+.coc7 .halfwidth{
+    width:348px;
+}
+
+.coc7 .thirdwidth{
+    width:219px;
+}
+
+.coc7 .quarterwidth{
+    width:170px;
+}
+
+.coc7 .threequarterwidth{
+    width:500px;
+}
+
+.coc7 .column{
+    vertical-align:top;
+    display:inline-block;
+    margin-right:15px;
+}
+
+.coc7 .colspace{
+    margin-right:10px;
+}
+
+.coc7 .head{
+    font-size:14pt;
+    font-weight:normal;
+    letter-spacing:3px;
+    border-bottom:solid 1px #554220;
+    margin-bottom:5px;
+}
+
+.coc7 .pagehead{
+    text-align:center;
+    width:600px;
+    margin:22px auto 30px auto;
+    text-transform: uppercase;
+}
+
+.coc7 .hidden{
+    display:none;
+}
+
+.coc7 .page{
+    display:none;
+}
+
+.coc7 .page.active{
+    display:block;
+}
+
+.coc7 .page_foot{
+    text-align:center;
+    width:600px;
+    margin:22px 0px 0px 55px;
+    padding:0px 0px 30px 0px;
+    position:absolute;
+    bottom:12px;
+}
+
+.coc7 a{
+    text-decoration:none;
+    color:#554220;
+}
+
+.coc7 .section a{
+    text-decoration:underline;
+}
+
+.coc7 .right{
+    float:right;
+    text-align:right;
+    white-space: nowrap;
+}
+
+.coc7 .justify{
+    text-align: right;
+}
+
+/* Corner Brass */
+
+.coc7 .corner_top_left{
+    position:absolute;
+    left:-7px;
+    top:-7px;
+    z-index:4;
+}
+
+.coc7 .corner_top_right{
+    position:absolute;
+    right:-7px;
+    top:-7px;
+    z-index:4;
+}
+
+.coc7 .corner_bottom_left{
+    position:absolute;
+    left:-7px;
+    bottom:-7px;
+    z-index:4;
+}
+
+.coc7 .corner_bottom_right{
+    position:absolute;
+    right:-7px;
+    bottom:-7px;
+    z-index:4;
+}
+
+.coc7 .brass_bottom{
+    position:absolute;
+    left:262px;
+    bottom:-7px;
+    z-index:4;
+}
+
+/* Portrait */
+
+.coc7 .portraitholder{
+    display:inline-block;
+    position:relative;
+    float:right;
+    padding:0px 0px 0px 0px;
+    margin:3px 3px 5px 10px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#554220;
+}
+.coc7 .portraitholder .portrait .avatar_image {
+    min-height: 140px;
+    min-width: 140px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    max-height: 300px;
+    max-width: 300px;
+}
+.coc7 .portraitholder .topleft{
+    position:absolute;
+    left:-4px;
+    top:-4px;
+    width:64px;
+    height:64px;
+    z-index:4;
+}
+.coc7 .portraitholder .topright{
+    position:absolute;
+    right:-4px;
+    top:-4px;
+    width:64px;
+    height:64px;
+    z-index:4;
+}
+.coc7 .portraitholder .bottomleft{
+    position:absolute;
+    left:-4px;
+    bottom:-4px;
+    width:64px;
+    height:64px;
+    z-index:4;
+}
+.coc7 .portraitholder .bottomright{
+    position:absolute;
+    right:-4px;
+    bottom:-4px;
+    width:64px;
+    height:64px;
+    z-index:4;
+}
+
+/* Editable Fields */
+
+.coc7 .dsf:not(.readonly),
+.coc7 .edit:not(.readonly){
+
+}
+
+.coc7 .dsf.fullcolumn,
+.coc7 .edit.fullcolumn{
+    width:312px;
+}
+
+.coc7 .threecolumn .dsf.fullcolumn,
+.coc7 .threecolumn .edit.fullcolumn{
+    width:190px;
+}
+
+.coc7 .dsf.fullwidth,
+.coc7 .edit.fullwidth{
+    width:704px;
+    min-height:50px;
+    display:inline-block;
+    line-height:17px;
+    text-align:justify;
+}
+
+.editable .coc7 .list .dsf.fullwidth,
+.editable .coc7 .list .edit.fullwidth{
+    width:684px;
+}
+
+.coc7 .list .dsf.fullwidth,
+.coc7 .list .edit.fullwidth{
+    min-height:0px;
+    line-height:14px;
+}
+
+.coc7 .dsf.right,
+.coc7 .edit.right{
+    max-width:180px;
+    min-width:100px;
+}
+
+.editable .coc7 .dsf:hover:not(.readonly),
+.editable .coc7 .edit:hover:not(.readonly){
+    color:#957438;
+    background-color:rgba(0,0,0,0.02);
+}
+
+.editable .coc7 .dsf:focus,
+.editable .coc7 .edit:focus,
+.editable .coc7 .dsf:focus:hover,
+.editable .coc7 .edit:focus:hover{
+    color:#957438;
+    background-color:rgba(0,0,0,0.05);
+}
+
+/* Attack List */
+
+.coc7 .attacks .weaponName{
+    width:135px;
+    margin-left:3px;
+}
+
+.editable .coc7 .attacks .weapon{
+    width:135px;
+    margin-left:3px;
+}
+
+.editable .coc7 .attacks .labelrow .weapon{
+    margin-left:5px;
+}
+.coc7 .attacks .labelrow span{
+    display:inline-block;
+    border-bottom:1px solid #A59270;
+    line-height:12px;
+}
+.coc7 .attacks .weaponDamage,
+.coc7 .attacks .weaponRange,
+.coc7 .attacks .weaponAttacks,
+.coc7 .attacks .weaponAmmo,
+.coc7 .attacks .weaponMalf,
+.coc7 .attacks .tags{
+    font-size:12px;
+    display:inline-block;
+    width:50px;
+    text-align:center;
+    margin-left:0px;
+}
+
+.coc7 .attacks .weaponAccuracy{
+    font-size:12px;
+    display:inline-block;
+    width:70px;
+    text-align:center;
+    margin-left:0px;
+}
+
+.coc7 .list li.item.highlight,.coc7 .list .column li.item.highlight{
+    background-color:rgba(255,255,255,0.4);
+}
+
+
+/* Misc */
+
+.coc7 .name{
+    display:inline-block;
+    font-size:18pt;
+    margin:0px 0px 9px 0px;
+    width: 600px;
+    height:16px;
+}
+
+.coc7 .dsf.dsf_type{
+    font-family:'Cinzel', palatino, serif;
+    font-size:14px;
+    line-height:17px;
+}
+
+.coc7 .dsf.dsf_bio{
+    width: auto;
+    display:block;
+}
+.coc7 .dsf.dsf_bio p{
+    margin-top:17px;
+}
+.coc7 .dsf.dsf_bio p:first-of-type{
+    margin-top:0px;
+}
+
+.editable .coc7 .list_combos .edit.fullwidth{
+    width:672px;
+}
+
+.coc7 .check.autobalance .checkMark{
+    background-position: 1px 3px;
+    position: relative;
+    left: 2px;
+}
+
+/*
+ * Custom CSS unique to this project and not gathered from elsewhere
+  */
+.coc7 dl dt {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.coc7 dl {
+    overflow: hidden;
+    margin: 0;
+    font-weight: normal;
+}
+.coc7 dt {
+    float: left;
+    padding: 0 .4em 0 0;
+    margin: 0;
+    font-weight: normal;
+}
+.coc7 dd {
+    float: right;
+    padding: 0 0 0 .4em;
+    margin: 0;
+    font-weight: normal;
+}
+/* That's the leader! */
+.coc7 dl:after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    height: 1em;
+    border-bottom: 2px dotted;
+    font-weight: normal;
+}

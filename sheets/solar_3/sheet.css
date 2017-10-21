@@ -1,0 +1,403 @@
+/* Font Imports */
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url(https://fonts.googleapis.com/css?family=Merienda);
+
+/* Component Includes */
+
+@import url(https://chainsawxiv.github.io/DST/common/css/csx_exalted_common.css);
+
+/* Splat Specific: Checks */
+
+div.ds_solar_3 .check .checkBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/check_border.svg');
+}
+
+div.ds_solar_3 .check .checkOff{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_off.png');
+}
+
+div.ds_solar_3.editable .check .checkOff:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_off_hover.png');
+}
+
+div.ds_solar_3 .check .checkOn{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_on.png');
+}
+
+div.ds_solar_3.editable .check .checkOn:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_on_hover.png');
+}
+
+/* Splat Specific: Pips */
+
+div.ds_solar_3 .pipBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/pip_border.svg');
+}
+
+div.ds_solar_3 .pips .pipOff{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_off.png');
+}
+
+div.ds_solar_3.editable .pips .pipOff:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_off_hover.png');
+}
+
+div.ds_solar_3 .pips .pipOn{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_on.png');
+}
+
+div.ds_solar_3.editable .pips .pipOn:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_on_hover.png');
+}
+
+/* Splat Specific: Tabs */
+
+div.ds_solar_3 .tab.crunch{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab01_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_solar_3 .tab.crunch:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab01_inactive.png');
+}
+div.ds_solar_3 .tab.crunch.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab01_active.png');
+}
+
+div.ds_solar_3 .tab.magic{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab02_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_solar_3 .tab.magic:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/magic_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab02_inactive.png');
+}
+div.ds_solar_3 .tab.magic.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab02_active.png');
+}
+
+div.ds_solar_3 .tab.equipment{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab03_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_solar_3 .tab.equipment:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab03_inactive.png');
+}
+div.ds_solar_3 .tab.equipment.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab03_active.png');
+}
+
+div.ds_solar_3 .tab.fluff{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab04_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_solar_3 .tab.fluff:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab04_inactive.png');
+}
+div.ds_solar_3 .tab.fluff.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab04_active.png');
+}
+
+/* Splat Specific: Tips */
+
+div.ds_solar_3 .tipBox .corner.topLeft{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-left.png') top left no-repeat;
+	background-size:15px 15px;
+}
+div.ds_solar_3 .tipBox .corner.topRight{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-right.png') top right no-repeat;
+	background-size:15px 15px;
+}
+div.ds_solar_3 .tipBox .corner.bottomLeft{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-left.png') bottom left no-repeat;
+	background-size:15px 15px;
+}
+div.ds_solar_3 .tipBox .corner.bottomRight{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-right.png') bottom right no-repeat;
+	background-size:15px 15px;
+}
+
+div.ds_solar_3 .tipBox .contentBox{
+	background:
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/background.jpg') top left no-repeat;
+	background-size:
+		730px 730px;
+	background-color:#e4e5d5;
+	border-color:#554220;
+}
+
+div.ds_solar_3 .tipBox .contentBox .tipArea,
+div.ds_solar_3 .tipBox .contentBox .tipArea:hover{
+	background-color:rgba(255,255,224,0.7);
+	border:1px dotted rgba(0,0,0,0.3);
+	border-radius:4px;
+	font-family:'EB Garamond',Sans Serif;
+	color:#554220;
+}
+
+/* Splat Specific: Editable */
+
+div.ds_solar_3 .dsf:not(.readonly),
+div.ds_solar_3 .edit:not(.readonly),
+div.ds_solar_3 .dsf_bio{
+	font-family:"Merienda","Open Sans",Arial,sans-serif;
+}
+
+/* Splat Specific: Sheet */
+
+div.ds_solar_3 .main{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/background.jpg');
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#e4e5d5;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+	
+	font-family:'Cinzel Decorative', palatino, serif;
+	font-size:14px;
+	line-height:17px;
+	color:#554220;
+}
+
+div.ds_solar_3 .head{
+	border-bottom:solid 1px #554220;
+}
+
+div.ds_solar_3 a{
+	text-decoration:none;
+	color:#554220;
+}
+
+div.ds_solar_3 .section a{
+	text-decoration:underline;
+}
+
+div.ds_solar_3 .attacks .labelrow span{
+	border-bottom:1px solid #A59270;
+}
+
+div.ds_solar_3 .charms .labelrow span{
+	border-bottom:1px solid #A59270;
+}
+
+div.ds_solar_3 .dsf.dsf_type{
+	font-family:'Cinzel Decorative', palatino, serif;
+}
+
+/* Charm List */
+
+.csx .charms .charm{
+	width:220px;
+	margin-left:5px;
+}
+
+.editable .csx .charms .charm{
+	width:190px;
+	margin-left:0px;
+}
+
+.editable .csx .charms .labelrow .charm{
+	margin-left:16px;
+}
+.csx .charms .labelrow span{
+	display:inline-block;
+	border-bottom:1px solid #A59270;
+	line-height:12px;
+}
+.csx .charms .skill,
+.csx .charms .cost,
+.csx .charms .type,
+.csx .charms .duration{
+	display:inline-block;
+	width:80px;
+	text-align:center;
+	margin-left:3px;
+}
+
+.csx .charms .keywords{
+	display:inline-block;
+	width:120px;
+	text-align:center;
+	margin-left:3px;
+}
+
+/* Sorcery List */
+.csx .sorcery .spell{
+	width:318px;
+	margin-left:5px;
+}
+
+.editable .csx .sorcery .spell{
+	width:300px;
+	margin-left:0px;
+}
+
+.editable .csx .sorcery .labelrow .spell{
+	margin-left:16px;
+}
+.csx .sorcery .labelrow span{
+	display:inline-block;
+	border-bottom:1px solid #A59270;
+	line-height:12px;
+}
+.csx .sorcery .cost,
+.csx .sorcery .duration{
+	display:inline-block;
+	width:110px;
+	text-align:center;
+	margin-left:3px;
+}
+
+.csx .sorcery .keywords{
+	display:inline-block;
+	width:135px;
+	text-align:center;
+	margin-left:3px;
+}
+
+/* Attack List */
+.csx .attacks .ovw,
+.csx .attacks .dice{
+	display:inline-block;
+	width:50px;
+	text-align:center;
+	margin-left:3px;
+}
+
+.csx .attacks .tags{
+	display:inline-block;
+	width:165px;
+	text-align:center;
+	margin-left:3px;
+}
+
+.csx .quarterwidth{
+	width:165px;
+	vertical-align:top;
+}
+
+.csx .twothirdwidth{
+	width:458px;
+	vertical-align:top;
+}
+
+/* Armor List */
+
+.csx .armor .armor{
+	width:253px;
+	margin-left:5px;
+}
+
+.editable .csx .armor .armor{
+	width:230px;
+	margin-left:0px;
+}
+
+.editable .csx .armor .labelrow .armor{
+	margin-left:16px;
+}
+.csx .armor .labelrow span{
+	display:inline-block;
+	border-bottom:1px solid #A59270;
+	line-height:12px;
+}
+.csx .armor .soak,
+.csx .armor .hard,
+.csx .armor .mp{
+	display:inline-block;
+	width:80px;
+	text-align:center;
+	margin-left:3px;
+}
+
+.csx .armor .tags{
+	display:inline-block;
+	width:170px;
+	text-align:center;
+	margin-left:3px;
+}
+
+.csx .dsf.right,
+.csx .edit.right{
+	max-width: 100px;
+	min-width: 50px;
+}
+
+.csx .dsf.wideright,
+.csx .edit.wideright{
+	max-width: 200px;
+	min-width: 50px;
+	text-align: right;
+	float: right;
+}
+
+.csx .section{
+	min-height: 50px;
+	vertical-align: top;
+}
+
+.csx .portraitholder .portrait {
+	max-height: none;
+}
+
+.csx .dsf.pips5label,
+.csx .edit.pips5label{
+	width: 212px;
+}
+
+.csx .edit.halfwidth{
+	width: 328px;
+}
+
+.csx .specialty {
+	color: rgba(85, 66, 32, 0.49);
+	font-size: smaller;
+}
+
+/* Overriding some of ChainSawXIV's CSS */
+.csx .head {
+    font-size: 14pt;
+    font-weight: normal;
+    letter-spacing: normal;
+    border-bottom: solid 1px #554220;
+    margin-bottom: 5px;
+}
+
+.csx .pagehead {
+    text-align: center;
+    width: 650px;
+    margin: 22px auto 20px auto;
+}

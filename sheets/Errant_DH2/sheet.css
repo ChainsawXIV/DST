@@ -1,0 +1,395 @@
+/* Font Imports */
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+/* Component Includes */
+
+@import url(https://chainsawxiv.github.io/DST/common/css/csx_exalted_common.css);
+
+/* Splat Specific: Checks */
+
+div.ds_Errant_DH2 .check .checkBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/check_border.svg');
+}
+
+div.ds_Errant_DH2 .check .checkOff{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_off.png');
+}
+
+div.ds_Errant_DH2.editable .check .checkOff:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_off_hover.png');
+}
+
+div.ds_Errant_DH2 .check .checkOn{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_on.png');
+}
+
+div.ds_Errant_DH2.editable .check .checkOn:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/check_on_hover.png');
+}
+
+/* Splat Specific: Pips */
+
+div.ds_Errant_DH2 .pipBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/pip_border.svg');
+}
+
+div.ds_Errant_DH2 .pips .pipOff{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_off.png');
+}
+
+div.ds_Errant_DH2.editable .pips .pipOff:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_off_hover.png');
+}
+
+div.ds_Errant_DH2 .pips .pipOn{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_on.png');
+}
+
+div.ds_Errant_DH2.editable .pips .pipOn:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/pip_on_hover.png');
+}
+
+/* Splat Specific: Tabs */
+
+div.ds_Errant_DH2 .tab.crunch{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab01_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_Errant_DH2 .tab.crunch:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab01_inactive.png');
+}
+div.ds_Errant_DH2 .tab.crunch.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/crunch.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab01_active.png');
+}
+
+div.ds_Errant_DH2 .tab.magic{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab02_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_Errant_DH2 .tab.magic:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/magic_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab02_inactive.png');
+}
+div.ds_Errant_DH2 .tab.magic.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/magic.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab02_active.png');
+}
+
+div.ds_Errant_DH2 .tab.equipment{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab03_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_Errant_DH2 .tab.equipment:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab03_inactive.png');
+}
+div.ds_Errant_DH2 .tab.equipment.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/equipment.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab03_active.png');
+}
+
+div.ds_Errant_DH2 .tab.fluff{
+	background:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab04_inactive.png');
+	background-size:
+		61% 70%,
+		100% 100%;
+}
+div.ds_Errant_DH2 .tab.fluff:not(.active):hover{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab04_inactive.png');
+}
+div.ds_Errant_DH2 .tab.fluff.active{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/tab04_active.png');
+}
+
+/* Splat Specific: Tips */
+
+div.ds_Errant_DH2 .tipBox .corner.topLeft{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-left.png') top left no-repeat;
+	background-size:15px 15px;
+}
+div.ds_Errant_DH2 .tipBox .corner.topRight{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-top-right.png') top right no-repeat;
+	background-size:15px 15px;
+}
+div.ds_Errant_DH2 .tipBox .corner.bottomLeft{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-left.png') bottom left no-repeat;
+	background-size:15px 15px;
+}
+div.ds_Errant_DH2 .tipBox .corner.bottomRight{
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/brass-corner-bottom-right.png') bottom right no-repeat;
+	background-size:15px 15px;
+}
+
+div.ds_Errant_DH2 .tipBox .contentBox{
+	background:
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_exalted/images/background.jpg') top left no-repeat;
+	background-size:
+		730px 730px;
+	background-color:#e4e5d5;
+	border-color:#554220;
+}
+
+div.ds_Errant_DH2 .tipBox .contentBox .tipArea,
+div.ds_Errant_DH2 .tipBox .contentBox .tipArea:hover{
+	background-color:rgba(255,255,224,0.7);
+	border:1px dotted rgba(0,0,0,0.3);
+	border-radius:4px;
+	font-family:'EB Garamond',Sans Serif;
+	color:#554220;
+}
+
+/* Splat Specific: Editable */
+
+div.ds_Errant_DH2 .dsf:not(.readonly),
+div.ds_Errant_DH2 .edit:not(.readonly),
+div.ds_Errant_DH2 .dsf_bio{
+	font-family:'EB Garamond',Sans Serif;
+}
+
+/* Splat Specific: Sheet */
+
+div.ds_Errant_DH2 .main{
+	background-image:url('http://www.zingerbugimages.com/backgrounds/white_parchment_paper_background_1800x1600.jpg');
+	background-position:top left;
+	background-color:#e4e5d5;
+	
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+	
+	font-family:'Cinzel', palatino, serif;
+	font-size:14px;
+	line-height:17px;
+	color:#554220;
+}
+
+div.ds_Errant_DH2 .head{
+	border-bottom:solid 1px #554220;
+}
+
+div.ds_Errant_DH2 a{
+	text-decoration:none;
+	color:#554220;
+}
+
+div.ds_Errant_DH2 .section a{
+	text-decoration:underline;
+}
+
+div.ds_Errant_DH2 .attacks .labelrow span{
+	border-bottom:1px solid #A59270;
+}
+
+div.ds_Errant_DH2 .dsf.dsf_type{
+	font-family:'Cinzel', palatino, serif;
+}
+
+
+div.ds_Errant_DH2 .spin{
+    -webkit-transform: rotate(-90deg);
+    display: inline-block;
+    text-align: left;
+    font-size: 7pt;
+    width:15px;
+    height: 15px;
+    float: right;
+    color: #998877;
+    font-variant: small-caps;
+}
+div.ds_Errant_DH2 .statgroup{
+	margin:0px 0px 8px 0px;
+	padding:0px 3px 0px 3px;
+	position:relative;}
+
+div.ds_Errant_DH2 .fourpips{
+padding-right:3px;}
+
+div.ds_Errant_DH2 .thirdwidth {
+width:227px;}
+
+div.ds_Errant_DH2 .twothirdwidths {
+width:454px;}
+
+div.ds_Errant_DH2 .skillwidth {
+width:135px;}
+
+div.ds_Errant_DH2 .smallhead {
+    font-size: 11pt;
+    font-weight: normal;
+    letter-spacing: 3px;
+    border-bottom: solid 1px #554220;
+    margin-bottom: 5px;}
+
+div.ds_Errant_DH2 .smallrowtext {
+    font-size: 8pt;}
+
+
+div.ds_Errant_DH2 .statisticrow {
+    text-align: center;
+    width: 100px;
+    height:20px;
+    font-size: 25pt;}
+
+div.ds_Errant_DH2 .statisticbox {
+    text-align: center;
+    margin: 2.5px;
+    float: left;
+    background-color: whitesmoke;
+    border-color: black;
+    border-style: double;
+    height:57px;
+}
+
+div.ds_Errant_DH2 .smallrowtextstats {
+width:100px;}
+
+div.ds_Errant_DH2 .avatar_image{
+	width:234px;
+}
+
+div.ds_Errant_DH2 .portrait_holder{
+	display:inline-block;
+	position:relative;
+	float:right;
+	padding:0px 0px 0px 0px;
+	margin:3px 3px 5px 10px;
+        margin-top:-5px;
+        margin-right:-5px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#554220;
+}
+
+div.ds_Errant_DH2 .portrait_corner_top_left{
+	position:absolute;
+	left:-4px;
+	top:-10px;
+	width:40px;
+	height:82.5px;
+	z-index:4;
+}
+
+div.ds_Errant_DH2 .portrait_corner_top_right{
+	position:absolute;
+	right:-4px;
+	top:-10px;
+	width:40px;
+	height:82.5px;
+	z-index:4;
+}
+
+div.ds_Errant_DH2 .portrait_corner_bottom_left{
+	position:absolute;
+	left:-4px;
+	bottom:-4px;
+	width:27.5px;
+	height:29.5px;
+	z-index:4;
+}
+
+div.ds_Errant_DH2 .portrait_corner_bottom_right{
+	position:absolute;
+	right:-4px;
+	bottom:-4px;
+	width:27.5px;
+	height:29.5px;
+	z-index:4;
+}
+
+div.ds_Errant_DH2 .Armour{
+        display:flex;
+	opacity:0.9;
+	position:absolute;
+	height:35px;
+	width:75px;
+	border-style:solid;
+	border-color:black;
+	background-color:white;
+	font-size:7pt;
+	font-variant:small-caps;}
+
+div.ds_Errant_DH2 .ArmourText{
+text-align: center;
+    width: 35px;
+    background-color: black;
+    float: left;
+    color: white;}
+
+div.ds_Errant_DH2 .ArmourField{
+    font-family:monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 30pt;
+    text-align: center;
+    flex-grow: 1;
+    line-height: 25px !important;}
+
+div.ds_Errant_DH2 .TwentyPercent{
+width:25%;}
+
+div.ds_Errant_DH2 .ThirtyFivePercent{
+width:30%;}
+
+div.ds_Errant_DH2 .FortyPercent{
+width:40%;}
+
+div.ds_Errant_DH2 .WeaponHead{
+font-variant:small-caps;
+display: inline-block;
+}
+
+div.ds_Errant_DH2 .WeaponQuarter{
+width:53px;
+}
+
+div.ds_Errant_DH2 .WeaponField{
+border-bottom: solid 1px #554220;
+}
+
+div.ds_Errant_DH2 .BlockDisplay{
+display:block;
+}
+
+div.ds_Errant_DH2 .FixWeaponMargin{
+width: 200px;
+}
+
+div.ds_Errant_DH2 .LiftCarryPush{
+width: 54px;
+}
+
+div.ds_Errant_DH2 .TwoColumn{
+width: 454px;
+}
+
+div.ds_Errant_DH2 .TwoColumnTextField{
+min-width: 428px;
+}
