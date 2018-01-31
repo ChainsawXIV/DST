@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<script src="sheet.js"></script>
+		<link type="text/css" rel="stylesheet" media="screen" href="sheet.css"></link>
+		<style>
+			.portrait{
+				height:150px;
+				width:150px;
+				background-color:white;
+			}
+		</style>
+		<script>
+			dynamic_sheet_attrs = {
+				"merit_00":"Test Merit",
+				"merit_tip_00":"",
+				"flaw_00":"Test Flaw",
+				"flaw_tip_00":"Test flaw tool tip...",
+				"flaw_01":"Another Test Flaw",
+				"flaw_tip_01":"Another test flaw tool tip...",
+				"craft_type_00":"Test Craft",
+				"craft_value_00":3
+			};
+			data = {
+				"containerId":"ds_chainsawxiv_mage",
+				"isEditable":true,
+			};
+		</script>
+		
+	</head>
+	<body onload="chainsawxiv_mage_dataPostLoad(data);">
+		<div class="main-content-container">
+			<div class="dynamic_sheet_container">
+				<div class="ds_chainsawxiv_mage editable" id="ds_chainsawxiv_mage">
+				
+<!-- START TEMPLATE INSERT -->
+				
+<div class="wrapper csx">
+
+	<div class="tabs">
+		<a class="tab fluff tab_fluff" title="Background"></a>
+		<a class="tab magic tab_magic" title="Loadout"></a>
+		<a class="tab crunch tab_crunch active" title="Traits"></a>
+	</div>
+	
+	<div class="uicontainer">
+	
+		<div class="formatBar">
+			<button type="button" class="boldButton" title="Bold (Ctrl+B)"></button>
+			<button type="button" class="italicButton" title="Italic (Ctrl+I)"></button>
+			<button type="button" class="underlineButton" title="Underline (Ctrl+U)"></button>
+			<button type="button" class="indentButton" title="Indent (Ctrl+Tab)"></button>
+		</div>
+	
+		<div class="tipBox">
+			<div class="corner topLeft"></div>
+			<div class="corner topRight"></div>
+			<div class="corner bottomLeft"></div>
+			<div class="corner bottomRight"></div>
+			<div class="contentBox">
+				<div class="tipArea edit"></div>
+			</div>
+		</div>
+	
+	</div>
+	
+	<div class="main" style="display:block;">
+		<div class="border_container"></div>
+		<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/mage/border-top.png" class="corner_top_left" />
+		<img alt="" src="https://innersecure.net/~omnichr/external/op/dst/images/mage/border-bottom.png" class="corner_bottom_left" />
+		
+		<div class="pagehead">
+			<div class="head">
+				<span class="name readonly dsf dsf_name singlerow">Edit Character Name</span>
+			</div>
+			<span class="dsf dsf_type typev singlerow" style="text-align:right;" defaultString="Edit Character Summary">Edit Character Summary</span> &#8226; <span class="readonly dsf dsf_campaign">Campaign Name</span>
+		</div>
+
+		<div class="page page_crunch active">
+			
+			<span class="column halfwidth colspace">
+			
+				<!-- Attributes -->
+				<div class="section halfwidth">
+					<div class="head">ATTRIBUTES</div>
+					<div class="group">
+						<div class="row">Strength<span class="readonly pips pipsRange_10 dsf dsf_strength"></span></div>
+						<div class="row">Dexterity<span class="readonly pips pipsRange_10 dsf dsf_dexterity"></span></div>
+						<div class="row">Stamina<span class="readonly pips pipsRange_10 dsf dsf_stamina"></span></div>
+					</div>
+					<div class="group">
+						<div class="row">Charisma<span class="readonly pips pipsRange_10 dsf dsf_charisma"></span></div>
+						<div class="row">Manipulation<span class="readonly pips pipsRange_10 dsf dsf_manipulation"></span></div>
+						<div class="row">Appearance<span class="readonly pips pipsRange_10 dsf dsf_appearance"></span></div>
+					</div>
+					<div class="group">
+						<div class="row">Perception<span class="readonly pips pipsRange_10 dsf dsf_perception"></span></div>
+						<div class="row">Intelligence<span class="readonly pips pipsRange_10 dsf dsf_intelligence"></span></div>
+						<div class="row">Wits<span class="readonly pips pipsRange_10 dsf dsf_wits"></span></div>
+					</div>
+				</div>
+				
+				<!-- Abilities -->
+				<div class="section halfwidth">
+					<div class="head">ABILITIES</div>
+					<div class="group">
+						<div class="row">Alertness<span class="readonly pips pipsRange_10 dsf dsf_alertness"></span></div>
+						<div class="row">Art<span class="readonly pips pipsRange_10 dsf dsf_art"></span></div>
+						<div class="row">Athletics<span class="readonly pips pipsRange_10 dsf dsf_athletics"></span></div>
+						<div class="row">Awareness<span class="readonly pips pipsRange_10 dsf dsf_awareness"></span></div>
+						<div class="row">Brawl<span class="readonly pips pipsRange_10 dsf dsf_brawl"></span></div>
+						<div class="row">Empathy<span class="readonly pips pipsRange_10 dsf dsf_empathy"></span></div>
+						<div class="row">Expression<span class="readonly pips pipsRange_10 dsf dsf_expression"></span></div>
+						<div class="row">Intimidation<span class="readonly pips pipsRange_10 dsf dsf_intimidation"></span></div>
+						<div class="row">Leadership<span class="readonly pips pipsRange_10 dsf dsf_leadership"></span></div>
+						<div class="row">Streetwise<span class="readonly pips pipsRange_10 dsf dsf_streetwise"></span></div>
+						<div class="row">Subterfuge<span class="readonly pips pipsRange_10 dsf dsf_subterfuge"></span></div>
+					</div>
+					<div class="group">
+						<div class="row">Crafts<span class="readonly pips pipsRange_10 dsf dsf_crafts"></span></div>
+						<div class="row">Drive<span class="readonly pips pipsRange_10 dsf dsf_drive"></span></div>
+						<div class="row">Etiquette<span class="readonly pips pipsRange_10 dsf dsf_etiquette"></span></div>
+						<div class="row">Firearms<span class="readonly pips pipsRange_10 dsf dsf_firearms"></span></div>
+						<div class="row">Martial Arts<span class="readonly pips pipsRange_10 dsf dsf_martial_arts"></span></div>
+						<div class="row">Meditation<span class="readonly pips pipsRange_10 dsf dsf_meditation"></span></div>
+						<div class="row">Melee<span class="readonly pips pipsRange_10 dsf dsf_melee"></span></div>
+						<div class="row">Research<span class="readonly pips pipsRange_10 dsf dsf_research"></span></div>
+						<div class="row">Stealth<span class="readonly pips pipsRange_10 dsf dsf_stealth"></span></div>
+						<div class="row">Survival<span class="readonly pips pipsRange_10 dsf dsf_survival"></span></div>
+						<div class="row">Technology<span class="readonly pips pipsRange_10 dsf dsf_technology"></span></div>
+					</div>
+					<div class="group">
+						<div class="row">Academics<span class="readonly pips pipsRange_10 dsf dsf_academics"></span></div>
+						<div class="row">Computer<span class="readonly pips pipsRange_10 dsf dsf_computer"></span></div>
+						<div class="row">Cosmology<span class="readonly pips pipsRange_10 dsf dsf_cosmology"></span></div>
+						<div class="row">Enigmas<span class="readonly pips pipsRange_10 dsf dsf_enigmas"></span></div>
+						<div class="row">Esoterica<span class="readonly pips pipsRange_10 dsf dsf_esoterica"></span></div>
+						<div class="row">Investigation<span class="readonly pips pipsRange_10 dsf dsf_investigation"></span></div>
+						<div class="row">Law<span class="readonly pips pipsRange_10 dsf dsf_law"></span></div>
+						<div class="row">Medicine<span class="readonly pips pipsRange_10 dsf dsf_medicine"></span></div>
+						<div class="row">Occult<span class="readonly pips pipsRange_10 dsf dsf_occult"></span></div>
+						<div class="row">Politics<span class="readonly pips pipsRange_10 dsf dsf_politics"></span></div>
+						<div class="row">Science<span class="readonly pips pipsRange_10 dsf dsf_science"></span></div>
+					</div>
+				</div>
+
+			</span>
+			
+			<span class="column halfwidth">
+			
+				<!-- Spheres -->
+				<div class="section halfwidth">
+					<div class="head">SPHERES</div>
+					<div class="group">
+						<div class="row"><span class="readonly check dsf dsf_correspondence_favored"></span>Correspondence<span class="readonly pips pipsRange_10 dsf dsf_correspondence"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_entropy_favored"></span>Entropy<span class="readonly pips pipsRange_10 dsf dsf_entropy"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_forces_favored"></span>Forces<span class="readonly pips pipsRange_10 dsf dsf_forces"></span></div>
+					</div>
+					<div class="group">
+						<div class="row"><span class="readonly check dsf dsf_life_favored"></span>Life<span class="readonly pips pipsRange_10 dsf dsf_life"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_matter_favored"></span>Matter<span class="readonly pips pipsRange_10 dsf dsf_matter"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_mind_favored"></span>Mind<span class="readonly pips pipsRange_10 dsf dsf_mind"></span></div>
+					</div>
+					<div class="group">
+						<div class="row"><span class="readonly check dsf dsf_prime_favored"></span>Prime<span class="readonly pips pipsRange_10 dsf dsf_prime"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_spirit_favored"></span>Spirit<span class="readonly pips pipsRange_10 dsf dsf_spirit"></span></div>
+						<div class="row"><span class="readonly check dsf dsf_time_favored"></span>Time<span class="readonly pips pipsRange_10 dsf dsf_time"></span></div>
+					</div>
+				</div>
+
+				<!-- Advantages -->
+				<div class="section halfwidth">
+					<div class="head">ADVANTAGES</div>
+					<div class="group">
+						<div class="row">Arete<span class="readonly pips pipsRange_10 dsf dsf_arete"></span></div>
+						<div class="row">Willpower<span class="readonly pips pipsRange_10 dsf dsf_willpower"></span></div>
+						<div class="row">Quintessence: <span class="dsf dsf_quintessence right singlerow" defaultString="0 (0 Maximum)">0 (0 Maximum)</span></div>
+						<div class="row">Paradox: <span class="dsf dsf_paradox right singlerow" defaultString="0 (0 Permanent)">0 (0 Permanent)</span></div>
+						<div class="row">Experience: <span class="dsf dsf_experience right singlerow" defaultString="0xp (0xp Unspent)">0xp (0xp Unspent)</span></div>
+					</div>
+				</div>
+
+				<!-- Focus -->
+				<div class="section halfwidth">
+					<div class="head">FOCUS
+						<span class="interface trash"></span>
+						<span class="interface add addto_instruments" title="Add Instrument"></span>
+					</div>
+					<div class="row hl_fix">Paradigm: 
+						<span class="tip dsf dsf_paradigm_tip readonly" style="margin:0px 1px 0px 5px;"></span>
+						<span class="dsf dsf_paradigm right singlerow" defaultString="Paradigm Name">Paradigm Name</span>
+					</div>
+					<div class="row hl_fix">Practice: 
+						<span class="tip dsf dsf_practice_tip readonly" style="margin:0px 1px 0px 5px;"></span>
+						<span class="dsf dsf_practice right singlerow" defaultString="Practice Name">Practice Name</span>
+					</div>
+					<div class="row" style="border-bottom:1px solid rgba(0,0,0,0.1);padding-top:3px;">Instruments</div>
+					<ul class="group list list_instruments">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_instrument fullcolumn singlerow" defaultString="Instrument">Instrument</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[]</span>
+						<span class="dsf dsf_instruments readonly hidden"></span>
+					</ul>
+				</div>
+
+				<!-- Merits & Flaws -->
+				<div class="section halfwidth">
+					<div class="head">MERITS & FLAWS
+						<span class="interface trash"></span>
+						<span class="interface add addto_mutations" title="Add Merit or Flaw"></span>
+					</div>
+					<ul class="group list list_mutations">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_mutation fullcolumn singlerow" defaultString="Merit or Flaw">Merit or Flaw</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"mutation":"merit","tip":"merit_tip"},{"mutation":"flaw","tip":"flaw_tip"}]</span>
+						<span class="dsf dsf_mutations readonly hidden"></span>
+					</ul>
+				</div>
+				
+				<!-- Other Traits -->
+				<div class="section halfwidth">
+					<div class="head">OTHER TRAITS
+						<span class="interface trash"></span>
+						<span class="interface add addto_others" title="Add Trait"></span>
+					</div>
+					<ul class="group list list_others">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_name pips10label singlerow" defaultString="Trait">Trait</span>
+							<span class="pips pipsRange_10 dslf readonly dslf_rating">1</span>
+						</li>
+						<span class="oldfields hidden">[{"name":"trait_type","rating":"trait_value"}]</span>
+						<span class="dsf dsf_others readonly hidden"></span>
+					</ul>
+				</div>
+
+				<!-- Specialties -->
+				<div class="section halfwidth">
+					<div class="head">SPECIALTIES
+						<span class="interface trash"></span>
+						<span class="interface add addto_specialties" title="Add Specialty"></span>
+					</div>
+					<ul class="group list list_specialties">
+						<li class="proto item">
+							<div class="handle"><div></div></div>
+							<span class="edit dslf dslf_specialty fullcolumn singlerow" defaultString="Specialty (Trait)">Specialty (Trait)</span>
+							<span class="tip dslf dslf_tip"></span>
+						</li>
+						<span class="oldfields hidden">[{"specialty":"specialty_type"}]</span>
+						<span class="dsf dsf_specialties readonly hidden"></span>
+					</ul>
+				</div>							
+			
+			</span>
+			
+		</div>
+		
+		<div class="page page_magic active">
+		
+			<!-- Rotes -->
+			<div class="section">
+				<div class="head">ROTES
+					<span class="interface trash"></span>
+					<span class="interface add addto_rotes" title="Add Rote"></span>
+					<span class="interface balance balance_rotes"></span>
+					<span class="interface readonly check dsf dsf_rotes_autobalance autobalance autobalance_rotes">1</span>
+				</div>
+				<ul class="group list list_rotes twocolumn">
+					<div class="column colspace"></div>
+					<div class="column"></div>
+					<li class="proto item">
+						<div class="handle"><div></div></div>
+						<span class="edit dslf dslf_name fullcolumn singlerow" defaultString="Rote Name">Rote Name</span>
+						<span class="tip dslf dslf_tip"></span>
+					</li>
+					<span class="oldfields hidden">[{"name":"rote_name","tip":"rote_tootip"}]</span>
+					<span class="dsf dsf_rotes readonly hidden"></span>
+				</ul>
+			</div>
+			
+			<!-- Backgrounds -->
+			<div class="section">
+				<div class="head">BACKGROUNDS
+					<span class="interface trash"></span>
+					<span class="interface add addto_backgrounds" title="Add Background"></span>
+					<span class="interface balance balance_backgrounds"></span>
+					<span class="interface readonly check dsf dsf_backgrounds_autobalance autobalance autobalance_backgrounds">1</span>
+				</div>
+				<ul class="group list list_backgrounds twocolumn">
+					<div class="column colspace"></div>
+					<div class="column"></div>
+					<li class="proto item">
+						<div class="handle"><div></div></div>
+						<span class="edit dslf dslf_name pips5label singlerow" defaultString="Background">Background</span>
+						<span class="pips pipsRange_5 pips_canHide readonly dslf dslf_rating">0</span>
+						<span class="tip dslf dslf_tip"></span>
+					</li>
+					<span class="oldfields hidden">[{"name":"background_type","tip":"background_tootip","rating":"background_value"}]</span>
+					<span class="dsf dsf_backgrounds readonly hidden"></span>
+				</ul>
+			</div>
+		
+			<!-- Equipment -->
+			<div class="section">
+				<div class="head">EQUIPMENT
+					<span class="interface trash"></span>
+					<span class="interface add addto_equipment" title="Add Item"></span>
+					<span class="interface balance balance_equipment"></span>
+					<span class="interface readonly check dsf dsf_equipment_autobalance autobalance autobalance_equipment">1</span>
+				</div>
+				<ul class="group list list_equipment threecolumn">
+					<div class="column colspace"></div>
+					<div class="column colspace"></div>
+					<div class="column"></div>
+					<li class="proto item">
+						<div class="handle"><div></div></div>
+						<span class="edit dslf dslf_name fullcolumn singlerow" defaultString="Item Name">Item Name</span>
+						<span class="tip dslf dslf_tip"></span>
+					</li>
+					<span class="oldfields hidden">[{"name":"equipment_name","tip":"equipment_tootip"}]</span>
+					<span class="dsf dsf_equipment readonly hidden"></span>
+				</ul>
+			</div>
+
+			<!-- Attacks -->
+			<div class="section attacks">
+				<div class="head">ATTACKS
+					<span class="interface trash"></span>
+					<span class="interface add addto_attacks" title="Add Attack"></span>
+				</div>
+				<div class="labelrow">
+					<span class="weapon">Attack</span>
+					<span class="difficulty">Difficulty</span>
+					<span class="damage">Damage</span>
+					<span class="range">Range</span>
+					<span class="rate">Rate</span>
+					<span class="clip">Clip</span>
+				</div>
+				<ul class="group list list_attacks">
+					<li class="proto item">
+						<div class="handle"><div></div></div>
+						<span class="edit dslf typea dslf_name weapon singlerow" defaultString="Attack Name">Attack Name</span>
+						<span class="edit dslf typed dslf_difficulty difficulty singlerow" defaultString="Difficulty">Difficulty</span>
+						<span class="edit dslf typed dslf_damage damage singlerow" defaultString="Damage">Damage</span>
+						<span class="edit dslf typed dslf_range range singlerow" defaultString="Range">Range</span>
+						<span class="edit dslf typed dslf_rate rate singlerow" defaultString="Rate">Rate</span>
+						<span class="edit dslf typed dslf_clip clip singlerow" defaultString="Clip">Clip</span>
+					</li>
+					<span class="oldfields hidden">[{"name":"attack_weapon","difficulty":"attack_speed","damage":"attack_damage","range":"attack_range","rate":"attack_rate","clip":"attack_clip"}]</span>
+					<span class="dsf dsf_attacks readonly hidden"></span>
+				</ul>
+			</div>
+		
+		</div>
+
+		<div class="page page_fluff active">
+
+			<!-- Identity -->
+			<div class="section">
+				<div class="head">IDENTITY</div>
+				<div class="group halfwidth" style="display:inline-block;width:340px;margin-right:12px">
+					<div class="row">Nature: <span class="dsf dsf_nature right singlerow" ></span></div>
+					<div class="row">Demeanor: <span class="dsf dsf_demeanor right singlerow" ></span></div>
+					<div class="row">Essence: <span class="dsf dsf_essence right singlerow" ></span></div>
+				</div>
+				<div class="group halfwidth" style="display:inline-block;width:340px;">
+					<div class="row">Affiliation: <span class="dsf dsf_affiliation right singlerow" ></span></div>
+					<div class="row">Sect: <span class="dsf dsf_sect right singlerow" ></span></div>
+					<div class="row">Concept: <span class="dsf dsf_concept right singlerow" ></span></div>
+				</div>
+			</div>
+		
+			<!-- History -->
+			<div class="section">
+				<div class="head">HISTORY</div>
+				<div class="group">
+					<div class="portraitholder">
+						<span class="portrait readonly dsf dsf_avatar_image">.</span>
+					</div>
+					<span class="dsf dsf_bio fullwidth readonly">Edit Biography below...</span>
+				</div>
+			</div>
+
+			<!-- Description -->
+			<div class="section">
+				<div class="head">DESCRIPTION</div>
+				<div class="group">
+					<span class="dsf dsf_desc fullwidth" defaultString="Character appearance...">Character appearance...</span>
+				</div>
+			</div>
+			
+			<!-- Goals & Destiny -->
+			<div class="section">
+				<div class="head">GOALS & DESTINY</div>
+				<div class="group">
+					<span class="dsf dsf_motivation fullwidth"></span>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="page_foot">
+			<div class="head"></div>
+			Character By <span class="align_right dsf dsf_player readonly">Player</span> &#8226; Sheet By <span class="align_left dsf dsf_dst_author readonly">Author</span>
+		</div>
+	</div>
+	
+</div>
+
+				
+<!-- END TEMPLATE INSERT -->
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
