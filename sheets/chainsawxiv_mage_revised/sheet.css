@@ -14,19 +14,19 @@ div.ds_chainsawxiv_mage_revised .check .checkBorder{
 }
 
 div.ds_chainsawxiv_mage_revised .check .checkOff{
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/check_off.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/check_off.png');
 }
 
 div.ds_chainsawxiv_mage_revised.editable .check .checkOff:hover{
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/check_off_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/check_off_hover.png');
 }
 
 div.ds_chainsawxiv_mage_revised .check .checkOn{
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/check_on.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/check_on.png');
 }
 
 div.ds_chainsawxiv_mage_revised.editable .check .checkOn:hover{
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/check_on_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/check_on_hover.png');
 }
 
 /* Splat Specific: Pips */
@@ -36,19 +36,19 @@ div.ds_chainsawxiv_mage_revised .pipBorder{
 }
 
 div.ds_chainsawxiv_mage_revised .pips .pipOff{
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/pip_off.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/pip_off.png');
 }
 
 div.ds_chainsawxiv_mage_revised.editable .pips .pipOff:hover{
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/pip_off_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/pip_off_hover.png');
 }
 
 div.ds_chainsawxiv_mage_revised .pips .pipOn{
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/pip_on.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/pip_on.png');
 }
 
 div.ds_chainsawxiv_mage_revised.editable .pips .pipOn:hover{
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/pip_on_hover.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/pip_on_hover.png');
 }
 
 /* Splat Specific: Tabs */
@@ -56,7 +56,7 @@ div.ds_chainsawxiv_mage_revised.editable .pips .pipOn:hover{
 div.ds_chainsawxiv_mage_revised .tab.crunch{
 	background:
 		url('https://chainsawxiv.github.io/DST/common/images/crunch.png') no-repeat 50% 50%,
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab01_inactive.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab01_inactive.png');
 	background-size:
 		61% 70%,
 		100% 100%;
@@ -64,18 +64,18 @@ div.ds_chainsawxiv_mage_revised .tab.crunch{
 div.ds_chainsawxiv_mage_revised .tab.crunch:not(.active):hover{
 	background-image:
 		url('https://chainsawxiv.github.io/DST/common/images/crunch_hover.png'),
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab01_inactive.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab01_inactive.png');
 }
 div.ds_chainsawxiv_mage_revised .tab.crunch.active{
 	background-image:
 		url('https://chainsawxiv.github.io/DST/common/images/crunch.png'),
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab01_active.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab01_active.png');
 }
 
 div.ds_chainsawxiv_mage_revised .tab.magic{
 	background:
 		url('https://chainsawxiv.github.io/DST/common/images/magic.png') no-repeat 50% 50%,
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab02_inactive.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab02_inactive.png');
 	background-size:
 		61% 70%,
 		100% 100%;
@@ -83,18 +83,18 @@ div.ds_chainsawxiv_mage_revised .tab.magic{
 div.ds_chainsawxiv_mage_revised .tab.magic:not(.active):hover{
 	background-image:
 		url('https://chainsawxiv.github.io/DST/common/images/magic_hover.png'),
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab02_inactive.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab02_inactive.png');
 }
 div.ds_chainsawxiv_mage_revised .tab.magic.active{
 	background-image:
 		url('https://chainsawxiv.github.io/DST/common/images/magic.png'),
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab02_active.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab02_active.png');
 }
 
 div.ds_chainsawxiv_mage_revised .tab.equipment{
 	background:
 		url('https://chainsawxiv.github.io/DST/common/images/equipment.png') no-repeat 50% 50%,
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab03_inactive.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab03_inactive.png');
 	background-size:
 		61% 70%,
 		100% 100%;
@@ -102,18 +102,18 @@ div.ds_chainsawxiv_mage_revised .tab.equipment{
 div.ds_chainsawxiv_mage_revised .tab.equipment:not(.active):hover{
 	background-image:
 		url('https://chainsawxiv.github.io/DST/common/images/equipment_hover.png'),
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab03_inactive.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab03_inactive.png');
 }
 div.ds_chainsawxiv_mage_revised .tab.equipment.active{
 	background-image:
 		url('https://chainsawxiv.github.io/DST/common/images/equipment.png'),
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab03_active.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab03_active.png');
 }
 
 div.ds_chainsawxiv_mage_revised .tab.fluff{
 	background:
 		url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab04_inactive.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab04_inactive.png');
 	background-size:
 		61% 70%,
 		100% 100%;
@@ -121,36 +121,36 @@ div.ds_chainsawxiv_mage_revised .tab.fluff{
 div.ds_chainsawxiv_mage_revised .tab.fluff:not(.active):hover{
 	background-image:
 		url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab04_inactive.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab04_inactive.png');
 }
 div.ds_chainsawxiv_mage_revised .tab.fluff.active{
 	background-image:
 		url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/tab04_active.png');
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/tab04_active.png');
 }
 
 /* Splat Specific: Tips */
 
 div.ds_chainsawxiv_mage_revised .tipBox .corner.topLeft{
-	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/brass-corner-top-left.png') top left no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/brass-corner-top-left.png') top left no-repeat;
 	background-size:15px 15px;
 }
 div.ds_chainsawxiv_mage_revised .tipBox .corner.topRight{
-	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/brass-corner-top-right.png') top right no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/brass-corner-top-right.png') top right no-repeat;
 	background-size:15px 15px;
 }
 div.ds_chainsawxiv_mage_revised .tipBox .corner.bottomLeft{
-	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/brass-corner-bottom-left.png') bottom left no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/brass-corner-bottom-left.png') bottom left no-repeat;
 	background-size:15px 15px;
 }
 div.ds_chainsawxiv_mage_revised .tipBox .corner.bottomRight{
-	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/brass-corner-bottom-right.png') bottom right no-repeat;
+	background:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/brass-corner-bottom-right.png') bottom right no-repeat;
 	background-size:15px 15px;
 }
 
 div.ds_chainsawxiv_mage_revised .tipBox .contentBox{
 	background:
-		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/background.jpg') top left no-repeat;
+		url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/background.jpg') top left no-repeat;
 	background-size:
 		730px 730px;
 	background-color:#e4e5d5;
@@ -177,7 +177,7 @@ div.ds_chainsawxiv_mage_revised .dsf_bio{
 /* Splat Specific: Sheet */
 
 div.ds_chainsawxiv_mage_revised .main{
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/background.jpg');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/background.jpg');
 	background-position:top left;
 	background-repeat:no-repeat;
 	background-color:#f5f4f2;
@@ -266,7 +266,7 @@ div.ds_chainsawxiv_mage_revised .csx .border_container{
 	right:-15px;
 	margin-top:100px;
 	margin-bottom:158px;
-	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised_revised/images/border-sides.png');
+	background-image:url('https://chainsawxiv.github.io/DST/sheets/chainsawxiv_mage_revised/images/border-sides.png');
 	z-index:0;
 }
 
