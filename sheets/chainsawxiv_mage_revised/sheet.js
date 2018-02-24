@@ -1,6 +1,6 @@
 // Global Options
 csx_opts = {
-	'setupCallback': function(item){chainsawxiv_mage_setup(item);},
+	'setupCallback': function(item){chainsawxiv_mage_revised_setup(item);},
 	'uiContainer': function(){return document;},
 	'defaultFieldValue':'Click to edit',
 	'imagePath':'https://chainsawxiv.github.io/DST/common/images/',
@@ -43,7 +43,7 @@ csx_opts = {
 };
 
 // Master Startup
-function chainsawxiv_mage_dataPostLoad(data){
+function chainsawxiv_mage_revised_dataPostLoad(data){
 
 	csx_opts.defaultContext = document.getElementById(data.containerId);	
 	csx_opts.uiContainer = csx_opts.defaultContext.querySelector('.uicontainer');
@@ -79,7 +79,7 @@ function chainsawxiv_mage_dataPostLoad(data){
 }
 
 // Setup After Script Load
-function chainsawxiv_mage_setup(context){
+function chainsawxiv_mage_revised_setup(context){
 
 	// Provide default context
 	if (context == undefined)
@@ -96,7 +96,7 @@ function chainsawxiv_mage_setup(context){
 }
 
 // Shutdown Before Save
-function chainsawxiv_mage_dataPreSave(){
+function chainsawxiv_mage_revised_dataPreSave(){
 
 	// Default the context if not set
 	var context = csx_opts.defaultContext;
