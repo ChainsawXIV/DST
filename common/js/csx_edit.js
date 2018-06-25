@@ -227,6 +227,7 @@ function csx_edit(context){
 			field.style.top = baseField.style.top;
 			field.style.width = baseField.style.width;
 			field.style.textAlign = baseField.style.textAlign;
+			field.old_value = '';
 			baseField.parentNode.insertBefore(field,baseField);
 			baseField.parentNode.removeChild(baseField);
 		}
@@ -294,14 +295,14 @@ function csx_edit(context){
 			// Assign the required events to the field
 			this.addEventListener('focus', this.activate, false);
 			this.addEventListener('blur', this.deactivate, false);
-			this.addEventListener('change', this.update, false);
 			this.allowBlur = true;
 			
 		}
 		
 		// Select content and show edit interface on focus
 		field.activate = function(e){
-		
+			this.old_value = this.innerHTML;
+
 			// Display the formatting toolbar
 			this.formatBar.show(this);
 			
@@ -340,7 +341,10 @@ function csx_edit(context){
 			
 			// Enable the element's title
 			this.title = this.titleStore;
-		
+			
+			if(this.old_value != this.innerHTML){
+				this.update();
+			}
 		}
 		
 		// Called when the content changes, typically overridden
