@@ -236,6 +236,7 @@ function csx_edit(context){
 			field.style.top = baseField.style.top;
 			field.style.width = baseField.style.width;
 			field.style.textAlign = baseField.style.textAlign;
+			field.old_value = '';
 			baseField.parentNode.insertBefore(field,baseField);
 			baseField.parentNode.removeChild(baseField);
 		}
@@ -303,14 +304,14 @@ function csx_edit(context){
 			// Assign the required events to the field
 			this.addEventListener('focus', this.activate, false);
 			this.addEventListener('blur', this.deactivate, false);
-			this.addEventListener('change', this.update, false);
 			this.allowBlur = true;
 			
 		}
 		
 		// Select content and show edit interface on focus
 		field.activate = function(e){
-		
+			this.old_value = this.innerHTML;
+
 			// Display the formatting toolbar
 			this.formatBar.show(this);
 			
@@ -349,7 +350,10 @@ function csx_edit(context){
 			
 			// Enable the element's title
 			this.title = this.titleStore;
-		
+			
+			if(this.old_value != this.innerHTML){
+				this.update();
+			}
 		}
 		
 		// Called when the content changes, typically overridden
@@ -511,8 +515,8 @@ function csx_list(context, addItemCallback){
 			}
 		}
 	
-        // Core function to load list data from JSON string
-        lists[listIndex].render = function(listData){
+		// Core function to load list data from JSON string
+		lists[listIndex].render = function(listData){
 			
 			// Add the contents of the object to the list
 			var rebalance = false;
@@ -561,8 +565,8 @@ function csx_list(context, addItemCallback){
 		else
 			lists[listIndex].itemAdded = function(){};
 		
-        // Core function to add an item to the list
-        lists[listIndex].addItem = function(data){
+		// Core function to add an item to the list
+		lists[listIndex].addItem = function(data){
 			
 			// Clone the embeded prototype as a basis
 			var proto = this.querySelector('.proto');
