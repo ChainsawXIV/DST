@@ -1,0 +1,227 @@
+
+/* Checks Interface */
+
+.csx .check{
+	position:relative;
+	top:1px;
+	margin:0px 3px 0px 0px;
+}
+
+.csx .check .checkMark{
+	display:inline-block;
+	width:12px;
+	height:12px;
+}
+
+.editable .csx .checkMark{
+	cursor:pointer;
+}
+
+.csx .check .checkBorder{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/check_border.svg');
+	display:inline-block;
+	height:12px;
+	width:12px;
+}
+
+.csx .check .checkOff{
+	background-image:url('../images/check_off.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+.editable .csx .check .checkOff:hover{
+	background-image:url('../images/check_off_hover.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+.csx .check .checkOn{
+	background-image:url('../images/check_on.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+.editable .csx .check .checkOn:hover{
+	background-image:url('../images/check_on_hover.png');
+	background-size:10px;
+	background-position:1px 2px;
+	background-repeat:no-repeat;
+}
+
+/* List Interface */
+
+.csx .add,
+.csx .trash,
+.csx .balance,
+.csx .autobalance{
+	display:none;
+	float:right;
+	height:15px;
+	width:15px;
+	margin-bottom:0px;
+	cursor:default;
+	background-size:contain;
+}
+
+.csx .autobalance{
+	position:relative;
+	top:-1px;
+	margin-right:0px;
+}
+
+.csx .trash{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/trash.png');
+}
+
+.csx .trash.active{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/trash_active.png');
+}
+
+.csx .trash.over{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/trash_hover.png');
+}
+
+.csx .add{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/add.png');
+	cursor:pointer;
+}
+
+.csx .add:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/add_hover.png');
+}
+
+.csx .balance{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/balance.png');
+	cursor:pointer;
+}
+
+.csx .balance:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/balance_hover.png');
+}
+
+.csx .list{
+	padding:0px;
+	line-height:inherit;
+}
+
+.csx .list li.item{
+	display:inline-block;
+	width:100%;
+	position:relative;
+	border-color:red;
+	border-radius:2px;
+}
+
+.csx .list li.item:nth-of-type(odd){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.csx .list li.item:nth-of-type(even){
+	background-color:initial;
+}
+
+.csx .list .column li.item:nth-of-type(even){
+	background-color:rgba(0,0,0,0.05);
+}
+
+.csx .list .column li.item:nth-of-type(odd){
+	background-color:initial;
+}
+
+.csx .list li.proto{
+	display:none;
+}
+
+.csx .list li.over-below{
+	border-bottom:1px dashed rgb(0,0,0);
+}
+
+.csx .list li.over-below:before{
+	content:"▶";
+	position:absolute;
+	left:-10px;
+	bottom:-9px;
+	z-index:10;
+}
+
+.csx .list li.over-below:after{
+	content:"◀";
+	position:absolute;
+	right:-10px;
+	bottom:-9px;
+	z-index:10;
+}
+
+.csx .list li.over-above{
+	border-top:1px dashed rgb(0,0,0);
+	line-height:16px;
+}
+
+.csx .list li.over-above:before{
+	content:"▶";
+	position:absolute;
+	left:-10px;
+	top:-8px;
+	z-index:10;
+}
+
+.csx .list li.over-above:after{
+	content:"◀";
+	position:absolute;
+	right:-10px;
+	top:-8px;
+	z-index:10;
+}
+
+.csx .list li.source{
+	background-color:rgba(0,0,0,0.1);
+	box-shadow:0px 0px 4px rgba(0,0,0,0.1);
+}
+
+.csx .list li .handle{
+	display:none;
+	float: left;
+	position: relative;
+	top: -1px;
+	left: -6px;
+	height:18px;
+	width:19px;
+	margin-right:-5px;
+}
+
+.csx .list li .handle div{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab.png');
+	background-position:2px 0px;
+	background-repeat:no-repeat;
+	height:12px;
+	width:13px;
+	margin:3px;
+}
+
+.csx .list li .handle div:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/grab_hover.png');
+}
+
+.csx .list li .handle img{
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	height:13px;
+}
+
+.editable .csx .list li .handle,
+.editable .csx .add,
+.editable .csx .trash,
+.editable .csx .balance,
+.editable .csx .autobalance{
+	display:inline-block;
+}
+
+.csx .list .item ul,
+.csx .list .item li{
+	line-height:inherit;
+}

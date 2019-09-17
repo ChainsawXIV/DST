@@ -1,0 +1,1 @@
+copy /b csx_check.css+csx_list.css csx_pathfinder_common.css
