@@ -21,7 +21,12 @@ function csx_check(context){
 		
 			// Get the value from the text content, cache, and return
 			var value = parseInt(this.innerHTML);
-			if (this.innerHTML == '') value = 0;
+			if ( this.innerHTML == '' ){
+				if ( this.className.match( 'checkDefaultOn' ) )
+					value = 1;
+				else
+					value = 0;
+			}
 			this.valueCache = value;
 			return value;
 			
