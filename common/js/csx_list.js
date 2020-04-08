@@ -250,12 +250,21 @@ function csx_list(context, addItemCallback){
 						this.parentNode.draggable = true;
 					}, false);
 				}, false);
+				textFields[fieldIndex].addEventListener('touchstart', function(e){
+					this.parentNode.draggable = false;
+					this.addEventListener('touchend', function(e){
+						this.parentNode.draggable = true;
+					}, false);
+					this.addEventListener('touchleave', function(e){
+						this.parentNode.draggable = true;
+					}, false);
+				}, false);
 			}
 			
 			// Designate to higher scope when mousing a drag handle
 			var dragHandle = item.querySelector('.handle');
 			dragHandle.title = 'Drag to rearrange list';
-			dragHandle.addEventListener('mousedown', function (e) {
+			dragHandle.addEventListener('mousedown', function(e){
 				onHandle = true;
 				var handle = this;
 				
@@ -282,6 +291,36 @@ function csx_list(context, addItemCallback){
 					this.removeEventListener('mouseup',this.mouseup);
 					this.removeEventListener('mouseout',this.mouseout);
 					this.removeEventListener('mouseover',this.mouseover);
+				};
+				
+			}, false);
+			dragHandle.addEventListener('touchstart', function(e){
+				onHandle = true;
+				var handle = this;
+				
+				this.touchend = function(e){
+					onHandle = false;
+					handle.clearEvents();
+				}
+				this.addEventListener('touchend', this.touchend, false);
+				
+				this.touchleave = function(e){
+					this.handleTimeout = window.setTimeout(function(){
+						onHandle = false;
+						handle.clearEvents();
+					},5);
+				}
+				this.addEventListener('touchleave', this.touchleave, false);
+				
+				this.touchenter = function(e){
+					window.clearTimeout(handle.handleTimeout);
+				}
+				this.addEventListener('touchenter', this.touchenter, false);
+				
+				this.clearEvents = function(){
+					this.removeEventListener('touchend',this.touchend);
+					this.removeEventListener('touchleave',this.touchleave);
+					this.removeEventListener('touchenter',this.touchenter);
 				};
 				
 			}, false);
