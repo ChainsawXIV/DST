@@ -52,6 +52,123 @@
 	background-repeat:no-repeat;
 }
 
+/* Edit Fields */
+
+.csx .dsf,
+.csx .edit{
+	position:relative;
+	display:inline-block;
+	cursor:default;
+}
+
+.csx .dsf p,
+.csx .edit p{
+	margin:0px;
+	line-height:inherit;
+}
+
+.csx .dsf:not(.readonly),
+.csx .edit:not(.readonly){
+
+}
+
+.editable .csx .dsf,
+.editable .csx .edit{
+	cursor:text;
+}
+
+.editable .csx .dsf:hover:not(.readonly),
+.editable .csx .edit:hover:not(.readonly){
+	background-color:rgba(0,0,0,0.02);
+}
+
+.editable .csx .dsf:focus,
+.editable .csx .edit:focus,
+.editable .csx .dsf:focus:hover,
+.editable .csx .edit:focus:hover{
+	background-color:rgba(0,0,0,0.05);
+}
+
+.csx .dsf ul,
+.csx .edit ul{
+	margin:0px;
+	padding: 0px 0px 0px 20px;
+	list-style: url('https://chainsawxiv.github.io/DST/common/images/bullet.png');
+}
+.csx .dsf ul li,
+.csx .edit ul li{
+	margin:0px;
+	display:list-item;
+}
+
+/* Format Bar */
+
+.csx .formatBar{
+	background-image:
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_top.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_main.png'),
+		url('https://chainsawxiv.github.io/DST/common/images/fb_back_bottom.png');
+	background-position:bottom center, center 1px, top center;
+	background-repeat:no-repeat, no-repeat, no-repeat;
+	position:absolute;
+	display:none;
+	padding-bottom:7px;
+	padding-top:3px;
+	margin-bottom:4px;
+	width:140px;
+	text-align:center;
+	font-size:12px;
+	z-index:10;	
+	height:28px;
+}
+
+.csx .formatBar button{
+	display:inline-block;
+	height:28px;
+	width:28px;
+	border:none;
+}
+
+.csx .formatBar .boldButton{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold.png');
+}
+.csx .formatBar .boldButton:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold_hover.png');
+}
+.csx .formatBar .boldButton:active{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/bold_active.png');
+}
+
+.csx .formatBar .italicButton{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic.png');
+}
+.csx .formatBar .italicButton:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic_hover.png');
+}
+.csx .formatBar .italicButton:active{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/italic_active.png');
+}
+
+.csx .formatBar .underlineButton{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline.png');
+}
+.csx .formatBar .underlineButton:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline_hover.png');
+}
+.csx .formatBar .underlineButton:active{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/underline_active.png');
+}
+
+.csx .formatBar .indentButton{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent.png');
+}
+.csx .formatBar .indentButton:hover{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent_hover.png');
+}
+.csx .formatBar .indentButton:active{
+	background-image:url('https://chainsawxiv.github.io/DST/common/images/indent_active.png');
+}
+
 /* List Interface */
 
 .csx .add,

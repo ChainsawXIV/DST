@@ -1,1 +1,1 @@
-copy /b csx_utils.js+csx_check.js+csx_list.js csx_pathfinder_common.js
+copy /b csx_utils.js+csx_edit.js+csx_check.js+csx_list.js csx_pathfinder_common.js
