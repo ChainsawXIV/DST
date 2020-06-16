@@ -178,6 +178,9 @@ function csx_edit(context){
 			// Hide the bar
 			this.style.display = 'none';
 			
+			// Move the bar back to the holding area
+			csx_opts.uiContainer.appendChild(this);
+			
 			// Disable keyboard shortcuts
 			this.editNode.removeEventListener('keyup', this.keyup, false);
 			this.editNode.removeEventListener('keydown', this.keydown, false);
