@@ -468,12 +468,14 @@ function csx_list(context, addItemCallback){
 			dataString = dataString.replace(/<[/]*font[^>]*>/g,'');
 			dataString = dataString.replace(/<b[^>r]*>/g,'<b>');	
 			
-			try{
-				var listData = (dataString) ? JSON.parse(dataString) : [];				
-			}
-			catch( error ){
-				console.error( "Unable to parse save blob for " + listName );
-				return;
+			var listData = [];
+			if ( dataString ){
+				try{
+					var listData = JSON.parse(dataString);				
+				}
+				catch( error ){
+					console.error( "Unable to parse save blob for " + listName );
+				}
 			}
 
 			// Add on to the end any data stored in the old way
