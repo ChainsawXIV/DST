@@ -468,7 +468,13 @@ function csx_list(context, addItemCallback){
 			dataString = dataString.replace(/<[/]*font[^>]*>/g,'');
 			dataString = dataString.replace(/<b[^>r]*>/g,'<b>');	
 			
-			var listData = (dataString) ? JSON.parse(dataString) : [];
+			try{
+				var listData = (dataString) ? JSON.parse(dataString) : [];				
+			}
+			catch( error ){
+				console.error( "Unable to parse save blob for " + listName );
+				return;
+			}
 
 			// Add on to the end any data stored in the old way
 			var oldStructure = this.querySelector('.oldfields').innerHTML;
