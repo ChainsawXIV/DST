@@ -173,6 +173,7 @@ function csx_list(context, addItemCallback){
 			// Stringify the object and put it to the save field
 			var listName = this.className.match(/list_([\w\d_]+)/)[1];
 			var dataString = JSON.stringify(listData);
+			dataString = dataString.replace(/</g,'&lt;');
 			this.querySelector('.dsf_' + listName).innerHTML = dataString;
 			
 		}
