@@ -649,7 +649,7 @@ function csx_list(context, addItemCallback){
 					var fields = items[itemIndex].querySelectorAll('.dslf');
 					for (var fieldIndex = 0; fieldIndex < fields.length; fieldIndex++){
 						var fieldName = fields[fieldIndex].className.match(/dslf_([\w\d_]+)/)[1];
-						var fieldValue = fields[fieldIndex].innerHTML;
+						var fieldValue = fields[fieldIndex].innerHTML.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
 						itemData[fieldName] = fieldValue;
 					}
 					if (this.columns.length)
@@ -688,7 +688,7 @@ function csx_list(context, addItemCallback){
 				for (var fieldIndex = 0; fieldIndex < fields.length; fieldIndex++){
 					var fieldName = fields[fieldIndex].className.match(/dslf_([\w\d_]+)/)[1];
 					if (fieldName in data)
-						fields[fieldIndex].innerHTML = data[fieldName];
+						fields[fieldIndex].innerHTML = data[fieldName].replace(/&quot;/g,'"').replace(/&amp;/g,'&');
 				}
 			}
 			
