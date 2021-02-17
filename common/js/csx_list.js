@@ -208,7 +208,7 @@ function csx_list(context, addItemCallback){
 				for (var fieldIndex = 0; fieldIndex < fields.length; fieldIndex++){
 					var fieldName = fields[fieldIndex].className.match(/dslf_([\w\d_]+)/)[1];
 					if (fieldName in data){
-						var fieldValue = data[fieldName].replace(/&qq;/g,'"').replace(/&amp;/g,'&');
+						var fieldValue = data[fieldName].replace(/&amp;/g,'&').replace(/&qq;/g,'"');
 						fields[fieldIndex].innerHTML = fieldValue;
 					}
 				}
