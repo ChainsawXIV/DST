@@ -207,8 +207,10 @@ function csx_list(context, addItemCallback){
 				var fields = newItem.querySelectorAll('.dslf');
 				for (var fieldIndex = 0; fieldIndex < fields.length; fieldIndex++){
 					var fieldName = fields[fieldIndex].className.match(/dslf_([\w\d_]+)/)[1];
-					if (fieldName in data)
-						fields[fieldIndex].innerHTML = data[fieldName].replace(/&qq;/g,'"').replace(/&amp;/g,'&');
+					if (fieldName in data){
+						var fieldValue = data[fieldName].replace(/&qq;/g,'"').replace(/&amp;/g,'&');
+						fields[fieldIndex].innerHTML = fieldValue;
+					}
 				}
 			}
 			
