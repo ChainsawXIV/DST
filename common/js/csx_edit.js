@@ -21,7 +21,7 @@ function csx_edit(context){
 
 	// Just unescape if not editing
 	if (!csx_opts.isEditable){
-		var editFields = context.querySelectorAll('.dsf:not(.readonly),.edit:not(.readonly)');
+		var editFields = context.querySelectorAll('.dsf:not(.readonly):not(.checkbox),.edit:not(.readonly)');
 		for (var i = 0; i < editFields.length; i++)
 			editFields[i].innerHTML = unescape(editFields[i].innerHTML);
 		return;
@@ -210,7 +210,7 @@ function csx_edit(context){
 	}
 	
 	// Convert each editable field
-	var editFields = context.querySelectorAll('.dsf,.edit');
+	var editFields = context.querySelectorAll('.dsf:not(.checkbox),.edit');
 	for (var i = 0; i < editFields.length; i++){
 	
 		var baseField = editFields[i];
