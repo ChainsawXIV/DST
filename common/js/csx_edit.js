@@ -210,7 +210,7 @@ function csx_edit(context){
 	}
 	
 	// Convert each editable field
-	var editFields = context.querySelectorAll('.dsf:not(.checkbox),.edit');
+	var editFields = context.querySelectorAll('.dsf,.edit');
 	for (var i = 0; i < editFields.length; i++){
 	
 		var baseField = editFields[i];
@@ -218,6 +218,19 @@ function csx_edit(context){
 		// Don't do anything to read only fields
 		if (baseField.className.match(/readonly/))
 			continue;
+		
+		// Add stub methods to checkboxes for backwards compatability
+		if (baseField.className.match(/checkbox/)){
+			baseField.value = function(){};
+			baseField.render = function(){};
+			baseField.unrender = function(){};
+			baseField.enable = function(){};
+			baseField.activate = function(){};
+			baseField.deactivate = function(){};
+			baseField.update = function(){};
+			baseField.select = function(){};
+			continue;
+		}
 			
 		// Replace the field span with a div if it's not
 		// Here instead of render so events attach to the new div
